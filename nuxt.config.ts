@@ -21,4 +21,13 @@ export default defineNuxtConfig({
       fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category'],
     },
   },
+
+  ogImage: {
+    runtimeCacheStorage: {
+      driver: 'cloudflare-kv-http',
+      namespaceId: 'streamerbot-docs',
+      accountId: process.env.CLOUDFLARE_ACCOUNT_ID,
+      apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
+    },
+  },
 });

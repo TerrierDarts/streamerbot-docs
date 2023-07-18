@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import slugify from 'slugify';
 const route = useRoute();
 const { navigation, page } = useContent();
 const { navKeyFromPath } = useContentHelpers();
@@ -22,6 +23,8 @@ if (route.path !== '/' && page.value?.ogImage !== false && page.value?.title) {
     siteName: 'Streamer.bot Docs',
     categoryTitle: category?.title ?? parentTitle,
     categoryIcon: category?.icon ?? parentIcon,
+    cacheKey: slugify(`${page.value?.title}${page.value?.icon}${category?.title}${category?.icon}`, { strict: true, lower: true }),
+    cacheTtl: 60 * 60 * 24 * 30, // 30 days
   });
 
   useHead({
