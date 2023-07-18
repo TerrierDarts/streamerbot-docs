@@ -8,7 +8,7 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "lint": "eslint .",
-    "deploy": "yarn generate && wrangler pages deploy .output/public --project-name=streamerbot-docs"
+    "deploy": "pnpm generate && wrangler pages deploy .output/public --project-name=streamerbot-docs"
   },
   "devDependencies": {
     "@nuxt-themes/docus": "^2.0.0-beta.12",
