@@ -1,0 +1,37 @@
+# Create Stream Marker
+Trigger creation of a Stream Marker on Twitch
+
+![Preview](/img/sub-actions/twitch/create-stream-marker.png)
+
+You can use this to signify an important event, or as a reminder for a point in the stream you'd like to review in your VOD at a later time.
+
+::list{type=warning}
+- Stream Markers are only available if you have VOD's enabled on your channel!
+::
+
+## Parameters
+### `Description`
+The description of the stream marker.
+- Type: `String`
+
+## Variables
+The following variables will be populated after executing this sub-action:
+
+Name | Description | Example
+----:|:------------|:--------|
+`broadcastUser` | The Twitch display name of the broadcaster account | `StreamerBotUser12`
+`broadcastUserName` | The Twitch user name of the broadcaster account | `streamerbotuser12`
+`broadcastUserId` | The Twitch user ID of the broadcaster account | `123456789`
+`broadcastIsAffiliate` | Boolean value indicating if the broadcast account is a Twitch affiliate | `True/False`
+`broadcastIsPartner` | Boolean value indicating if the broadcast account is a Twitch partner | `True/False`
+
+## C# Usage
+
+::code-group
+  ```csharp [Method]
+  StreamMarker CreateStreamMarker(string description);
+  ```
+  ```csharp [Example]
+  CPH.CreateStreamMarker('Something cool happened here!');
+  ```
+::

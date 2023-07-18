@@ -1,0 +1,8 @@
+title: Arguments Sub-Actions
+icon: mdi:application-variable
+aside.level: 4
+category.title: Arguments Sub-Actions
+category.icon: mdi:application-variable
+navigation.title: Arguments
+navigation.description: Manipulate arguments in your running actions
+navigation.redirect: /api/sub-actions/core/arguments/set-argument
