@@ -6,6 +6,10 @@ const { navDirFromPath } = useContentHelpers();
 const isActive = (link: any) =>
   link.exact ? route.fullPath === link._path : route.fullPath.startsWith(link._path);
 
+const showMenu = computed(() => {
+  return page.aside !== false && route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
+});
+
 // Automatically choose a matching API directory when it exists
 const links = computed(() => {
   const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
@@ -43,6 +47,10 @@ const links = computed(() => {
           : '/api/csharp',
       text: 'C# Code',
     },
+    {
+      _path: '/api/servers',
+      text: 'Servers',
+    }
   ];
 });
 </script>
@@ -55,7 +63,7 @@ const links = computed(() => {
       <Container>
         <div class="grid grid-cols-12">
           <div class="col-span-3">
-            <CategoryMenu v-if="page.aside !== false" />
+            <CategoryMenu v-if="showMenu" />
           </div>
           <nav class="col-span-6 flex justify-center items-center gap-5 font-semibold">
             <NuxtLink
