@@ -1,19 +1,57 @@
 <script setup lang="ts">
 const route = useRoute();
-const { page } = useContent();
+const { page, navigation } = useContent();
+const { navDirFromPath } = useContentHelpers();
 
-const isActive = (link: any) => (link.exact ? route.fullPath === link._path : route.fullPath.startsWith(link._path));
+const isActive = (link: any) =>
+  link.exact ? route.fullPath === link._path : route.fullPath.startsWith(link._path);
 
-const links = [
-  { _path: '/api/sub-actions', text: 'Sub-Actions' },
-  { _path: '/api/triggers', text: 'Triggers' },
-  { _path: '/api/csharp', text: 'C# Code' },
-]
+// Automatically choose a matching API directory when it exists
+const links = computed(() => {
+  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
+  const categoryPath = m && m[1] ? m[1] : null;
+  const subActionsPath = categoryPath
+    ? categoryPath.replace(/^\/api\/(triggers|csharp)/, '/api/sub-actions')
+    : '/api/sub-actions';
+  const triggersPath = categoryPath
+    ? categoryPath.replace(/^\/api\/(sub-actions|csharp)/, '/api/triggers')
+    : '/api/triggers';
+  const csharpPath = categoryPath
+    ? categoryPath.replace(/^\/api\/(sub-actions|triggers)/, '/api/csharp')
+    : '/api/csharp';
+
+  return [
+    {
+      _path:
+        !categoryPath?.startsWith('/api/sub-actions') &&
+        navDirFromPath(subActionsPath, navigation.value)
+          ? subActionsPath
+          : '/api/sub-actions',
+      text: 'Sub-Actions',
+    },
+    {
+      _path:
+        !categoryPath?.startsWith('/api/triggers') && navDirFromPath(triggersPath, navigation.value)
+          ? triggersPath
+          : '/api/triggers',
+      text: 'Triggers',
+    },
+    {
+      _path:
+        !categoryPath?.startsWith('/api/csharp') && navDirFromPath(csharpPath, navigation.value)
+          ? csharpPath
+          : '/api/csharp',
+      text: 'C# Code',
+    },
+  ];
+});
 </script>
 
 <template>
   <BasicLayout>
-    <div class="sticky z-20 top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1">
+    <div
+      class="sticky z-20 top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1"
+    >
       <Container>
         <div class="grid grid-cols-12">
           <div class="col-span-3">
