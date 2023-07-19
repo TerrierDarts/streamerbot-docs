@@ -11,6 +11,7 @@ specifiers:
   nuxt-headlessui: ^1.1.4
   nuxt-og-image: ^2.0.10
   postcss: ^8.4.26
+  semver: ^7.5.4
   vite: ^4.4.4
   vue: ^3.3.4
   webpack: ^5.88.2
@@ -26,6 +27,7 @@ devDependencies:
   nuxt-headlessui: 1.1.4_vue@3.3.4
   nuxt-og-image: 2.0.10
   postcss: 8.4.26
+  semver: 7.5.4
   vite: 4.4.4_@types+node@20.4.2
   vue: 3.3.4
   webpack: 5.88.2

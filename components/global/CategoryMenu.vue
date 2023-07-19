@@ -3,7 +3,7 @@ const route = useRoute();
 const { navigation } = useContent();
 const { navDirFromPath } = useContentHelpers();
 
-const m = route.path.match(/^(\/api\/[\w-]+)\//i);
+const m = route.path.match(/^(\/[\w-]\/[\w-]+)\//i);
 const path = m && m[1] ? m[1] : route.path;
 
 const dir = navDirFromPath(path, navigation.value)?.filter(i => i._path !== route.path);

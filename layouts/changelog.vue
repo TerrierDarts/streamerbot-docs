@@ -3,7 +3,7 @@ useOgImage();
 </script>
 
 <template>
-  <DocsLayout>
+  <ChangelogDocsLayout>
     <slot />
-  </DocsLayout>
+  </ChangelogDocsLayout>
 </template>
