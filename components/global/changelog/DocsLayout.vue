@@ -10,8 +10,8 @@ const { config, tree } = useDocus()
 const route = useRoute()
 
 const sortedTree = (tree.value ?? []).sort((a, b) => {
-  const aSemver = a.version ?? a._path.split('/').at(-1).slice(1);
-  const bSemver = b.version ?? b._path.split('/').at(-1).slice(1);
+  const aSemver = a.version;
+  const bSemver = b.version;
   if (!valid(aSemver) || !valid(bSemver)) { return 0 }
   return compare(bSemver, aSemver);
 })

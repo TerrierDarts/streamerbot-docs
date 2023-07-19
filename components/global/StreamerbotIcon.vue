@@ -1,4 +1,5 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <svg
@@ -10,11 +11,10 @@
     viewBox="0 0 1000 1000"
     version="1.1"
     xml:space="preserve"
-    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2"
+    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2; color: currentColor"
+    v-bind="$attrs"
   >
     <g
-      id="Logo---Transparent-White"
-      serif:id="Logo - Transparent White"
       transform="matrix(3.50877,0,0,3.50877,-67.4403,-114.035)"
     >
       <g transform="matrix(0.251419,0,0,0.251419,36.011,47.3455)">

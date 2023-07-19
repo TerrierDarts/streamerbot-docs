@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   content: {
     navigation: {
-      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category'],
+      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version'],
     },
   },
 

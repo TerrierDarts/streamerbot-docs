@@ -93,7 +93,7 @@ const MaybeIconComponent = resolveComponent('Icon')
       </div>
       <div class="flex items-center justify-between w-full flex-nowrap text-3xl tracking-tight">
         <span class="text-sky-400 font-light">
-          <MaybeIconComponent :name="categoryIcon" class="mr-2 mt-1 text-sky-400" />
+          <MaybeIconComponent :name="categoryIcon" class="mr-2 mt-1 !text-sky-400" />
           {{ categoryTitle }}
         </span>
         <span class="text-gray-300">
