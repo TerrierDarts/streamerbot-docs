@@ -1,7 +1,7 @@
 # Add Viewer Count
 Populate a variable with your current Twitch viewer count.
 
-![Preview](/img/sub-actions/twitch/add-viewer-count.png)
+![Preview](assets/add-viewer-count.png)
 
 ## Variables
 The following variables will be populated after executing this sub-action:

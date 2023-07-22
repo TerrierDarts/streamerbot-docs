@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-headlessui', 'nuxt-og-image'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-headlessui', 'nuxt-og-image', 'nuxt-content-assets'],
 
   site: {
     url: 'https://docs.streamer.bot',

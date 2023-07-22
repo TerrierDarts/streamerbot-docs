@@ -1,7 +1,7 @@
 # Set Channel Game
 Update the current game category of your Twitch channel.
 
-![Preview](/img/sub-actions/twitch/set-channel-game.png)
+![Preview](assets/set-channel-game.png)
 
 ## Parameters
 ### `Source`

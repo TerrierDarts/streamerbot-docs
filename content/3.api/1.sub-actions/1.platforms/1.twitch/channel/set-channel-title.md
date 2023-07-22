@@ -1,7 +1,7 @@
 # Set Channel Title
 Update the current title of your Twitch channel.
 
-![Preview](/img/sub-actions/twitch/set-channel-title.png)
+![Preview](assets/set-channel-title.png)
 
 ## Parameters
 ### `Title`

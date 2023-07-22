@@ -1,7 +1,7 @@
 # Run Commercial
 Start an ad break on your Twitch channel.
 
-![Preview](/img/sub-actions/twitch/run-commercial.png)
+![Preview](assets/run-commercial.png)
 
 ## Parameters
 
