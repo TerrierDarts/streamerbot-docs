@@ -1,10 +1,8 @@
 # Run Commercial
-Start an ad break on your Twitch channel.
-
-![Preview](assets/run-commercial.png)
+Start an ad break on your Twitch channel
+:image-preview
 
 ## Parameters
-
 ### `Duration`
 Duration of ad break, in seconds.
 

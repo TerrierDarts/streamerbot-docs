@@ -1,7 +1,6 @@
 # Create Clip
-Create a 30 second Twitch Clip.
-
-![Preview](assets/create-clip.png)
+Create a 30 second Twitch Clip
+:image-preview
 
 ::alert{type=info}
 Due to Twitch API restrictions, the generated clip will always be 30 seconds long and will be titled to match your current stream title.

@@ -1,7 +1,6 @@
 # Create Stream Marker
 Trigger creation of a Stream Marker on Twitch
-
-![Preview](assets/create-stream-marker.png)
+:image-preview
 
 You can use this to signify an important event, or as a reminder for a point in the stream you'd like to review in your VOD at a later time.
 
