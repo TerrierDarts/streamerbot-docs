@@ -1,13 +1,4 @@
----
-title: Execute C# Code
-description: Execute custom C# code in your actions
-published: true
-date: 2023-05-08T02:26:55.234Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-25T21:31:50.110Z
----
-
+# Execute C# Code
 For the power users out there, I've included the ability for runtime compilation of your own code to act as an action!
 
 Whenever you add a new Execute C# code action, you will be greeted with the following code snippet:
@@ -104,7 +95,7 @@ This video's are video's for learning C# with streamer.bot{.subtitle}
 <div>
 
 nutty VODs{.overline}
-  
+
 <span></span>
 
 <div class=“iframe-container”><iframe src="https://www.youtube.com/embed/rS5ZuIZV_y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allow fullscreen style="border: none; max-width: 100%; width: 100%; aspect-ratio: 16/9;"></iframe></div>
