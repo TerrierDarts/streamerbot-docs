@@ -35,6 +35,6 @@ Name | Description | Example
   GameInfo SetChannelGame(string game);
   ```
   ```csharp [Example]
-  CPH.SetChannelGame('Beat Saber');
+  CPH.SetChannelGame("Beat Saber");
   ```
 ::

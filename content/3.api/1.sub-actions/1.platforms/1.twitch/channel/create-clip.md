@@ -24,6 +24,6 @@ Name | Description | Example
   ClipData CreateClip(string description);
   ```
   ```csharp [Example]
-  CPH.CreateClip('My cool clip!');
+  CPH.CreateClip("My cool clip!");
   ```
 ::

@@ -31,6 +31,6 @@ Name | Description | Example
   StreamMarker CreateStreamMarker(string description);
   ```
   ```csharp [Example]
-  CPH.CreateStreamMarker('Something cool happened here!');
+  CPH.CreateStreamMarker("Something cool happened here!");
   ```
 ::

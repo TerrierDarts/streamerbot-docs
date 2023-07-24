@@ -14,3 +14,8 @@ Name | Description | Example
 `charity.websiteUrl` | The website to the charity you are supporting.
 `currentAmount` | How much you have raised so far, in cents | `4200`
 `targetAmount` | Your campaign's target amount, in cents | `5000`
+
+## C# Usage
+::list{type=danger}
+- C# method does not exist for this sub-action
+::
