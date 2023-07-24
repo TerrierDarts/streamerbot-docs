@@ -19,7 +19,7 @@ Enter the title of the new game category
 ::
 
 ## Variables
-The following variables will be populated after executing this sub-action
+:variables-description
 
 Name | Description | Example
 ----:|:------------|---------|

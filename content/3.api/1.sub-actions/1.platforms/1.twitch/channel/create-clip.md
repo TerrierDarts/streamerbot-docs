@@ -8,7 +8,7 @@ To make your own changes to the clip duration or title, you must manually edit t
 ::
 
 ## Variables
-The following variables will be populated after executing this sub-action:
+:variables-description
 
 Name | Description | Example
 ----:|:------------|:--------|

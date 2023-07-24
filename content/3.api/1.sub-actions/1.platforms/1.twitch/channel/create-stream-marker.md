@@ -14,7 +14,7 @@ The description of the stream marker.
 - Type: `String`
 
 ## Variables
-The following variables will be populated after executing this sub-action:
+:variables-description
 
 Name | Description | Example
 ----:|:------------|:--------|
