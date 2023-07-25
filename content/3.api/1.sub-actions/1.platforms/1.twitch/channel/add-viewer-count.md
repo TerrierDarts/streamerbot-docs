@@ -11,6 +11,4 @@ Name | Description | Example
 
 
 ## C# Usage
-::list{type=danger}
-- C# method does not exist for this sub-action
-::
+:csharp-method

@@ -14,13 +14,4 @@ Duration of ad break, in seconds.
 ::
 
 ## C# Usage
-
-::code-group
-  ```csharp [Method]
-  void TwitchRunCommercial(int duration);
-  ```
-  ```csharp [Example]
-  // Start a 30 second ad break
-  CPH.TwitchRunCommercial(30);
-  ```
-::
+:csharp-method{name=TwitchRunCommercial}

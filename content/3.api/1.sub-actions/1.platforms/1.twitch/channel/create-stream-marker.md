@@ -25,12 +25,4 @@ Name | Description | Example
 `broadcastIsPartner` | Boolean value indicating if the broadcast account is a Twitch partner | `True/False`
 
 ## C# Usage
-
-::code-group
-  ```csharp [Method]
-  StreamMarker CreateStreamMarker(string description);
-  ```
-  ```csharp [Example]
-  CPH.CreateStreamMarker("Something cool happened here!");
-  ```
-::
+:csharp-method{name=CreateStreamMarker}

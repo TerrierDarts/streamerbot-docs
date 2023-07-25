@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const route = useRoute();
 const { page, navigation } = useContent();
-const { navDirFromPath } = useContentHelpers();
+const { navDirFromPath, navPageFromPath } = useContentHelpers();
+
+useOgImage();
 
 const isActive = (link: any) =>
   link.exact ? route.fullPath === link._path : route.fullPath.startsWith(link._path);
@@ -15,34 +17,36 @@ const links = computed(() => {
   const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
   const categoryPath = m && m[1] ? m[1] : null;
   const subActionsPath = categoryPath
-    ? categoryPath.replace(/^\/api\/(triggers|csharp)/, '/api/sub-actions')
+    ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/sub-actions')
     : '/api/sub-actions';
   const triggersPath = categoryPath
-    ? categoryPath.replace(/^\/api\/(sub-actions|csharp)/, '/api/triggers')
+    ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/triggers')
     : '/api/triggers';
   const csharpPath = categoryPath
-    ? categoryPath.replace(/^\/api\/(sub-actions|triggers)/, '/api/csharp')
+    ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/csharp')
     : '/api/csharp';
 
   return [
     {
       _path:
         !categoryPath?.startsWith('/api/sub-actions') &&
-        navDirFromPath(subActionsPath, navigation.value)
+        (navDirFromPath(subActionsPath, navigation.value) || navPageFromPath(subActionsPath, navigation.value))
           ? subActionsPath
           : '/api/sub-actions',
       text: 'Sub-Actions',
     },
     {
       _path:
-        !categoryPath?.startsWith('/api/triggers') && navDirFromPath(triggersPath, navigation.value)
+        !categoryPath?.startsWith('/api/triggers') &&
+        (navDirFromPath(triggersPath, navigation.value) || navPageFromPath(triggersPath, navigation.value))
           ? triggersPath
           : '/api/triggers',
       text: 'Triggers',
     },
     {
       _path:
-        !categoryPath?.startsWith('/api/csharp') && navDirFromPath(csharpPath, navigation.value)
+        !categoryPath?.startsWith('/api/csharp') &&
+        (navDirFromPath(csharpPath, navigation.value) || navPageFromPath(csharpPath, navigation.value))
           ? csharpPath
           : '/api/csharp',
       text: 'C# Code',

@@ -1,26 +1,24 @@
----
-title: Set Argument
-description: Arguments Sub-Actions Reference
-published: true
-date: 2023-04-07T16:20:30.011Z
-tags: logic, set argument
-editor: markdown
-dateCreated: 2022-06-28T00:44:25.623Z
----
+# Set Argument
+Define custom arguments for use in subsequent sub-actions
+:image-preview
 
-## Overview
-This sub-action is used to define custom `Arguments` or perform [Inline Functions](/Inline-Functions) with them such as [Math](/Inline-Functions/Math)
+## Parameters
+### `Variable Name`
+Enter the name of the variable in which to store your argument.
 
-![logic-set-argument.png](/logic-set-argument.png =400x)
+::list{type=warning}
+- Do not wrap your variable name with `%` symbols
+::
 
-## Configuration
-### Variable Name
-The `Argument` you wish to manipulate (This should be without the % symbols)
+### `Value`
+Enter the value to store in your argument / variable.
 
-### Value
-The data you want to store in the argument
+::list
+- You can use other [Variables](/config/variables) or [Inline Functions](/config/variables/functions) to manipulate existing arguments
+::
 
----
+### `Auto Type`
+Toggle [auto typing](/config/variables#auto-type) of the resulting value
 
-- [<i class="mdi mdi-chevron-left"></i> **Arguments Sub-Actions *Go Back***](/Sub-Actions/Arguments)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=SetArgument}

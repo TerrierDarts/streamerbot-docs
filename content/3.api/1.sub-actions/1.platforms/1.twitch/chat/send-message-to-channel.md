@@ -12,11 +12,4 @@ Select the Twitch account to use when sending the message:
 Enter the text you would like to send
 
 ## C# Usage
-::code-group
-  ```csharp [Method]
-  void SendMessage(string message, bool bot = true);
-  ```
-  ```csharp [Example]
-  CPH.SendMessage("Some chat message from my broadcaster account!", false);
-  ```
-::
+:csharp-method{name=SendMessage}

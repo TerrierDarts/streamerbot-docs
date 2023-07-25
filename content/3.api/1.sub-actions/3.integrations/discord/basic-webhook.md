@@ -40,3 +40,6 @@ Optional added images the to webhook message.
 
 ### Text to Speech
 Whether the Discord webhook message is Text to Speech or not.
+
+## C# Usage
+:csharp-method{name=DiscordPostTextToWebhook}

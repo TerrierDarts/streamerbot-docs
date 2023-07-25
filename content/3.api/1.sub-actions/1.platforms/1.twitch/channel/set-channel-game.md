@@ -29,12 +29,4 @@ Name | Description | Example
 `gameBoxArt` | The url of the game boxart, can be used with browser sources in your broadcaster.
 
 ## C# Usage
-
-::code-group
-  ```csharp [Method]
-  GameInfo SetChannelGame(string game);
-  ```
-  ```csharp [Example]
-  CPH.SetChannelGame("Beat Saber");
-  ```
-::
+:csharp-method{name=SetChannelGame}
