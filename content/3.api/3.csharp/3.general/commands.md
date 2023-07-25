@@ -1,5 +1,10 @@
-# Commands
-Reference of C# methods for Streamer.bot commands
+---
+navigation.title: Commands
+icon: mdi:message-alert
+---
+
+# Commands C# Methods
+Reference of C# methods for interacting with Streamer.bot commands
 
 ## State
 ### `EnableCommand`

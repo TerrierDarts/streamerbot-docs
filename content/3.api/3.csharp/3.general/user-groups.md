@@ -1,4 +1,9 @@
-# User Groups
+---
+navigation.title: User Groups
+icon: mdi:account-group
+---
+
+# User Group C# Methods
 Reference of C# methods for Streamer.bot user groups
 
 ## User in group

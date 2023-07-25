@@ -1,4 +1,9 @@
-# Servers & Clients
+---
+navigation.title: Servers & Clients
+icon: mdi:server
+---
+
+# Servers & Clients C# Methods
 Reference of C# methods for Streamer.bot servers and clients
 
 ## Websocket Server

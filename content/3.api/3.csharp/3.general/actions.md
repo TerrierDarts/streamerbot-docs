@@ -1,35 +1,45 @@
 ---
 navigation.title: Actions
+icon: mdi:lightning-bolt
 ---
 
 # Action C# Methods
-C# methods for manipulating Streamer.bot actions
+Reference of C# methods for manipulating Streamer.bot actions
 
 ## Actions
-```csharp
-bool RunAction(string actionName, bool runImmediately = true);
-```
+### `RunAction`
+Execute an action by name
+:csharp-method{name=RunAction}
 
-```csharp
-bool RunActionById(string actionId, bool runImmediately = true);
-```
+### `RunActionById`
+Execute an action by ID
+:csharp-method{name=RunActionById}
 
-```csharp
-void DisableAction(string actionName);
-void EnableAction(string actionName);
-```
+### `EnableAction`
+Enable an action by name
+:csharp-method{name=EnableAction}
 
-```csharp
-bool ActionExists(string actionName);
-```
+### `DisableAction`
+Disable an action by name
+:csharp-method{name=DisableAction}
+
+### `ActionExists`
+Check if an action exists with the given name
+:csharp-method{name=ActionExists}
 
 ## Action Queues
-```csharp
-void PauseActionQueue(string name);
-void PauseAllActionQueues();
-```
+### `PauseActionQueue`
+Pause an action queue by name
+:csharp-method{name=PauseActionQueue}
 
-```csharp
-void ResumeActionQueue(string name, bool clear = false);
-void ResumeAllActionQueues(bool clear = false);
-```
+### `ResumeActionQueue`
+Resume an action queue by name and optionally clear all pending items
+:csharp-method{name=ResumeActionQueue}
+
+### `PauseAllActionQueues`
+Pause **all** action queues
+:csharp-method{name=PauseAllActionQueues}
+
+### `ResumeAllActionQueues`
+Resume **all** action queues and optionally clear all pending items
+:csharp-method{name=PauseAllActionQueues}
