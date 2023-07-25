@@ -5,40 +5,42 @@ icon: IconVoicemod
 # VoiceMod
 Reference of all C# methods available for the [VoiceMod integration](/config/integrations/voicemod)
 
-## Select Voice
-```csharp
-void VoiceModSelectVoice(string voiceId);
-```
+## `VoiceModSelectVoice`
+Set the current voice in VoiceMod
+:csharp-method{name=VoiceModSelectVoice}
 
-## Voice Changer On/Off
-```csharp
-bool VoiceModVoiceChangerOn();
-bool VoiceModVoiceChangerOff();
-```
+## `VoiceModGetCurrentVoice`
+Get the name of the current voice
+:csharp-method{name=VoiceModGetCurrentVoice}
 
-## Hear My Voice On/Off
-```csharp
-bool VoiceModHearMyVoiceOn();
-bool VoiceModHearMyVoiceOff();
-```
+## `VoiceModGetVoiceChangerStatus`
+Get the current enabled status of the voice changer
+:csharp-method{name=VoiceModGetVoiceChangerStatus}
 
-## Censor On/Off
-```csharp
-void VoiceModCensorOn();
-void VoiceModCensorOff();
-```
+## `VoiceModVoiceChangerOn`
+Enable the voice changer
+:csharp-method{name=VoiceModVoiceChangerOn}
 
-## Get Current Voice
-```csharp
-string VoiceModGetCurrentVoice();
-```
+## `VoiceModVoiceChangerOff`
+Disable the voice changer
+:csharp-method{name=VoiceModVoiceChangerOff}
 
-## Get Voice Changer Status
-```csharp
-bool VoiceModGetVoiceChangerStatus();
-```
+## `VoiceModGetHearMyselfStatus`
+Get the current enabled status of voice monitoring
+:csharp-method{name=VoiceModGetHearMyselfStatus}
 
-## Get Hear Myself Status
-```csharp
-bool VoiceModGetHearMyselfStatus();
-```
+## `VoiceModHearMyVoiceOn`
+Enable voice monitoring
+:csharp-method{name=VoiceModHearMyVoiceOn}
+
+## `VoiceModHearMyVoiceOff`
+Disable voice monitoring
+:csharp-method{name=VoiceModHearMyVoiceOff}
+
+## `VoiceModCensorOn`
+Enable VoiceMod censoring
+:csharp-method{name=VoiceModCensorOn}
+
+## `VoiceModCensorOff`
+Disable VoiceMod censoring
+:csharp-method{name=VoiceModCensorOff}

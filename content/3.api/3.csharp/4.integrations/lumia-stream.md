@@ -5,8 +5,10 @@ icon: IconLumiaStream
 # Lumia Stream
 Reference of all C# methods available for the [Lumia Stream integration](/config/integrations/lumia-stream)
 
-## Set To Default
+## `LumiaSetToDefault`
+Set Lumia to its default state
 :csharp-method{name=LumiaSetToDefault}
 
-## Send Command
+## `LumiaSendCommand`
+Send a command to Lumia Stream
 :csharp-method{name=LumiaSendCommand}
