@@ -23,11 +23,21 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
+    runtimeSatori: process.dev,
     runtimeCacheStorage: {
       driver: 'cloudflare-kv-http',
       namespaceId: 'streamerbot-docs',
       accountId: process.env.CLOUDFLARE_ACCOUNT_ID,
       apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
     },
+    defaults: {
+      cacheTtl: 60 * 60 * 24 * 30, // 30 days
+    },
   },
+
+  nitro: {
+    prerender: {
+      crawlLinks: false
+    }
+  }
 });
