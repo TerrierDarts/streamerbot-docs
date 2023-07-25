@@ -1,9 +1,5 @@
----
 title: C# API Reference
 icon: mdi:code-braces-box
 description: Reference of all C# Methods in Streamer.bot
-category.title: C# Reference
-category.icon: mdi:code-braces-box
----
-
-# C# API Reference
+layout: api
+aside.level: 2
