@@ -3,7 +3,7 @@ icon: IconLumiaStream
 ---
 
 # Lumia Stream
-Reference of all C# methods available for the [Lumia Stream integration](/config/integrations/lumia-stream)
+Reference of all C# methods available for the [Lumia Stream integration](/guide/integrations/lumia-stream)
 
 ## `LumiaSetToDefault`
 Set Lumia to its default state

@@ -32,5 +32,5 @@ Enable `Auto Connect` to automatically connect to **Twitch** on startup
 ::
 
 ::list{type=success}
-- Visit the [Twitch Configuration Guide](/config/platforms/twitch) to learn more about all options!
+- Visit the [Twitch Configuration Guide](/guide/platforms/twitch) to learn more about all options!
 ::

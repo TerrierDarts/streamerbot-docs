@@ -14,11 +14,11 @@ Enter the name of the variable in which to store your argument.
 Enter the value to store in your argument / variable.
 
 ::list
-- You can use other [Variables](/config/variables) or [Inline Functions](/config/variables/functions) to manipulate existing arguments
+- You can use other [Variables](/guide/variables) or [Inline Functions](/guide/variables/functions) to manipulate existing arguments
 ::
 
 ### `Auto Type`
-Toggle [auto typing](/config/variables#auto-type) of the resulting value
+Toggle [auto typing](/guide/variables#auto-type) of the resulting value
 
 ## C# Usage
 :csharp-method{name=SetArgument}

@@ -10,7 +10,7 @@ Integrate Streamer.bot with your Ko-Fi account!
 [Ko-Fi](https://ko-fi.com/), a highly requested integration, is now available in Streamer.bot *v0.1.8*{.version-badge}
 
 ::alert{type=warning icon=mdi:alert}
-This integration requires the [Streamer.bot Website Integration](/config/integrations/streamerbot)
+This integration requires the [Streamer.bot Website Integration](/guide/integrations/streamerbot)
 ::
 
 ![kofi-integration.png](/kofi-integration.png)

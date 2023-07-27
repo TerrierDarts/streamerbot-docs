@@ -23,7 +23,7 @@ This account is **required** for Streamer.bot to monitor chat and events from Yo
 3. Enable `Auto Connect` to automatically connect to your YouTube account on startup
 
 ::list{type=success}
-- Visit the [YouTube Configuration Guide](/config/platforms/youtube) to learn more about all options!
+- Visit the [YouTube Configuration Guide](/guide/platforms/youtube) to learn more about all options!
 ::
 
 ---

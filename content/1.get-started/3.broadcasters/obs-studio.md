@@ -15,7 +15,7 @@ In OBS Studio version `28`, the OBS WebSocket plugin was added to the core appli
 
 Streamer.bot supports **both** OBS WebSocket `v4.9.*` and the latest `v5`
 
-If you are running **OBS Studio** version `<28` or OBS WebSocket version `4.9`, refer to the full [OBS Configuration Guide](/config/broadcasters/obs-studio)
+If you are running **OBS Studio** version `<28` or OBS WebSocket version `4.9`, refer to the full [OBS Configuration Guide](/guide/broadcasters/obs-studio)
 ::
 
 ## Prerequisites

@@ -22,8 +22,3 @@ Enable, disable and pause multiple rewards.
 
 ### Disable not configured rewards
 Checking this box will move any rewards in the `Not Configured` group into the `Disabled` group.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}

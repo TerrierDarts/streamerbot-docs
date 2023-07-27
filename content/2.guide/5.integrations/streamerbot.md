@@ -13,25 +13,25 @@ Enable additional Streamer.bot features by configuring the Streamer.bot Website 
 #default
   ::card{icon="StreamerbotIcon" lights noise}
   #title
-  [Streamer.bot Decks](/Extended-Features/HTML-Decks)
+  [Streamer.bot Decks](/guide/extra-features/streamerbot-decks)
   #description
   Web-based stream decks for Streamer.bot
   ::
   ::card{icon="simple-icons:kofi" lights noise}
   #title
-  [Ko-Fi](/config/integrations/ko-fi)
+  [Ko-Fi](/guide/integrations/ko-fi)
   #description
   Ko-Fi Webhook Integration
   ::
   ::card{icon="mdi:patreon" lights noise}
   #title
-  [Patreon](/config/integrations/patreon)
+  [Patreon](/guide/integrations/patreon)
   #description
   Patreon Webhook Integration
   ::
   ::card{icon="mdi:shopify" lights noise}
   #title
-  [Shopify](/config/integrations/shopify)
+  [Shopify](/guide/integrations/shopify)
   #description
   Shopify Webhook Integration
   ::

@@ -3,7 +3,7 @@ icon: IconVoicemod
 ---
 
 # VoiceMod
-Reference of all C# methods available for the [VoiceMod integration](/config/integrations/voicemod)
+Reference of all C# methods available for the [VoiceMod integration](/guide/integrations/voicemod)
 
 ## `VoiceModSelectVoice`
 Set the current voice in VoiceMod
