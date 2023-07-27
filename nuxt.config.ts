@@ -1,6 +1,12 @@
 export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-headlessui', 'nuxt-og-image', 'nuxt-content-assets'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-headlessui',
+    'nuxt-og-image',
+    'nuxt-content-assets',
+    'nuxt-link-checker',
+  ],
 
   site: {
     url: 'https://docs.streamer.bot',
@@ -34,10 +40,4 @@ export default defineNuxtConfig({
       cacheTtl: 60 * 60 * 24 * 30, // 30 days
     },
   },
-
-  nitro: {
-    prerender: {
-      crawlLinks: false
-    }
-  }
 });

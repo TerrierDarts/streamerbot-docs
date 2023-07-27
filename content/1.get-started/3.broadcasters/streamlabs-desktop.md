@@ -1,7 +1,10 @@
 ---
-title: Streamlabs Desktop
-description: Set up Streamer.bot to remotely control your Streamlabs Desktop instance
+navigation.title: Streamlabs Desktop
+icon: IconStreamlabsDesktop
 ---
+
+# Streamlabs Desktop Quick Start
+Set up Streamer.bot to remotely control your Streamlabs Desktop instance
 
 ## Prerequisites
 

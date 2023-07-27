@@ -1,12 +1,32 @@
 ---
-title: PolyPop
-description: Set up Streamer.bot to remotely control your OBS instance
+navigation.title: OBS Studio
+icon: simple-icons:obsstudio
 ---
 
+# OBS Studio Quick Start
+Set up Streamer.bot to remotely control your [OBS Studio](https://obsproject.com) instance
+
+::disclosure{type=info}
+#summary
+This guide assumes you are running **OBS Studio** version `28` or later
+
+#content
+In OBS Studio version `28`, the OBS WebSocket plugin was added to the core application. With this change came a new version of the WebSocket protocol.
+
+Streamer.bot supports **both** OBS WebSocket `v4.9.*` and the latest `v5`
+
+If you are running **OBS Studio** version `<28` or OBS WebSocket version `4.9`, refer to the full [OBS Configuration Guide](/config/broadcasters/obs-studio)
+::
+
 ## Prerequisites
+*If you are running **OBS 28 or higher** the WebSocket Plugin is pre-installed and the settings can be found on the top bar under Tools.*
+![image](https://user-images.githubusercontent.com/96934345/230672612-5850ee77-50b6-409e-8fa7-0ef6de2ab314.png)
+
+*If you don't see the websocket settings and you have **OBS 28+**, go to Help > Verify Files*
+
 To enable remote control of your **OBS Studio** instance from **Streamer.bot** you must first install the OBS WebSocket Plugin
 
-- [<img src="/logos/obs-websocket.png"/>**Download OBS WebSocket *<i class="mdi mdi-github"></i> obs-websocket v5+***](https://github.com/obsproject/obs-websocket/releases/latest)
+- [<img src="/logos/obs-websocket.png"/>**Download OBS WebSocket *<i class="mdi mdi-github"></i> obs-websocket v5+***](https://github.com/obsproject/obs-websocket/releases/tag/5.0.1)
 {.btn-grid .my-5}
 
 After installing the plugin and restarting OBS, you should be able to configure your WebSocket Server settings as you wish:
@@ -17,7 +37,6 @@ Later, you will need to match these settings in Streamer.bot
 
 
 ## Configuration
-
 Once configured, connected OBS sessions will report their status on the OBS tab in Streamer.bot
 
 ![overview.png](/broadcasters/obs/overview.png =700x)
