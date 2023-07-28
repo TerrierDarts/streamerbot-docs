@@ -11,6 +11,13 @@ You can also send outgoing triggers from Streamer.bot to IFTTT using the include
 
 The documentation below outlines the actions available to your applets in IFTTT.
 
+## Setup
+1. Create a new applet in your IFTTT app
+2. For `If This,` select the `Streamer.bot` service
+3. Select the `IFTTT Notification Sub-Action` as your trigger
+4. If you have not already, you will be asked to authenticate with your Streamer.bot account
+5. Enter a matching event name in both your IFTTT applet and your Streamer.bot sub-action to trigger on specific events
+
 ## Execute Action
 The `Execute Action` IFTTT action allows you to execute any action in your Streamer.bot instance along with a configurable text field.
 

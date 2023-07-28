@@ -5,3 +5,4 @@ category.title: Speaker.bot Sub-Actions
 category.icon: IconSpeakerbot
 navigation.title: Speaker.bot
 navigation.description: Text-to-Speech with Speaker.bot
+navigation.redirect: /api/sub-actions/integrations/speakerbot/speak

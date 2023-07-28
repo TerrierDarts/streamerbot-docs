@@ -1,11 +1,10 @@
 ---
-title: Speak
-description: How to pair up Streamer.bot and Twitch Speaker
+navigation.title: Speaker.bot
+icon: IconSpeakerbot
 ---
 
-# Speak
-## Overview
-Controls the Speaker.bot Speak Message using your Voice Alias
+# Speaker.bot Integration
+Connect Streamer.bot with [Speaker.bot](https://speaker.bot)
 
 ## Configuration
 To do this select an Action you want to have this type of interactivity included then in the sub actions pane right click to bring up the menu now click `Add Action` then down to `Twitch Speaker` then click `Speak` now a dialog box will appear like the one shown below.
@@ -25,6 +24,3 @@ Last step is the message box. You can either hard write the message in the box o
 
 > If you have already set up a different Voice Alias in the Speaker.bot Application then you can use this name instead.
 {.is-info}
-
-## C# Usage
-:csharp-method{name=TtsSpeak}

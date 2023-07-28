@@ -3,7 +3,7 @@ Send a chat message to your YouTube channel
 :image-preview
 
 ## Parameters
-### Message
+### `Message`
 Enter the message to be sent to your chat.
 
 ::list{type=warning}

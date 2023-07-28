@@ -3,7 +3,7 @@ Update the title of your YouTube stream
 :image-preview
 
 ## Parameters
-### Description
+### `Description`
 Enter the text you would like to set your new stream title to.
 
 ::list{type=warning}

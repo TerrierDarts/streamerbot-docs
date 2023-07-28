@@ -3,7 +3,7 @@ Update the description of your YouTube stream
 :image-preview
 
 ## Parameters
-### Description
+### `Description`
 Enter the text you would like to set your new stream description to.
 
 ::list{type=warning}
