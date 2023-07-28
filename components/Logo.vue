@@ -11,7 +11,7 @@ const links: Array<{
     title: 'Streamer.bot',
     href: 'https://streamer.bot',
     description: 'Streamer.bot Home',
-    icon: 'StreamerbotIcon',
+    icon: 'IconStreamerbot',
   },
   {
     title: 'Speaker.bot',
@@ -22,8 +22,8 @@ const links: Array<{
   {
     title: 'Extensions',
     href: 'https://extensions.streamer.bot',
-    description: 'Community made extensions ready to import for Streamer.bot',
-    icon: 'StreamerbotIcon',
+    description: 'Community-made features, ready to import!',
+    icon: 'IconStreamerbotExtensions',
   },
   {
     title: 'Discord',
@@ -41,7 +41,7 @@ const links: Array<{
     title: 'WebSocket Client',
     href: 'https://github.io/streamerbot/client',
     description: 'Official WebSocket Client for Streamer.bot',
-    icon: 'StreamerbotIcon',
+    icon: 'IconStreamerbot',
   }
 ];
 </script>

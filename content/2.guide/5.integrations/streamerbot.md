@@ -1,6 +1,6 @@
 ---
 navigation.title: Streamer.bot Website
-icon: StreamerbotIcon
+icon: IconStreamerbot
 version: 0.1.8
 tags: integrations, streamerbot, decks, ko-fi, patreon, v0.1.8
 ---
@@ -11,7 +11,7 @@ Enable additional Streamer.bot features by configuring the Streamer.bot Website 
 ## Supported Features
 ::card-grid{cols=2}
 #default
-  ::card{icon="StreamerbotIcon" lights noise}
+  ::card{icon="IconStreamerbot" lights noise}
   #title
   [Streamer.bot Decks](/guide/extra-features/streamerbot-decks)
   #description

@@ -8,7 +8,7 @@ export default defineAppConfig({
       twitter: 'streamerdotbot',
       web: {
         label: 'Streamer.bot',
-        icon: 'StreamerbotIcon',
+        icon: 'IconStreamerbot',
         href: 'https://streamer.bot',
       },
     },
