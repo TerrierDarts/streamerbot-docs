@@ -62,14 +62,11 @@ const links = computed(() => {
 <template>
   <BasicLayout>
     <div
-      class="sticky z-20 top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1"
+      class="sticky z-[5] top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1"
     >
       <Container>
         <div class="grid grid-cols-12">
-          <div class="col-span-3">
-            <CategoryMenu v-if="showMenu" />
-          </div>
-          <nav class="col-span-6 flex justify-center items-center gap-5 font-semibold">
+          <nav class="col-span-12 flex justify-center items-center gap-5 font-semibold">
             <NuxtLink
               v-for="link in links"
               :key="link._path"
@@ -83,7 +80,6 @@ const links = computed(() => {
               {{ link.text }}
             </NuxtLink>
           </nav>
-          <div class="col-span-3"></div>
         </div>
       </Container>
     </div>
@@ -93,6 +89,9 @@ const links = computed(() => {
       </div>
     </Container>
     <DocsLayout v-else>
+      <template #aside-app-navigation>
+        <CategoryMenu v-if="showMenu" />
+      </template>
       <slot />
     </DocsLayout>
   </BasicLayout>
