@@ -1,19 +1,22 @@
 <script setup lang="ts">
 const route = useRoute();
-const { page, navigation } = useContent();
-const { navDirFromPath } = useContentHelpers();
+const { navigation } = useContent();
+const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
 const dir = navDirFromPath(route.path, navigation.value)?.filter(i => i._path !== route.path);
 const categories = computed(() => dir?.map(i => ({ title: i.navigation?.title ?? i.title, icon: i.icon })) ?? []);
 const items = computed(() => dir?.map(i => ({
   title: i.navigation?.title ?? i.title,
   icon: i.icon,
-  items: i.children?.map(child => ({
-    _path: child._path,
-    title: child.navigation?.title ?? child.title,
-    description: child.navigation?.description ?? child.description,
-    icon: child.icon
-  })) ?? []
+  items: i.children?.map(child => {
+    const childPage = navPageFromPath(child._path, navigation.value);
+    return {
+      _path: childPage ? navBottomLink(childPage) ?? child._path : child._path,
+      title: child.navigation?.title ?? child.title,
+      description: child.navigation?.description ?? child.description,
+      icon: child.icon
+    }
+  }) ?? []
 }) ?? []));
 </script>
 
