@@ -15,7 +15,7 @@ This event triggers 5 seconds prior to the start of an ad.
 See the [Ad Run](/api/triggers/platforms/twitch/ad-run) trigger if you are looking for the ad start event.
 
 ## Variables
-The following variables will be available in your sub-actions:
+:variables-description
 
 Name | Description
 ----:|:------------
