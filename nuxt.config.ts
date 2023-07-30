@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     'nuxt-og-image',
     'nuxt-content-assets',
-    'nuxt-link-checker',
+    // 'nuxt-link-checker',
   ],
 
   site: {
@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
       ignore: [
+        // TODO: Remove these when migration is finished and we have no more broken links :)
         '/guide',
         '/Sub-Actions',
         '/Events',

@@ -2,7 +2,7 @@
 const route = useRoute();
 const { config } = useDocus();
 const { navigation } = useContent();
-const { navDirFromPath } = useContentHelpers();
+const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
 const m = route.path.match(/^(\/[\w-]+\/[\w-]+)\//i);
 const path = m && m[1] ? m[1] : route.path;
@@ -11,12 +11,15 @@ const dir = navDirFromPath(path, navigation.value)?.filter(i => i._path !== rout
 const items = computed(() => dir?.map(i => ({
   title: i.navigation?.title ?? i.title,
   icon: i.icon,
-  items: i.children?.map(child => ({
-    _path: child._path,
-    title: child.navigation?.title ?? child.title,
-    description: child.navigation?.description ?? child.description,
-    icon: child.icon
-  })) ?? []
+  items: i.children?.map(child => {
+    const childPage = navPageFromPath(child._path, navigation.value);
+    return {
+      _path: childPage ? navBottomLink(childPage) ?? child._path : child._path,
+      title: child.navigation?.title ?? child.title,
+      description: child.navigation?.description ?? child.description,
+      icon: child.icon
+    };
+  }) ?? []
 }) ?? []));
 
 const apiCategory = computed(() => {
