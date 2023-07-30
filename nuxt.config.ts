@@ -30,6 +30,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      failOnError: false,
       ignore: [
         '/guide',
         '/Sub-Actions',
@@ -46,6 +47,7 @@ export default defineNuxtConfig({
         '/hotkeys',
         '/Quick-Start',
         '/Voice-Control',
+        '/api/sub-actions/platforms/twitch/moderation/Sub-Actions',
       ],
     },
   },
