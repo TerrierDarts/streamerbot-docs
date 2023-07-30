@@ -11,7 +11,8 @@ const items = computed(() => dir?.map(i => ({
   items: i.children?.map(child => {
     const childPage = navPageFromPath(child._path, navigation.value);
     return {
-      _path: childPage ? navBottomLink(childPage) ?? child._path : child._path,
+      _path: child._path,
+      href: childPage ? navBottomLink(childPage) ?? child._path : child._path,
       title: child.navigation?.title ?? child.title,
       description: child.navigation?.description ?? child.description,
       icon: child.icon
@@ -45,7 +46,7 @@ const items = computed(() => dir?.map(i => ({
               is="li"
               v-for="item in category.items"
               :key="item._path"
-              :to="item._path"
+              :to="item.href"
               class="bg-neutral-900 rounded-xl border border-neutral-800 hover:border-cyan-500 px-4 py-3 transition-colors"
             >
               <span class="inline-block rounded-lg my-2 h-8 w-8">

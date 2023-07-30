@@ -14,7 +14,8 @@ const items = computed(() => dir?.map(i => ({
   items: i.children?.map(child => {
     const childPage = navPageFromPath(child._path, navigation.value);
     return {
-      _path: childPage ? navBottomLink(childPage) ?? child._path : child._path,
+      _path: child._path,
+      href: childPage ? navBottomLink(childPage) ?? child._path : child._path,
       title: child.navigation?.title ?? child.title,
       description: child.navigation?.description ?? child.description,
       icon: child.icon
@@ -58,7 +59,7 @@ const currentItem = computed(() => {
           as="li"
           class=" hover:bg-neutral-800 transition-colors"
         >
-          <NuxtLink :to="item._path" class="flex items-baseline px-4 py-2">
+          <NuxtLink :to="item.href" class="flex items-baseline px-4 py-2">
             <Icon v-if="item.icon" :name="item.icon" class="mr-2 h-3.5 w-3.5 self-center text-neutral-400" />
             <span class="text-neutral-300">{{ item.title }}</span>
             <!-- <small class="text-neutral-400 ml-2">{{ category.title }}</small> -->
