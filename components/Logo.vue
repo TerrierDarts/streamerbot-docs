@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
 
+const isOpen = ref(false);
+
 const links: Array<{
   title: string;
   href: string;
@@ -8,9 +10,15 @@ const links: Array<{
   description: string;
 }> = [
   {
+    title: 'Home',
+    href: 'https://docs.streamer.bot',
+    description: 'Streamer.bot Documentation',
+    icon: 'IconStreamerbot',
+  },
+  {
     title: 'Streamer.bot',
     href: 'https://streamer.bot',
-    description: 'Streamer.bot Home',
+    description: 'Streamer.bot Website',
     icon: 'IconStreamerbot',
   },
   {
@@ -26,12 +34,6 @@ const links: Array<{
     icon: 'IconStreamerbotExtensions',
   },
   {
-    title: 'Discord',
-    href: 'https://discord.streamer.bot',
-    description: 'Official Discord server for Streamer.bot',
-    icon: 'mdi:discord',
-  },
-  {
     title: 'Stream Deck Plugin',
     href: 'https://streamdeck.streamer.bot',
     description: 'Official plugin for Elgato Stream Deck',
@@ -42,12 +44,18 @@ const links: Array<{
     href: 'https://github.io/streamerbot/client',
     description: 'Official WebSocket Client for Streamer.bot',
     icon: 'IconStreamerbot',
-  }
+  },
+  {
+    title: 'Discord',
+    href: 'https://discord.streamer.bot',
+    description: 'Official Discord server for Streamer.bot',
+    icon: 'mdi:discord',
+  },
 ];
 </script>
 
 <template>
-  <Popover v-slot="{ open }" class="relative">
+  <Popover v-model="isOpen" v-slot="{ open }" class="relative">
     <PopoverButton
       :class="open ? '' : 'text-opacity-90'"
       class="group inline-flex items-center rounded-md bg-gray-700 px-3 py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-1 focus-visible:ring-cyan-600 focus-visible:ring-opacity-75"
@@ -86,6 +94,7 @@ const links: Array<{
               :key="item.title"
               :href="item.href"
               class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-neutral-800 focus:outline-none focus-visible:ring focus-visible:ring-cyan-600 focus-visible:ring-opacity-50"
+              @click.stop="isOpen = false"
             >
               <div
                 class="flex h-10 w-10 shrink-0 items-center justify-center text-white bg-neutral-800 rounded-xl sm:h-12 sm:w-12"
