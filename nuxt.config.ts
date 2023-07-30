@@ -1,3 +1,5 @@
+console.log('CLOUDFLARE_ACCOUNT_ID', process.env.CLOUDFLARE_ACCOUNT_ID);
+
 export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
   modules: [
