@@ -8,6 +8,12 @@ export default defineNuxtConfig({
     // 'nuxt-link-checker',
   ],
 
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    },
+  },
+
   site: {
     url: 'https://docs.streamer.bot',
     name: 'Streamer.bot Documentation',

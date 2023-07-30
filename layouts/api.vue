@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const { page, navigation } = useContent();
-const { navDirFromPath, navPageFromPath } = useContentHelpers();
+const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
 useOgImage();
 
@@ -16,39 +16,36 @@ const showMenu = computed(() => {
 const links = computed(() => {
   const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
   const categoryPath = m && m[1] ? m[1] : null;
+
   const subActionsPath = categoryPath
     ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/sub-actions')
     : '/api/sub-actions';
+  const subActionsPage = navPageFromPath(subActionsPath, navigation.value);
+  const subActionsLink = subActionsPage ? navBottomLink(subActionsPage) : '/api/sub-actions';
+
   const triggersPath = categoryPath
     ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/triggers')
     : '/api/triggers';
+  const triggersPage = navPageFromPath(triggersPath, navigation.value);
+  const triggersLink = triggersPage ? navBottomLink(triggersPage) : '/api/triggers';
+
   const csharpPath = categoryPath
     ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/csharp')
     : '/api/csharp';
+  const csharpPage = navPageFromPath(csharpPath, navigation.value);
+  const csharpLink = csharpPage ? navBottomLink(csharpPage) : '/api/csharp';
 
   return [
     {
-      _path:
-        !categoryPath?.startsWith('/api/sub-actions') &&
-        (navDirFromPath(subActionsPath, navigation.value) || navPageFromPath(subActionsPath, navigation.value))
-          ? subActionsPath
-          : '/api/sub-actions',
+      _path: !categoryPath?.startsWith('/api/sub-actions') && subActionsLink ? subActionsLink : '/api/sub-actions',
       text: 'Sub-Actions',
     },
     {
-      _path:
-        !categoryPath?.startsWith('/api/triggers') &&
-        (navDirFromPath(triggersPath, navigation.value) || navPageFromPath(triggersPath, navigation.value))
-          ? triggersPath
-          : '/api/triggers',
+      _path: !categoryPath?.startsWith('/api/triggers') && triggersLink ? triggersLink : '/api/triggers',
       text: 'Triggers',
     },
     {
-      _path:
-        !categoryPath?.startsWith('/api/csharp') &&
-        (navDirFromPath(csharpPath, navigation.value) || navPageFromPath(csharpPath, navigation.value))
-          ? csharpPath
-          : '/api/csharp',
+      _path: !categoryPath?.startsWith('/api/csharp') && csharpLink ? csharpLink : '/api/csharp',
       text: 'C# Code',
     },
     {

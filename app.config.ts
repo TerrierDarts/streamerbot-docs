@@ -4,6 +4,7 @@ export default defineAppConfig({
     description: 'The best place to start your documentation.',
     url: 'https://docs.streamer.bot',
     image: 'https://streamer.bot/og-image.png',
+    icon: 'https://streamer.bot/favicon.ico',
     socials: {
       twitter: 'streamerdotbot',
       web: {
