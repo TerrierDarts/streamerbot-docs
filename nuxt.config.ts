@@ -34,9 +34,20 @@ export default defineNuxtConfig({
         '/guide',
         '/Sub-Actions',
         '/Events',
-        '/Triggers'
+        '/Triggers',
+        '/Trigger',
+        '/Platforms',
+        '/Broadcasters',
+        '/Integrations',
+        '/Servers-Clients',
+        '/Variables',
+        '/Commands',
+        '/Settings',
+        '/hotkeys',
+        '/Quick-Start',
+        '/Voice-Control',
       ],
-    }
+    },
   },
 
   ogImage: {
