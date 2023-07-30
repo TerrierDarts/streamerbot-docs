@@ -28,6 +28,17 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    prerender: {
+      ignore: [
+        '/guide',
+        '/Sub-Actions',
+        '/Events',
+        '/Triggers'
+      ],
+    }
+  },
+
   ogImage: {
     runtimeSatori: process.dev,
     runtimeCacheStorage: {
