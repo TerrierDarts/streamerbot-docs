@@ -1,4 +1,3 @@
-import slugify from 'slugify';
 
 type OgImageOptions = {
   component: 'OgImageDefault';
@@ -33,13 +32,6 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
     : undefined;
 
   if (route.path !== '/' && page.value?.ogImage !== false && page.value?.title) {
-    page.value.image = `https://docs.streamer.bot${page.value?._path}`;
-
-    const cacheKey = slugify(`${page.value?.title ?? ''}${page.value?.icon ?? ''}${category?.title ?? ''}${category?.icon ?? ''}`, {
-      strict: true, lower: true }
-    );
-    console.log('[OG Image]', 'Cache Key:', cacheKey);
-
     defineOgImage({
       component: options.component ?? defaultOptions.component,
       title: page.value?.title ?? 'Docs',
@@ -48,9 +40,11 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
       siteName: 'Streamer.bot Docs',
       categoryTitle: category?.title ?? parentTitle,
       categoryIcon: category?.icon ?? parentIcon,
-      cacheKey,
+      cacheKey: page.value?._path,
       cacheTtl: 60 * 60 * 24 * 30, // 30 days
     });
+
+    page.value.image = `https://docs.streamer.bot${page.value?._path}/__og_image__/og.png`;
 
     useHead({
       title: page.value?.title ?? 'Streamer.bot Docs',
