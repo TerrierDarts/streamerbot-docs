@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     runtimeSatori: process.dev,
     runtimeCacheStorage: {
       driver: 'cloudflare-kv-http',
-      namespaceId: 'streamerbot-docs',
+      namespaceId: process.env.CLOUDFLARE_KV_NAMESPACE_ID,
       accountId: process.env.CLOUDFLARE_ACCOUNT_ID,
       apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
     },
