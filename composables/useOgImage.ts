@@ -47,7 +47,7 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
     page.value.image = `https://docs.streamer.bot${page.value?._path}/__og_image__/og.png`;
 
     useSeoMeta({
-      ogUrl: `https://docs.streamer.bot${page.value?._path ?? ''}`,
+      ogUrl:`https://docs.streamer.bot${page.value?._path ?? ''}`,
       ogTitle: page.value?.title ?? 'Docs',
       ogDescription: page.value?.description,
       ogImage: `${page.value?._path}/__og_image__/og.png`,

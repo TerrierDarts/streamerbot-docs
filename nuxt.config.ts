@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     'nuxt-og-image',
     'nuxt-content-assets',
-    // 'nuxt-link-checker',
+    'nuxt-link-checker',
   ],
 
   app: {
@@ -57,6 +57,10 @@ export default defineNuxtConfig({
         '/api/sub-actions/platforms/twitch/moderation/Sub-Actions',
       ],
     },
+  },
+
+  linkChecker: {
+    failOnError: false
   },
 
   ogImage: {

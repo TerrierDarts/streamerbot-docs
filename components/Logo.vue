@@ -11,7 +11,7 @@ const links: Array<{
 }> = [
   {
     title: 'Home',
-    href: 'https://docs.streamer.bot',
+    href: '/',
     description: 'Streamer.bot Documentation',
     icon: 'IconStreamerbot',
   },
