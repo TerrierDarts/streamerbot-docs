@@ -39,7 +39,6 @@ export default defineNuxtConfig({
       failOnError: false,
       ignore: [
         // TODO: Remove these when migration is finished and we have no more broken links :)
-        '/guide',
         '/Sub-Actions',
         '/Events',
         '/Triggers',
