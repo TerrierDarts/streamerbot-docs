@@ -60,7 +60,8 @@ export default defineNuxtConfig({
   },
 
   linkChecker: {
-    failOnError: false
+    failOnError: false,
+    runOnBuild: false,
   },
 
   ogImage: {
