@@ -41,7 +41,7 @@ const links: Array<{
   },
   {
     title: 'WebSocket Client',
-    href: 'https://github.io/streamerbot/client',
+    href: 'https://streamerbot.github.io/client/',
     description: 'Official WebSocket Client for Streamer.bot',
     icon: 'IconStreamerbot',
   },
