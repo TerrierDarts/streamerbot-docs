@@ -32,7 +32,7 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
     : undefined;
 
   if (route.path !== '/' && page.value?.ogImage !== false && page.value?.title) {
-    defineOgImage({
+    defineOgImageCached({
       component: options.component ?? defaultOptions.component,
       title: page.value?.title ?? 'Docs',
       description: page.value?.description,
