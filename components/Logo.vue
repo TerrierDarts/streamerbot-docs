@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
 
-const isOpen = ref(false);
-
 const links: Array<{
   title: string;
   href: string;
@@ -55,7 +53,7 @@ const links: Array<{
 </script>
 
 <template>
-  <Popover v-model="isOpen" v-slot="{ open }" class="relative">
+  <Popover v-slot="{ open }" class="relative">
     <PopoverButton
       :class="open ? '' : 'text-opacity-90'"
       class="group inline-flex items-center rounded-md bg-gray-700 px-3 py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-1 focus-visible:ring-cyan-600 focus-visible:ring-opacity-75"
@@ -83,6 +81,7 @@ const links: Array<{
       leave-to-class="translate-y-1 opacity-0"
     >
       <PopoverPanel
+        v-slot="{ close }"
         class="absolute z-20 mt-3 w-screen max-w-sm transform px-4 sm:px-0 lg:max-w-3xl"
       >
         <div
@@ -94,7 +93,7 @@ const links: Array<{
               :key="item.title"
               :href="item.href"
               class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-neutral-800 focus:outline-none focus-visible:ring focus-visible:ring-cyan-600 focus-visible:ring-opacity-50"
-              @click.stop="isOpen = false"
+              @click.stop="close()"
             >
               <div
                 class="flex h-10 w-10 shrink-0 items-center justify-center text-white bg-neutral-800 rounded-xl sm:h-12 sm:w-12"

@@ -51,9 +51,6 @@ watch(Escape, () => {
             @click="showDocsSearch = true"
           />
           <AppColorMode />
-          <div class="social-icons">
-            <AppSocialIcons />
-          </div>
         </div>
       </div>
     </Container>
