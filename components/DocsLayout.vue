@@ -3,6 +3,8 @@ const { page } = useContent()
 const { config, tree } = useDocus()
 const route = useRoute()
 
+useOgImage();
+
 const fallbackValue = (value: string, fallback = true) => {
   if (typeof page.value?.[value] !== 'undefined') { return page.value[value] }
   return fallback
@@ -52,72 +54,74 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <Container
-    :padded="config?.main?.padded"
-    class="docs-page-content"
-    :class="{
-      'has-toc': hasToc,
-      'has-aside': true,
-    }"
-  >
-    <!-- Aside -->
-    <aside
-      ref="asideNav"
-      class="aside-nav"
+  <RenderCacheable :cache-key="page._id">
+    <Container
+      :padded="config?.main?.padded"
+      class="docs-page-content"
+      :class="{
+        'has-toc': hasToc,
+        'has-aside': true,
+      }"
     >
-      <slot name="aside-app-navigation">
-        <AppNavigation
-          v-if="config.aside?.navigation"
-          vertical
-        />
-      </slot>
-      <DocsNavigation
-        v-if="tree?.length > 0"
-        :links="tree"
-      />
-    </aside>
-
-    <!-- Page Content -->
-    <article class="page-content">
-      <slot v-if="hasContent" />
-      <Alert
-        v-else
-        type="info"
+      <!-- Aside -->
+      <aside
+        ref="asideNav"
+        class="aside-nav"
       >
-        Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.
-      </Alert>
-      <template v-if="hasContent && page && bottom">
-        <div class="page-content-bottom">
-          <DocsContentBottom />
-          <DocsPrevNext />
-        </div>
-      </template>
-    </article>
-
-    <!-- ToC -->
-    <div
-      v-if="hasToc"
-      class="toc"
-    >
-      <div class="toc-wrapper">
-        <button @click="isOpen = !isOpen">
-          <span class="title">Table of Contents</span>
-          <Icon
-            name="heroicons-outline:chevron-right"
-            class="icon"
-            :class="[isOpen && 'rotate']"
+        <slot name="aside-app-navigation">
+          <AppNavigation
+            v-if="config.aside?.navigation"
+            vertical
           />
-        </button>
+        </slot>
+        <DocsNavigation
+          v-if="tree?.length > 0"
+          :links="tree"
+        />
+      </aside>
 
-        <div
-          class="docs-toc-wrapper"
-          :class="[isOpen && 'opened']"
+      <!-- Page Content -->
+      <article class="page-content">
+        <slot v-if="hasContent" />
+        <Alert
+          v-else
+          type="info"
         >
-          <DocsToc @move="isOpen = false" />
+          Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.
+        </Alert>
+        <template v-if="hasContent && page && bottom">
+          <div class="page-content-bottom">
+            <DocsContentBottom />
+            <DocsPrevNext />
+          </div>
+        </template>
+      </article>
+
+      <!-- ToC -->
+      <div
+        v-if="hasToc"
+        class="toc"
+      >
+        <div class="toc-wrapper">
+          <button @click="isOpen = !isOpen">
+            <span class="title">Table of Contents</span>
+            <Icon
+              name="heroicons-outline:chevron-right"
+              class="icon"
+              :class="[isOpen && 'rotate']"
+            />
+          </button>
+
+          <div
+            class="docs-toc-wrapper"
+            :class="[isOpen && 'opened']"
+          >
+            <DocsToc @move="isOpen = false" />
+          </div>
         </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </RenderCacheable>
 </template>
 
 <style scoped lang="ts">

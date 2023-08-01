@@ -22,7 +22,7 @@
     "nuxt-headlessui": "^1.1.4",
     "nuxt-link-checker": "^2.0.2",
     "nuxt-multi-cache": "^3.0.1",
-    "nuxt-og-image": "^2.0.12",
+    "nuxt-og-image": "^2.0.13",
     "postcss": "^8.4.27",
     "semver": "^7.5.4",
     "vite": "^4.4.7",
