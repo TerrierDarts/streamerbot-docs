@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'nuxt-content-assets',
     'nuxt-link-checker',
+    'nuxt-multi-cache',
   ],
 
   app: {
@@ -58,6 +59,12 @@ export default defineNuxtConfig({
     },
   },
 
+  multiCache: {
+    component: {
+      enabled: true,
+    }
+  },
+
   linkChecker: {
     failOnError: false,
     runOnBuild: false,
@@ -66,6 +73,7 @@ export default defineNuxtConfig({
   ogImage: {
     runtimeSatori: process.dev,
     runtimeCacheStorage: {
+      base: 'og-image:',
       driver: 'cloudflare-kv-http',
       namespaceId: process.env.CLOUDFLARE_KV_NAMESPACE_ID,
       accountId: process.env.CLOUDFLARE_ACCOUNT_ID,

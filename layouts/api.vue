@@ -57,39 +57,41 @@ const links = computed(() => {
 </script>
 
 <template>
-  <BasicLayout>
-    <div
-      class="sticky z-[5] top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1"
-    >
-      <Container>
-        <div class="grid grid-cols-12">
-          <nav class="col-span-12 flex justify-center items-center gap-5 font-semibold">
-            <NuxtLink
-              v-for="link in links"
-              :key="link._path"
-              :to="link._path"
-              class="px-2 hover:text-white transition-colors"
-              :class="{
-                'text-white': isActive(link),
-                'text-neutral-400': !isActive(link),
-              }"
-            >
-              {{ link.text }}
-            </NuxtLink>
-          </nav>
+  <RenderCacheable>
+    <BasicLayout>
+      <div
+        class="sticky z-[5] top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1"
+      >
+        <Container>
+          <div class="grid grid-cols-12">
+            <nav class="col-span-12 flex justify-center items-center gap-5 font-semibold">
+              <NuxtLink
+                v-for="link in links"
+                :key="link._path"
+                :to="link._path"
+                class="px-2 hover:text-white transition-colors"
+                :class="{
+                  'text-white': isActive(link),
+                  'text-neutral-400': !isActive(link),
+                }"
+              >
+                {{ link.text }}
+              </NuxtLink>
+            </nav>
+          </div>
+        </Container>
+      </div>
+      <Container v-if="page.aside === false">
+        <div class="py-12">
+          <slot />
         </div>
       </Container>
-    </div>
-    <Container v-if="page.aside === false">
-      <div class="py-12">
+      <DocsLayout v-else>
+        <template #aside-app-navigation>
+          <CategoryMenu v-if="showMenu" />
+        </template>
         <slot />
-      </div>
-    </Container>
-    <DocsLayout v-else>
-      <template #aside-app-navigation>
-        <CategoryMenu v-if="showMenu" />
-      </template>
-      <slot />
-    </DocsLayout>
-  </BasicLayout>
+      </DocsLayout>
+    </BasicLayout>
+  </RenderCacheable>
 </template>

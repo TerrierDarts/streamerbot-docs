@@ -3,7 +3,9 @@ useOgImage();
 </script>
 
 <template>
-  <DocsLayout>
-    <slot />
-  </DocsLayout>
+  <RenderCacheable>
+    <DocsLayout>
+      <slot />
+    </DocsLayout>
+  </RenderCacheable>
 </template>
