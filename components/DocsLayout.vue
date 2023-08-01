@@ -54,7 +54,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <RenderCacheable :cache-key="page._id">
+  <RenderCacheable :cache-key="page?._id" :no-cache="!page">
     <Container
       :padded="config?.main?.padded"
       class="docs-page-content"
