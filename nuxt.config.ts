@@ -57,6 +57,14 @@ export default defineNuxtConfig({
         '/api/sub-actions/platforms/twitch/moderation/Sub-Actions',
       ],
     },
+    storage: {
+      cache: {
+        driver: "cloudflare-kv-http",
+        namespaceId: process.env.CLOUDFLARE_KV_NAMESPACE_ID,
+        accountId: process.env.CLOUDFLARE_ACCOUNT_ID,
+        apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
+      }
+    },
   },
 
   multiCache: {

@@ -40,7 +40,7 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
       siteName: 'Streamer.bot Docs',
       categoryTitle: category?.title ?? parentTitle,
       categoryIcon: category?.icon ?? parentIcon,
-      cacheKey: page.value?._path,
+      cacheKey: page.value?._id ?? page.value?._path ?? route.path,
       cacheTtl: 60 * 60 * 24 * 30, // 30 days
     });
 
