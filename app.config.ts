@@ -6,9 +6,25 @@ export default defineAppConfig({
     image: 'https://streamer.bot/og-image.png',
     icon: 'https://streamer.bot/favicon.ico',
     socials: {
+      github: 'Streamerbot',
+      discord: {
+        label: 'Discord',
+        icon: 'mdi:discord',
+        href: 'https://discord.streamer.bot',
+      },
+      twitch: {
+        label: 'Twitch Team',
+        icon: 'mdi:twitch',
+        href: 'https://www.twitch.tv/team/streamerdotbot',
+      },
+      reddit: {
+        label: 'Reddit',
+        icon: 'mdi:reddit',
+        href: 'https://reddit.com/r/streamerbot',
+      },
       twitter: 'streamerdotbot',
       web: {
-        label: 'Streamer.bot',
+        label: 'Streamer.bot Website',
         icon: 'IconStreamerbot',
         href: 'https://streamer.bot',
       },
