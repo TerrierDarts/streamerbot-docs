@@ -1,14 +1,8 @@
 ---
-title: Goal Begin
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-13T10:53:46.154Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-13T10:53:46.154Z
+version: 0.1.15
 ---
 
-## Overview
+# Goal Begin
 When a channel goal begins.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.1.15*{.version-badge}
 
 ## Variables
 Name | Description

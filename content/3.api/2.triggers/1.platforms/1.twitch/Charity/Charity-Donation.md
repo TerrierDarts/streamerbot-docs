@@ -1,14 +1,8 @@
 ---
-title: Charity Donation
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:06:54.147Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:06:54.147Z
+version: 0.1.14
 ---
 
-## Overview
+# Charity Donation
 When a charity event gets a donation.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.1.14*{.version-badge}
 
 ## Variables
 Name | Description

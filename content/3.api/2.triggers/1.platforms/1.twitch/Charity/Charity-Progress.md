@@ -1,14 +1,8 @@
 ---
-title: Charity Progress
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:08:43.529Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:08:43.529Z
+version: 0.1.15
 ---
 
-## Overview
+# Charity Progress
 When a charity event progresses.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.1.15*{.version-badge}
 
 ## Variables
 Name | Description

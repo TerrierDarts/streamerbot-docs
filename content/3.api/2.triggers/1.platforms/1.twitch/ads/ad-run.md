@@ -2,7 +2,6 @@
 version: 0.1.10
 ---
 
-
 # Ad Run
 Twitch ad start trigger.
 

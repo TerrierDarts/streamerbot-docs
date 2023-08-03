@@ -1,14 +1,8 @@
 ---
-title: Reward Redemption
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:17:47.989Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:15:16.142Z
+version: 0.0.30
 ---
 
-## Overview
+# Reward Redemption
 When someone redeems a reward redemption
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `PubSub`
-Added in: | *v0.0.30*{.version-badge}
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables and the [Broadcaster](/Variables/Broadcaster) variables.

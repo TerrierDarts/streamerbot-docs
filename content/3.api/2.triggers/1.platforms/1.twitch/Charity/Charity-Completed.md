@@ -1,14 +1,8 @@
 ---
-title: Charity Completed
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:07:56.475Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:07:56.475Z
+version: 0.1.14
 ---
 
-## Overview
+# Charity Completed
 When a charity event is completed.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.1.14*{.version-badge}
 
 ## Variables
 Name | Description

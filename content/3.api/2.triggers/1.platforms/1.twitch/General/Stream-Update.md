@@ -1,14 +1,8 @@
 ---
-title: Stream Update
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T14:28:39.894Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T14:28:39.894Z
+version: 0.0.30
 ---
 
-## Overview
+## Stream Update
 This triggers when the title or the description changes on your stream. 
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `PubSub`
-Added in: | *v0.0.30*{.version-badge}
 
 ## Variables
 Name | Description

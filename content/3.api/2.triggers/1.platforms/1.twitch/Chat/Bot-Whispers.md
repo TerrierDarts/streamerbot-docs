@@ -1,14 +1,8 @@
 ---
-title: Bot Whispers
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-10T18:19:13.111Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-10T18:18:58.718Z
+version: 0.1.14
 ---
 
-## Overview
+# Bot Whispers
 When someone sends the bot account a whisper.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -29,7 +23,6 @@ Messages that exceed the maximum length are truncated.
 ## Event Data
 :----|:------------:
 Twitch Service: | `Chat Client`
-Added in: | *v0.1.14*{.version-badge}
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.

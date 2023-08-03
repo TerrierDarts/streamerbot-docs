@@ -1,14 +1,8 @@
 ---
-title: Present Viewers
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T14:34:22.056Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T14:34:22.056Z
+version: 0.0.50
 ---
 
-## Overview
+# Present Viewers
 This triggers every 1-10 minutes, default every 5 minutes.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -27,7 +21,6 @@ The default setting is `Live Update` not checked, and the slider set to `5` minu
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
 Name | Description

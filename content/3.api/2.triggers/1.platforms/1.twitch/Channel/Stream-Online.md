@@ -1,14 +1,8 @@
 ---
-title: Stream Online
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-10T08:33:03.728Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-10T08:33:00.953Z
+version: 0.1.17
 ---
 
-## Overview
+# Stream Online
 This triggers when the stream has started on your broadcaster account.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.1.17*{.version-badge}
 
 ## Variables
 Name | Description

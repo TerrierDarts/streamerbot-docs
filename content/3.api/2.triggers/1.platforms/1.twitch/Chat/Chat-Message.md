@@ -1,14 +1,8 @@
 ---
-title: Chat Message
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:25:38.672Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:25:38.672Z
+version: 0.0.50
 ---
 
-## Overview
+# Chat Message
 When someone sends a message in chat.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `Chat Client`
-Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.

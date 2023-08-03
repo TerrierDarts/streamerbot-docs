@@ -1,14 +1,4 @@
----
-title: Cheer
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-27T15:23:19.125Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-25T21:05:21.877Z
----
-
-## Overview
+# Cheer
 This triggers when you get a cheer donation.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +6,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `Chat Client`
-Added in: | *N/A*{.version-badge}
 
 ## Configuration
 ### Ranges

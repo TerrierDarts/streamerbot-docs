@@ -1,14 +1,8 @@
 ---
-title: Stream Offline
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-10T08:35:37.815Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-10T08:35:35.776Z
+version: 0.1.17
 ---
 
-## Overview
+# Stream Offline
 This triggers when the stream has ended on your broadcaster account.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).

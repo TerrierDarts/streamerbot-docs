@@ -1,14 +1,8 @@
 ---
-title: Whispers
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-10T18:18:29.159Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-10T18:18:29.159Z
+version: 0.0.39
 ---
 
-## Overview
+# Whispers
 When someone sends the broadcaster account a whisper.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).

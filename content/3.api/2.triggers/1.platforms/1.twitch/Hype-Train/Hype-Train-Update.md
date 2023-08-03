@@ -1,14 +1,4 @@
----
-title: Hype Train Update
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:02:45.346Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:02:45.346Z
----
-
-## Overview
+# Hype Train Update
 When a hype train updates on your channel.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).

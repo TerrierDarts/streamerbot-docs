@@ -1,14 +1,4 @@
----
-title: Community Goal Contribution
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-13T10:45:05.293Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-13T10:45:05.293Z
----
-
-## Overview
+# Community Goal Contribution
 When someone contributes to the community goal.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +6,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `PubSub`
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables.

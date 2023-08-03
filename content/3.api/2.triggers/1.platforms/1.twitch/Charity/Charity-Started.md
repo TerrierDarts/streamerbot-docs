@@ -1,14 +1,8 @@
 ---
-title: Charity Started
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:05:37.605Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:05:37.605Z
+version: 0.1.15
 ---
 
-## Overview
+# Charity Started
 When a charity event starts.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +10,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *v0.1.15*{.version-badge}
 
 ## Variables
 Name | Description

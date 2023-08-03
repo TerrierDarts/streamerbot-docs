@@ -1,14 +1,4 @@
----
-title: Hype Train Level Up
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:03:06.066Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:03:06.066Z
----
-
-## Overview
+# Hype Train Level Up
 When a hype train levels up on your channel.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +6,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 Name | Description

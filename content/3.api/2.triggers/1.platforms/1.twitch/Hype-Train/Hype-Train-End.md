@@ -1,14 +1,4 @@
----
-title: Hype Train End
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T18:03:31.327Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T18:03:22.951Z
----
-
-## Overview
+# Hype Train End
 When a hype train ends on your channel.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +6,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `EventSub`
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 Name | Description

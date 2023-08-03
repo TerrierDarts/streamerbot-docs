@@ -1,14 +1,4 @@
----
-title: Community Goal Ended
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-13T10:47:12.344Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-13T10:47:12.344Z
----
-
-## Overview
+# Community Goal Ended
 When a community goal ends.
 
 For a detailed guide about Twitch see [this page](/Platforms/Twitch).
@@ -16,7 +6,6 @@ For a detailed guide about Twitch see [this page](/Platforms/Twitch).
 ## Event Data
 :----|:------------:
 Twitch Service: | `PubSub`
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 Name | Description
