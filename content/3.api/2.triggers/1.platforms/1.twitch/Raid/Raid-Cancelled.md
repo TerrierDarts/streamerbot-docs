@@ -26,9 +26,3 @@ Name | Description
 `raidUserId` | The raider's user id
 `raidUserProfileImageURL` | The raider's profile image URL
 `raidUserProfileImageEscaped` | The raider's profile image URL escaped
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

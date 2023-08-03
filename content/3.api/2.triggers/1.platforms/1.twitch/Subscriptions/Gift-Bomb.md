@@ -28,9 +28,3 @@ Name | Description
 `fromGiftBomb` | Boolean value if sub came from a gift bomb <br>  `True`/`False` 
 `anonymous` | Boolean value indicating the gift was anonymous <br> `True`/`False` 
 `tier` | The subscriptions tier <br> `tier 1`. `tier 2`, `tier 3`
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

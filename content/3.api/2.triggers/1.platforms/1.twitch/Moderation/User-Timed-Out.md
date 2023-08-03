@@ -28,9 +28,3 @@ Name | Description
 `createdByDisplayName` | The display name from who created the timeout
 `reason` | The reason for the timeout
 `duration` | The duration of this timeout in seconds
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

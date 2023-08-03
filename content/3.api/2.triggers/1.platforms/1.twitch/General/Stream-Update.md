@@ -31,9 +31,3 @@ Name | Description
 `oldGameName` | The previous game name
 `gameBoxArt` | The URL for current game boxart image
 `oldGameBoxArt` | The URL for previous game boxart image
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

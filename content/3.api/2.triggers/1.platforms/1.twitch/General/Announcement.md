@@ -24,9 +24,3 @@ This includes the [User](/Variables/User-Variables) variables and the [Chat](/Va
 Name | Description
 ----:|:------------
 `announceColor` | The color of the announcement <br> `DEFAULT`, `BLUE`, `RED`, `ORANGE`, `PURPLE`
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

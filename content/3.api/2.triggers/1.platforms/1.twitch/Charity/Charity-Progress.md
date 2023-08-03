@@ -32,9 +32,3 @@ Name | Description
 `charity.description` | The description of the charity you're supporting.
 `charity.logo` | The URL to the logo of the charity you're supporting.
 `charity.website` | The URL to the website of the charity you're supporting.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

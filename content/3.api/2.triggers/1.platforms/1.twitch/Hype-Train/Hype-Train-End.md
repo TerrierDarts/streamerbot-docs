@@ -39,9 +39,3 @@ Name | Description
 `top.other.userId` | The user id of the user that have given the most amount of things that aren't bits/giftsubs this hype train
 `top.other.total` | The toal amount of the user that have given the most amount of things that aren't bits/giftsubs this hype train
 `id` | The unique hype train id
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

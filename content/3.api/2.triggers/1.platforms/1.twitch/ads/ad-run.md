@@ -23,9 +23,3 @@ Name | Description
 ----:|:------------
 `adLength` | The length of the ad in seconds.
 `adScheduled` | If this ad was scheduled. Returns `True` or `False`.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

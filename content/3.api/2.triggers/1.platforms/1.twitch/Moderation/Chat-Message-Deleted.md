@@ -27,9 +27,3 @@ Name | Description
 ----:|:------------
 `targetMessageId` | The id of the message that was deleted
 `message` | The message that was deleted
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

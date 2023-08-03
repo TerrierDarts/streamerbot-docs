@@ -27,9 +27,3 @@ Name | Description
 `goal.currentAmount` | The current amount of this channel goal
 `goal.targetAmount` | The target of this channel goal
 `goal.startedAt` | The timestamp that this channel goal started
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

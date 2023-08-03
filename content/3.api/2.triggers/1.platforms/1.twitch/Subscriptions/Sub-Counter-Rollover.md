@@ -24,9 +24,3 @@ Name | Description
 `subCounter` | Current value of the sub counter
 `rollover` | Configured rollover value
 `rolloverCount` | Number of times the configured rollover value has been reached
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

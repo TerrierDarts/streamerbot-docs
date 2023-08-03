@@ -20,8 +20,3 @@ Added in: | *v0.1.18*{.version-badge}
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

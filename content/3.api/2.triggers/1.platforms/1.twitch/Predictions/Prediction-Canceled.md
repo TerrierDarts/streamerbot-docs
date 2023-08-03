@@ -37,8 +37,3 @@ Name | Description
 
 > Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
 {.is-info}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

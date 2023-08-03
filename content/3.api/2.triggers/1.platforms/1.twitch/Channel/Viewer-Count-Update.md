@@ -22,9 +22,3 @@ Added in: | *v0.2.0*{.version-badge}
 Name | Description
 ----:|:------------
 `viewerCount` | Your current Twitch viewer count
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

@@ -32,9 +32,3 @@ Name | Description
 `targetUserDisplayName` | The user's display name
 `targetUserPrimaryColorHex` | The user's primary color in hex
 `targetUserProfileImageURL` | The user's profile image
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

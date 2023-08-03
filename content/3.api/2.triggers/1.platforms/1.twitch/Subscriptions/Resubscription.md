@@ -30,9 +30,3 @@ Name | Descriptions
 `rawInputEscaped` | The message escaped
 `role` | What role the user has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
 `color` | User's color (if they have chosen one or a random one if not)
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

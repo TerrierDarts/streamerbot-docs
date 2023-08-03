@@ -26,9 +26,3 @@ Name | Description
 `totalPyramids` | The total amount of pyramids the user has made.
 `pyramidWidth` | The total amount of pyramid layers.
 `pyramidEmote` | The name of the emote that was used in the pyramid.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

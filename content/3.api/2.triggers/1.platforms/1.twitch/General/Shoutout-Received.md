@@ -24,9 +24,3 @@ This includes the [User](/Variables/User-Variables) variables.
 Name | Description
 ----:|:------------
 `viewerCount` | The viewer count from the user that created the shoutout
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

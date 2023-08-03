@@ -28,9 +28,3 @@ This includes the [Chat](/Variables/Chat-Variables) variables.
 Name | Description
 ----:|:------------
 `bits` | The number of bits that the message has.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

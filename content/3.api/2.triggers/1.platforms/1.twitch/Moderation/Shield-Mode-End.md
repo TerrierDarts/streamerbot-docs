@@ -22,9 +22,3 @@ Added in: | *v0.1.15*{.version-badge}
 Name | Description
 ----:|:------------
 `endedAt` | The timestamp that shield mode was ended
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

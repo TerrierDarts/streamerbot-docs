@@ -32,8 +32,3 @@ Name | Description
 
 > Change the `#` to a number from 0 to the end of the tags. So e.g. `%tag0%`, `%tag1%`, `%tag2%`
 {.is-info}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

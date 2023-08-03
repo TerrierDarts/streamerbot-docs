@@ -33,8 +33,3 @@ Name | Description
 
 > The user variables are for the person who destroyed the pyramid.
 {.is-info}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

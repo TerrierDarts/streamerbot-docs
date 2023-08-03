@@ -27,9 +27,3 @@ Name | Description
 `createdByUsername` | The user name from who created the ban
 `createdByDisplayName` | The display name from who created the ban
 `reason` | The reason for the ban
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

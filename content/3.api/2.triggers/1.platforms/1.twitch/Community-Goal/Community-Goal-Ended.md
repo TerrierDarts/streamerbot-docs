@@ -28,9 +28,3 @@ Name | Description
 `contributedFormatted` | The formatted amount that has been contributed
 `percentComplete` | How much percent this community goal is from finishing
 `percentDecimal` | How much percent this community goal is from finishing in decimal
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

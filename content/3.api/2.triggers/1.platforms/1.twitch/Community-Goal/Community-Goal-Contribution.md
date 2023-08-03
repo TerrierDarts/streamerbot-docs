@@ -36,9 +36,3 @@ Name | Description
 `percentDecimal` | How much percent this community goal is from finishing in decimal
 `durationDays` | How much days this community goal lasts
 `daysLeft` | How much remaining days for this community goal
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}

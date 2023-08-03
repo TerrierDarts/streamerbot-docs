@@ -33,8 +33,3 @@ Added in: | *v0.0.39*{.version-badge}
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Triggers Reference *Go Back***](/Triggers/Twitch)
-{.btn-grid .my-5}
