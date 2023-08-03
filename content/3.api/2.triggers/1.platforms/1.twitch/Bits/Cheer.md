@@ -28,3 +28,7 @@ This includes the [Chat](/Variables/Chat-Variables) variables.
 Name | Description
 ----:|:------------
 `bits` | The number of bits that the message has.
+
+::wip
+TODO: Add shared twitch chat vars here
+::

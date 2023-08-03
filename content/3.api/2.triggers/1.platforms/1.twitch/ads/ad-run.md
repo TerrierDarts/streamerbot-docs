@@ -1,24 +1,23 @@
 ---
-title: Ad Run
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-27T14:57:37.782Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-25T20:55:52.968Z
+version: 0.1.10
 ---
 
-## Overview
-This triggers when an ad starts to run. See the [Ad Midroll](/Trigger/Twitch/Ads/Ad-Mid-Roll) trigger if you want the trigger to run 5 seconds prior to the ad.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
+# Ad Run
+Twitch ad start trigger.
 
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
-Added in: | *v0.1.10*{.version-badge}
+## Details
+::list
+- Twitch Service: `PubSub`
+::
+
+This event triggers at the start of an ad.
+
+See the [Ad Mid Roll](/api/triggers/platforms/twitch/ads/ad-mid-roll) trigger if you are looking for an 5 seconds prior to the ad event.
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `adLength` | The length of the ad in seconds.
