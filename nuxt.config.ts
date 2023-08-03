@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
   modules: [
-    '@nuxthq/studio',
     '@nuxtjs/tailwindcss',
     'nuxt-headlessui',
     'nuxt-og-image',
