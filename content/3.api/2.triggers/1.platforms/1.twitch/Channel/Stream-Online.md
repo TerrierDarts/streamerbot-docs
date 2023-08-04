@@ -21,7 +21,6 @@ Name | Description
 `tag#` | Each individual tag
 `tags` | A `List<string>()` object for use in C#
 `tagsDelimited` | A comma delimited string of the tags
-{.vars-table}
 
 ::alert{type="info"}
 Change the `#` to a number from 0 to the end of the tags. So e.g. `%tag0%`, `%tag1%`, `%tag2%`
