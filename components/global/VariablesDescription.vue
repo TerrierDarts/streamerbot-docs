@@ -1,16 +1,27 @@
 <script setup lang="ts">
+const props = defineProps<{
+  empty?: boolean;
+}>();
+
 const { page } = useContent();
+
 const text = computed(() => {
   const m = page.value._path.match(/\/(sub-actions|triggers)\//i);
   const type = m && m[1] ? m[1] : null;
 
   switch(type) {
     case 'sub-actions':
-      return 'The following variables will be populated after executing this sub-action:';
+      return props.empty
+        ? 'This sub-action does not populate any variables.'
+        : 'The following variables will be populated after executing this sub-action:';
     case 'triggers':
-      return 'The following variables will be populated when this trigger executes:';
+      return props.empty
+      ? 'This trigger does not populate any variables.'
+      : 'The following variables will be populated when this trigger executes:';
     default:
-      return 'The following variables will be populated:'
+      return props.empty
+      ? 'No variables will be populated.'
+      : 'The following variables will be populated:';
   }
 })
 </script>

@@ -13,5 +13,8 @@ Duration of ad break, in seconds.
 - Only the specified values are allowed
 ::
 
+## Variables
+:variables-description{empty}
+
 ## C# Usage
 :csharp-method{name=TwitchRunCommercial}
