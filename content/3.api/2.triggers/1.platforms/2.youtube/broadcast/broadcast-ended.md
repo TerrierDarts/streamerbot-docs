@@ -1,8 +1,4 @@
 # Broadcast Ended
 
 ## Variables
-:variables-description
-
-::alert{type="danger"}
-No variables generated.
-::
+:variables-description{empty}

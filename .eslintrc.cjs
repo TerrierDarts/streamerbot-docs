@@ -5,5 +5,6 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/html-self-closing': 'off',
+    'vue/no-setup-props-destructure': 'off',
   }
 }
