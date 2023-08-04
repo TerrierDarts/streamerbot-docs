@@ -7,7 +7,7 @@ const props = defineProps<{
 
 const { data, pending } = useAsyncData(`variables-${props.name ?? 'empty'}`, () => {
   if (!props.name) return Promise.resolve(null);
-  return queryContent('api', 'triggers').where({
+  return queryContent('api', '_variables').where({
     _partial: true,
     $or: [
       { 'variables.name': props.name ?? '' },
