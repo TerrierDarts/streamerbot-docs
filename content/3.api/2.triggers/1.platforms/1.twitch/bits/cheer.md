@@ -17,5 +17,5 @@ Name | Description
 ----:|:------------
 `bits` | The number of bits that the message has.
 
-:variables{name=TwitchChat}
-:variables{name=TwitchUser}
+:variables{name=TwitchChat disclosure}
+:variables{name=TwitchUser disclosure}

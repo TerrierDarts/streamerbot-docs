@@ -12,11 +12,5 @@ When someone sends a message in chat.
 
 ## Variables
 :variables-description
-
-::wip
-TODO: Add shared twitch user vars here
-::
-
-::wip
-TODO: Add shared twitch chat vars here
-::
+:variables{name=TwitchChat}
+:variables{name=TwitchUser}

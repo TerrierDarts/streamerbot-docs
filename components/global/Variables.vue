@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const props = defineProps<{name?: string, icon?: string}>();
+const props = defineProps<{
+  name?: string,
+  icon?: string,
+  disclosure?: boolean,
+}>();
 
 const { data, pending } = useAsyncData(`variables-${props.name ?? 'empty'}`, () => {
   if (!props.name) return Promise.resolve(null);
@@ -19,7 +23,7 @@ const icon = computed(() => {
 
 <template>
   <template v-if="data">
-    <Disclosure type="neutral" :icon="icon" class="mb-3">
+    <Disclosure v-if="disclosure" type="neutral" :icon="icon" class="mb-3">
       <template #summary>
         <template v-if="data?.variables?.summaryText">
           <span class="font-semibold">{{ data?.variables?.summaryText }}</span> variables will also be populated. Click here to view.
@@ -38,6 +42,18 @@ const icon = computed(() => {
         </ContentRenderer>
       </template>
     </Disclosure>
+    <template v-else>
+      <div class="text-lg font-semibold mt-8">
+        {{ data?.variables?.summaryText }} Variables
+      </div>
+      <ContentRenderer :value="data">
+        <template #empty>
+          <List type="warning">
+            Variables not found
+          </List>
+        </template>
+      </ContentRenderer>
+    </template>
   </template>
   <List v-else-if="!pending" type="warning">
     Variables not found
