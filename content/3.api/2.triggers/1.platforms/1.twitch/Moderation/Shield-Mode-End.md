@@ -11,11 +11,10 @@ dateCreated: 2023-06-10T18:10:53.472Z
 ## Overview
 When shield mode gets ended.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 Added in: | *v0.1.15*{.version-badge}
 
 ## Variables

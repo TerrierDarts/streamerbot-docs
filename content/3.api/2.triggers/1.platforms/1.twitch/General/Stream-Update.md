@@ -5,11 +5,10 @@ version: 0.0.30
 ## Stream Update
 This triggers when the title or the description changes on your stream. 
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
+## Details
+::list
+- Twitch Service: `PubSub`
+::
 
 ## Variables
 Name | Description

@@ -5,8 +5,6 @@ version: 0.0.39
 # Whispers
 When someone sends the broadcaster account a whisper.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
 ## Notes
 The user sending the whisper must have a **verified phone number** (see the **Phone Number setting** in your **Security and Privacy settings**).
 
@@ -20,9 +18,10 @@ The maximum message lengths are:
 
 Messages that exceed the maximum length are truncated.
 
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 Added in: | *v0.0.39*{.version-badge}
 
 ## Variables

@@ -1,11 +1,10 @@
 # Hype Train Update
 When a hype train updates on your channel.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 Added in: | *N/A*{.version-badge}
 
 ## Variables

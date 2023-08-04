@@ -5,11 +5,10 @@ version: 0.1.17
 # Stream Online
 This triggers when the stream has started on your broadcaster account.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 
 ## Variables
 Name | Description

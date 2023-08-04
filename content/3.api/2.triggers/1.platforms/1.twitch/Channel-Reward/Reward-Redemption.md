@@ -5,11 +5,10 @@ version: 0.0.30
 # Reward Redemption
 When someone redeems a reward redemption
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
+## Details
+::list
+- Twitch Service: `PubSub`
+::
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables and the [Broadcaster](/Variables/Broadcaster) variables.

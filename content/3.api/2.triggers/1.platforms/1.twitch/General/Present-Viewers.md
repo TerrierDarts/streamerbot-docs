@@ -5,8 +5,6 @@ version: 0.0.50
 # Present Viewers
 This triggers every 1-10 minutes, default every 5 minutes.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
 ## Notes
 The present viewer tick will always happen, but you have the ability to have it "live update" from twitch, or artificially mark someone as present.
 
@@ -18,9 +16,10 @@ When Live Update is not checked, the slider next to it behaves as a threshold. T
 
 The default setting is `Live Update` not checked, and the slider set to `5` minutes.  To have the same functionality as *v0.1.12*{.version-badge} and earlier, enable `Live Update` and make sure the slider is set to `5` minutes.
 
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 
 ## Variables
 Name | Description

@@ -11,11 +11,10 @@ dateCreated: 2023-04-27T15:17:55.911Z
 ## Overview
 This triggers when a pyramid succesfully gets created in Twitch chat.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 Added in: | *N/A*{.version-badge}
 
 ## Variables

@@ -11,11 +11,10 @@ dateCreated: 2023-06-11T11:43:28.955Z
 ## Overview
 When a user gets timed out in chat.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
+## Details
+::list
+- Twitch Service: `PubSub`
+::
 Added in: | *N/A*{.version-badge}
 
 ## Variables

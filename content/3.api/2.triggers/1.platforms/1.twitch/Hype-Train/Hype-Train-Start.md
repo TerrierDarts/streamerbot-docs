@@ -1,11 +1,10 @@
 # Hype Train Start
 When a hype train starts on your channel.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 
 ## Variables
 Name | Description

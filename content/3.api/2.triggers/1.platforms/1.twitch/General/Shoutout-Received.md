@@ -5,11 +5,10 @@ version: 0.1.17
 # Shoutout Received
 This triggers when the broadcaster account receives a shoutout.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 
 ## Variables
 This includes the [User](/Variables/User-Variables) variables.

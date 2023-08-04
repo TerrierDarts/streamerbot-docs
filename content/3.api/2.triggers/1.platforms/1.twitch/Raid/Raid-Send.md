@@ -11,11 +11,10 @@ dateCreated: 2023-05-20T17:56:19.868Z
 ## Overview
 When a raid that your channel started is send.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
+## Details
+::list
+- Twitch Service: `PubSub`
+::
 Added in: | *v0.0.36*{.version-badge}
 
 ## Variables

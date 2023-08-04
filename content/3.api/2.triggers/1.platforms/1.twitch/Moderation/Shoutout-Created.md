@@ -11,11 +11,10 @@ dateCreated: 2023-05-28T13:25:11.169Z
 ## Overview
 This triggers when a shoutout gets created in your chat.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 Added in: | *v0.1.14*{.version-badge}
 
 ## Variables

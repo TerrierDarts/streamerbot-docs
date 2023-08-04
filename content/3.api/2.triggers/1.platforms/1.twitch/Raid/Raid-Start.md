@@ -11,11 +11,10 @@ dateCreated: 2023-05-20T17:56:58.546Z
 ## Overview
 When your channel starts a raid on someone.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
+## Details
+::list
+- Twitch Service: `PubSub`
+::
 Added in: | *v0.0.33*{.version-badge}
 
 ## Variables

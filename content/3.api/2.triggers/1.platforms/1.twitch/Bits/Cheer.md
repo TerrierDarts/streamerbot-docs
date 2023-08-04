@@ -1,11 +1,10 @@
 # Cheer
 This triggers when you get a cheer donation.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 
 ## Configuration
 ### Ranges

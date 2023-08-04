@@ -5,11 +5,10 @@ version: 0.1.14
 # Charity Completed
 When a charity event is completed.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 
 ## Variables
 Name | Description

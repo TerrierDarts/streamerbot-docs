@@ -11,11 +11,10 @@ dateCreated: 2023-06-07T08:48:46.927Z
 ## Overview
 This triggers when someone does a gift bomb.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 Added in: | *N/A*{.version-badge}
 
 ## Variables

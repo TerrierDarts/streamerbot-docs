@@ -5,11 +5,10 @@ version: 0.1.15
 # Charity Progress
 When a charity event progresses.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 
 ## Variables
 Name | Description

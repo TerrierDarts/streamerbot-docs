@@ -11,11 +11,10 @@ dateCreated: 2023-06-10T18:27:11.768Z
 ## Overview
 When a message gets deleted in Twitch chat.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `Chat Client`
+## Details
+::list
+- Twitch Service: `Chat Client`
+::
 Added in: | *N/A*{.version-badge}
 
 ## Variables

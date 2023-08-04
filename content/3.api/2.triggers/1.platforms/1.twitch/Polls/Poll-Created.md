@@ -11,11 +11,10 @@ dateCreated: 2023-04-28T18:50:08.733Z
 ## Overview
 This triggers when a poll gets created.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `EventSub`
+## Details
+::list
+- Twitch Service: `EventSub`
+::
 Added in: | *v0.0.50*{.version-badge}
 
 ## Variables

@@ -1,11 +1,10 @@
 # Community Goal Ended
 When a community goal ends.
 
-For a detailed guide about Twitch see [this page](/Platforms/Twitch).
-
-## Event Data
-:----|:------------:
-Twitch Service: | `PubSub`
+## Details
+::list
+- Twitch Service: `PubSub`
+::
 
 ## Variables
 Name | Description
