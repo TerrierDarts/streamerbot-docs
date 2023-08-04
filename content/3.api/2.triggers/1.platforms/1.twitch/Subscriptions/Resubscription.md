@@ -1,25 +1,13 @@
----
-title: Resubscription
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T08:42:30.859Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T08:42:04.912Z
----
-
-## Overview
+# Resubscription
 This triggers when you get a resubscription.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Descriptions
 ----:|:------------
@@ -30,3 +18,7 @@ Name | Descriptions
 `rawInputEscaped` | The message escaped
 `role` | What role the user has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
 `color` | User's color (if they have chosen one or a random one if not)
+
+::wip
+TODO: Add shared twitch user vars here
+::

@@ -23,5 +23,6 @@ Name | Description
 `tagsDelimited` | A comma delimited string of the tags
 {.vars-table}
 
-> Change the `#` to a number from 0 to the end of the tags. So e.g. `%tag0%`, `%tag1%`, `%tag2%`
-{.is-info}
+::alert{type="info"}
+Change the `#` to a number from 0 to the end of the tags. So e.g. `%tag0%`, `%tag1%`, `%tag2%`
+::

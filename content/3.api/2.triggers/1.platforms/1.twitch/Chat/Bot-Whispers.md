@@ -25,4 +25,7 @@ Messages that exceed the maximum length are truncated.
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.
+
+::wip
+TODO: Add shared twitch user vars here
+::

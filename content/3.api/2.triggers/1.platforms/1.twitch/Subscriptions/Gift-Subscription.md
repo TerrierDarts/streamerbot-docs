@@ -1,25 +1,13 @@
----
-title: Gift Subscription
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T08:46:36.644Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T08:46:36.644Z
----
-
-## Overview
+# Gift Subscription
 This triggers when someone gifts a subscription.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description
 ----:|:------------
@@ -36,3 +24,7 @@ Name | Description
 `anonymous` | Boolean value indicating the gift was anonymous <br> `True`/`False` 
 `tier` | Subscription tier as a string <br> `tier 1`, `tier 2`, `tier 3`
 `role` | What role the gifter has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
+
+::wip
+TODO: Add shared twitch user vars here
+::

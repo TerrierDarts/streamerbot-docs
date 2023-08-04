@@ -5,7 +5,6 @@ When a hype train updates on your channel.
 ::list
 - Twitch Service: `EventSub`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description

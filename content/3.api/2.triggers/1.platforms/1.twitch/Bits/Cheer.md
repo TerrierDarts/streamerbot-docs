@@ -15,7 +15,6 @@ TODO: Add some bit for ranges here, preferably some kind of component because a 
 
 ## Variables
 :variables-description
-This includes the [Chat](/Variables/Chat-Variables) variables.
 
 Name | Description
 ----:|:------------

@@ -12,8 +12,15 @@ When an announcement is send in chat.
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.
 
 Name | Description
 ----:|:------------
 `announceColor` | The color of the announcement <br> `DEFAULT`, `BLUE`, `RED`, `ORANGE`, `PURPLE`
+
+::wip
+TODO: Add shared twitch user vars here
+::
+
+::wip
+TODO: Add shared twitch chat vars here
+::

@@ -1,21 +1,14 @@
 ---
-title: Prediction Updated
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-28T19:05:36.277Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-28T19:02:58.301Z
+version: 0.0.50
 ---
 
-## Overview
+# Prediction Updated
 This triggers when a prediction gets updated.
 
 ## Details
 ::list
 - Twitch Service: `EventSub`
 ::
-Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
 :variables-description
@@ -31,7 +24,7 @@ Name | Description
 `prediction.outcome#.points` | The total channel points used for this outcome
 `prediction.outcome#.color` | In caps the color name for this outcome e.g. `BLUE` or `PINK`
 `prediction._json` | All the variables in a JSON Object
-{.vars-table}
 
-> Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
-{.is-info}
+::alert{type="info"}
+Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
+::

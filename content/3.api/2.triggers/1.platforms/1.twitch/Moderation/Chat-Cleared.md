@@ -12,4 +12,7 @@ When someone clears your Twitch chat.
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
+
+::wip
+TODO: Add shared twitch user vars here
+::

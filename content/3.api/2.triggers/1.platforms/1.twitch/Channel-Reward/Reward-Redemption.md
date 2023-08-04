@@ -12,7 +12,6 @@ When someone redeems a reward redemption
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables and the [Broadcaster](/Variables/Broadcaster) variables.
 
 Name | Description
 ----:|:------------
@@ -25,3 +24,7 @@ Name | Description
 `userCounter` | Number of times the same user has redeemed this reward <br> `1`
 `rawInput` | String text entered by the user (if required) <br> `https://streamer.bot/Test Unescaped Text $$$`
 `rawInputEscaped` | String text entered by the user (escaped) <br> `https://streamer\.bot/Test Escaped Text \$\$\$`
+
+::wip
+TODO: Add shared twitch user vars here
+::

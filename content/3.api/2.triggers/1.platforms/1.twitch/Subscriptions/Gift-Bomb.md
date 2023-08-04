@@ -1,25 +1,13 @@
----
-title: Gift Bomb
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T08:48:46.927Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T08:48:46.927Z
----
-
-## Overview
+# Gift Bomb
 This triggers when someone does a gift bomb.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description
 ----:|:------------
@@ -28,3 +16,7 @@ Name | Description
 `fromGiftBomb` | Boolean value if sub came from a gift bomb <br>  `True`/`False` 
 `anonymous` | Boolean value indicating the gift was anonymous <br> `True`/`False` 
 `tier` | The subscriptions tier <br> `tier 1`. `tier 2`, `tier 3`
+
+::wip
+TODO: Add shared twitch user vars here
+::

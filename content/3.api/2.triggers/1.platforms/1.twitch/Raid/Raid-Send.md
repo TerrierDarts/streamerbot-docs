@@ -1,14 +1,8 @@
 ---
-title: Raid Send
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T17:57:46.868Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T17:56:19.868Z
+version: 0.0.36
 ---
 
-## Overview
+# Raid Send
 When a raid that your channel started is send.
 
 ## Details

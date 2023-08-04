@@ -1,21 +1,14 @@
 ---
-title: Raid Start
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-20T17:57:36.112Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-20T17:56:58.546Z
+version: 0.0.33
 ---
 
-## Overview
+# Raid Start
 When your channel starts a raid on someone.
 
 ## Details
 ::list
 - Twitch Service: `PubSub`
 ::
-Added in: | *v0.0.33*{.version-badge}
 
 ## Variables
 :variables-description

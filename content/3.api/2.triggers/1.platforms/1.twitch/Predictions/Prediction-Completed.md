@@ -1,21 +1,14 @@
 ---
-title: Prediction Completed
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-28T19:07:11.017Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-28T19:07:09.037Z
+version: 0.0.50
 ---
 
-## Overview
+# Prediction Completed
 This triggers when a prediction gets completed.
 
 ## Details
 ::list
 - Twitch Service: `EventSub`
 ::
-Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
 :variables-description
@@ -38,7 +31,7 @@ Name | Description
 `prediction.winningOutcome.points` | The count of channel points used for the winning outcome
 `prediction.winningOutcome.color`	| In caps the color name e.g. `BLUE` or `PINK`
 `prediction._json` | All the variables in a JSON Object
-{.vars-table}
 
+::alert{type="info"}
 > Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
-{.is-info}
+::

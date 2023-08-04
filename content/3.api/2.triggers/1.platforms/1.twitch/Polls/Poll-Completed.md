@@ -1,21 +1,14 @@
 ---
-title: Poll Completed
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-28T18:55:00.869Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-28T18:54:58.864Z
+version: 0.0.50
 ---
 
-## Overview
+# Poll Completed
 This triggers when a poll gets completed.
 
 ## Details
 ::list
 - Twitch Service: `EventSub`
 ::
-Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
 :variables-description
@@ -42,7 +35,7 @@ Name | Description
 `poll.winningChoice.rewardVotes` | Number of channel point based votes
 `poll.winningChoice.totalVotes` | Total number of votes for the choice
 `poll._json` | All the variables in a JSON Object
-{.vars-table}
 
-> Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
-{.is-info}
+::alert{type="info"}
+Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
+::

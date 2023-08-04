@@ -1,25 +1,13 @@
----
-title: Subscription
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T08:42:31.771Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T08:40:56.500Z
----
-
-## Overview
+# Subscription
 This triggers when you get a subscription.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description
 ----:|:------------
@@ -28,3 +16,7 @@ Name | Description
 `rawInputEscaped` | The message escaped
 `role` | What role the user has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
 `color` | User's color (if they have chosen one or a random one if not)
+
+::wip
+TODO: Add shared twitch user vars here
+::

@@ -1,21 +1,10 @@
----
-title: User Timed Out
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-11T11:43:39.115Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-11T11:43:28.955Z
----
-
-## Overview
+# User Timed Out
 When a user gets timed out in chat.
 
 ## Details
 ::list
 - Twitch Service: `PubSub`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description

@@ -8,7 +8,6 @@ When someone contributes to the community goal.
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description
 ----:|:------------
@@ -25,3 +24,7 @@ Name | Description
 `percentDecimal` | How much percent this community goal is from finishing in decimal
 `durationDays` | How much days this community goal lasts
 `daysLeft` | How much remaining days for this community goal
+
+::wip
+TODO: Add shared twitch user vars here
+::

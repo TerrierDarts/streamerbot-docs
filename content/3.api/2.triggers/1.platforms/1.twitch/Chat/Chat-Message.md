@@ -12,4 +12,11 @@ When someone sends a message in chat.
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.
+
+::wip
+TODO: Add shared twitch user vars here
+::
+
+::wip
+TODO: Add shared twitch chat vars here
+::

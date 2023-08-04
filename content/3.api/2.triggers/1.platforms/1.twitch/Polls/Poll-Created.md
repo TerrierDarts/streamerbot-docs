@@ -1,21 +1,14 @@
 ---
-title: Poll Created
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-28T18:55:33.595Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-28T18:50:08.733Z
+version: 0.0.50
 ---
 
-## Overview
+# Poll Created
 This triggers when a poll gets created.
 
 ## Details
 ::list
 - Twitch Service: `EventSub`
 ::
-Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
 :variables-description
@@ -35,7 +28,6 @@ Name | Description
 `poll.rewardVotes` | Total number of reward based votes
 `poll.totalVotes` | Overall total number of votes
 `poll._json` | All the variables in a JSON Object
-{.vars-table}
-
-> Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
-{.is-info}
+::alert{type="info"}
+Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
+::

@@ -1,21 +1,10 @@
----
-title: Sub Counter Rollover
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-07T08:58:22.325Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-07T08:58:22.325Z
----
-
-## Overview
+# Sub Counter Rollover
 This triggers when the sub counter rolls over.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description

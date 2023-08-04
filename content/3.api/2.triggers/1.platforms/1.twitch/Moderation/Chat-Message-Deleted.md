@@ -1,29 +1,19 @@
----
-title: Chat Message Deleted
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-10T18:27:11.768Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-10T18:27:11.768Z
----
-
-## Overview
+# Chat Message Deleted
 When a message gets deleted in Twitch chat.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
-
-User: the user of who the message was deleted.
 
 Name | Description
 ----:|:------------
 `targetMessageId` | The id of the message that was deleted
 `message` | The message that was deleted
+
+::wip
+TODO: Add shared twitch user vars here
+::

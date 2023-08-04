@@ -1,21 +1,10 @@
----
-title: User Banned
-description: Twitch Triggers Reference
-published: true
-date: 2023-06-11T11:43:27.953Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-11T11:41:10.260Z
----
-
-## Overview
+# User Banned
 When a user gets banned in chat.
 
 ## Details
 ::list
 - Twitch Service: `PubSub`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description

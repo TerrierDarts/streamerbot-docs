@@ -28,7 +28,6 @@ Name | Description
 `isLive` | Boolean for current streaming status <br> `True`/`False` 
 `isTest` | Boolean for if this is demo data or not <br> `True`/`False` 
 `users` | A C# Dictionary list of usernames present in IRC chat <br> Each user present will get [the following data](#users-dictionary)
-{.vars-table}
 
 ### users Dictionary
 Name | Description

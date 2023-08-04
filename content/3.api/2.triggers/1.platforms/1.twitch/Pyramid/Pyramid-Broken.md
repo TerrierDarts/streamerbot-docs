@@ -1,25 +1,13 @@
----
-title: Pyramid Broken
-description: Twitch Triggers Reference
-published: true
-date: 2023-04-27T15:23:33.081Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-27T15:22:36.285Z
----
-
-## Overview
+# Pyramid Broken
 This triggers when a pyramid gets destroyed in Twitch chat.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *N/A*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description
 ----:|:------------
@@ -29,7 +17,11 @@ Name | Description
 `pyramidOwnerId` | The user id of the person who intiated the pyramid.
 `pyramidOwnerUsername` | The user name of the person who intiated the pyramid.
 `pyramidOwnerDisplayName` | The user display of the person who intiated the pyramid.
-{.vars-table}
 
-> The user variables are for the person who destroyed the pyramid.
-{.is-info}
+::alert{type="info"}
+The user variables are for the person who destroyed the pyramid.
+::
+
+::wip
+TODO: Add shared twitch user vars here
+::

@@ -12,8 +12,11 @@ This triggers when the broadcaster account receives a shoutout.
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description
 ----:|:------------
 `viewerCount` | The viewer count from the user that created the shoutout
+
+::wip
+TODO: Add shared twitch user vars here
+::

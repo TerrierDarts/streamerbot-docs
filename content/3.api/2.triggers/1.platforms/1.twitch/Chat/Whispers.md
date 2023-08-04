@@ -26,4 +26,11 @@ Added in: | *v0.0.39*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.
+
+::wip
+TODO: Add shared twitch user vars here
+::
+
+::wip
+TODO: Add shared twitch chat vars here
+::

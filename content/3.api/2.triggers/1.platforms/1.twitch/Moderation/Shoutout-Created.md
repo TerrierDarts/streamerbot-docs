@@ -1,28 +1,17 @@
 ---
-title: Shoutout Created
-description: Twitch Triggers Reference
-published: true
-date: 2023-05-28T13:25:11.169Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-28T13:25:11.169Z
+version: 0.1.14
 ---
 
-## Overview
+# Shoutout Created
 This triggers when a shoutout gets created in your chat.
 
 ## Details
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *v0.1.14*{.version-badge}
 
 ## Variables
 :variables-description
-This includes the [User](/Variables/User-Variables) variables and the [Target](/Sub-Actions/Twitch/Get-User-Info-for-Target#variables) variables.
-
-User: Who created the shoutout
-Target: Who reveived the shoutout
 
 Name | Description
 ----:|:------------
@@ -32,3 +21,14 @@ Name | Description
 `targetUserDisplayName` | The user's display name
 `targetUserPrimaryColorHex` | The user's primary color in hex
 `targetUserProfileImageURL` | The user's profile image
+
+User: Who created the shoutout
+Target: Who reveived the shoutout
+
+::wip
+TODO: Add shared twitch user vars here
+::
+
+::wip
+TODO: Add shared twitch target vars here
+::
