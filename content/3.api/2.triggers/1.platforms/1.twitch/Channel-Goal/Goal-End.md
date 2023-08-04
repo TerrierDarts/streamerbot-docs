@@ -11,6 +11,7 @@ When a channel goal ends.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `goal.id` | The UUID of this channel goal

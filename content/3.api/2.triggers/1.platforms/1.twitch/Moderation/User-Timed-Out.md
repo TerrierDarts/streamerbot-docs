@@ -18,6 +18,7 @@ When a user gets timed out in chat.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `user` | The user who was timed out

@@ -25,4 +25,5 @@ Messages that exceed the maximum length are truncated.
 Added in: | *v0.0.39*{.version-badge}
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables and the [Chat](/Variables/Chat-Variables) variables.

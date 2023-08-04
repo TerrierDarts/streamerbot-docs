@@ -18,6 +18,7 @@ This triggers when a pyramid gets destroyed in Twitch chat.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description

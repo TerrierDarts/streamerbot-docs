@@ -11,6 +11,7 @@ When someone redeems a reward redemption
 ::
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables and the [Broadcaster](/Variables/Broadcaster) variables.
 
 Name | Description

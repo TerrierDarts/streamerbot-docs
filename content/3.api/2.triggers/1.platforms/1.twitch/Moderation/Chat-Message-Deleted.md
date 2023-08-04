@@ -18,6 +18,7 @@ When a message gets deleted in Twitch chat.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.
 
 User: the user of who the message was deleted.

@@ -7,4 +7,5 @@ This triggers when someone follows you on Twitch.
 ::
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.

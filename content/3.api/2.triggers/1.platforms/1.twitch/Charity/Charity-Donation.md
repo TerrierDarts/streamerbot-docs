@@ -11,6 +11,7 @@ When a charity event gets a donation.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `charity.amount.value` | The amount of the donation in decimal form e.g. `5.25` ($5.25).

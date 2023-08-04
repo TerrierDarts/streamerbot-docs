@@ -6,11 +6,15 @@ This triggers when you get a cheer donation.
 - Twitch Service: `Chat Client`
 ::
 
-## Configuration
-### Ranges
-You can select ranges if you want to filter between two values.
+## Parameters
+### `Ranges`
+
+::wip
+TODO: Add some bit for ranges here, preferably some kind of component because a lot of triggers have ranges
+::
 
 ## Variables
+:variables-description
 This includes the [Chat](/Variables/Chat-Variables) variables.
 
 Name | Description

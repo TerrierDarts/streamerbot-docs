@@ -18,6 +18,7 @@ This triggers when a poll gets completed.
 Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `poll.Id` | Twitch's id for the poll

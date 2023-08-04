@@ -11,6 +11,7 @@ This triggers when your Twitch viewer count updates.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `viewerCount` | Your current Twitch viewer count

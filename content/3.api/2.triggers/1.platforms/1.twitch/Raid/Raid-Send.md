@@ -18,6 +18,7 @@ When a raid that your channel started is send.
 Added in: | *v0.0.36*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `raidUser` | The raider's username

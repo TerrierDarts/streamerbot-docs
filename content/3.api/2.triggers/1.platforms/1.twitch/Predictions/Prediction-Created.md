@@ -18,6 +18,7 @@ This triggers when a prediction gets created.
 Added in: | *v0.0.50*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `prediction.Id` | Twitch's id of the prediction

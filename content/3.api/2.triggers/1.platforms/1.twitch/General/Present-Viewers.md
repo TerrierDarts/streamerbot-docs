@@ -22,6 +22,7 @@ The default setting is `Live Update` not checked, and the slider set to `5` minu
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `isLive` | Boolean for current streaming status <br> `True`/`False` 

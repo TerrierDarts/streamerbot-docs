@@ -8,6 +8,7 @@ When a hype train updates on your channel.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `level` | The current Hype Train level e.g. `3`

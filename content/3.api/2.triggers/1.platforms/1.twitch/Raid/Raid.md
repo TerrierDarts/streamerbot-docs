@@ -18,6 +18,7 @@ When someone raids your Twitch stream.
 Added in: | *v0.0.33*{.version-badge}
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description

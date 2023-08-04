@@ -18,6 +18,7 @@ This triggers when the sub counter rolls over.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `subCounter` | Current value of the sub counter

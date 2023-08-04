@@ -18,6 +18,7 @@ When a user gets banned in chat.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `user` | The user who was banned <br> <small>*This will only be populated if the user has been present in chat*</small>

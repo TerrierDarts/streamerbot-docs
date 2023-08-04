@@ -7,6 +7,7 @@ When a hype train levels up on your channel.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `prevLevel`	| The previous Hype Train level e.g. `2`

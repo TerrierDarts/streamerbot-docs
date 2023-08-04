@@ -18,6 +18,7 @@ When your channel starts a raid on someone.
 Added in: | *v0.0.33*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `raidUser` | The raider's username

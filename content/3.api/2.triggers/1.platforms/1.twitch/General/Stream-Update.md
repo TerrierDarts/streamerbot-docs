@@ -11,6 +11,7 @@ This triggers when the title or the description changes on your stream.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `status` | The current stream title

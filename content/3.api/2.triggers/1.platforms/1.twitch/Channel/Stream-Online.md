@@ -11,6 +11,7 @@ This triggers when the stream has started on your broadcaster account.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `startedAt` | The date and time that the stream went online

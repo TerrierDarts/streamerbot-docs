@@ -18,6 +18,7 @@ This triggers when a pyramid succesfully gets created in Twitch chat.
 Added in: | *N/A*{.version-badge}
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description

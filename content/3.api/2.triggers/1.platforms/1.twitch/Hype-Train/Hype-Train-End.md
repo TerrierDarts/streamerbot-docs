@@ -7,6 +7,7 @@ When a hype train ends on your channel.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `level` | The current Hype Train level e.g. `3`

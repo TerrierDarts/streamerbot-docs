@@ -11,6 +11,7 @@ When a charity event progresses.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `charity.currentAmount.value` | The current amount of the money raised in decimal form e.g. `5.25` ($5.25).

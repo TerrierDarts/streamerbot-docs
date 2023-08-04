@@ -18,6 +18,7 @@ When shield mode gets activated.
 Added in: | *v0.1.15*{.version-badge}
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `startedAt` | The timestamp that shield mode was activated

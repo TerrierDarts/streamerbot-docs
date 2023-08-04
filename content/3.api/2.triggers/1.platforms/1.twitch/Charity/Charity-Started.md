@@ -11,6 +11,7 @@ When a charity event starts.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `charity.startedAt` | The time and date the charity event started, format: `MM/dd/yyyy h:m:ss tt`.

@@ -18,6 +18,7 @@ This triggers when a shoutout gets created in your chat.
 Added in: | *v0.1.14*{.version-badge}
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables and the [Target](/Sub-Actions/Twitch/Get-User-Info-for-Target#variables) variables.
 
 User: Who created the shoutout

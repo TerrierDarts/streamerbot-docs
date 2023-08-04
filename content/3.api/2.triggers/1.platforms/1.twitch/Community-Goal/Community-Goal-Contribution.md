@@ -7,6 +7,7 @@ When someone contributes to the community goal.
 ::
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description

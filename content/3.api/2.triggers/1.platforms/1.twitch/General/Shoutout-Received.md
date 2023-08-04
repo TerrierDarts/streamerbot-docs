@@ -11,6 +11,7 @@ This triggers when the broadcaster account receives a shoutout.
 ::
 
 ## Variables
+:variables-description
 This includes the [User](/Variables/User-Variables) variables.
 
 Name | Description

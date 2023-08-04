@@ -7,6 +7,7 @@ When a community goal ends.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `title` | The name of community goal

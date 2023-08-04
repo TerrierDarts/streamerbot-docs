@@ -11,6 +11,7 @@ When a charity event is completed.
 ::
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `charity.stoppedAt` | The time and date the charity event completed, format: `MM/dd/yyyy h:m:ss tt`.
