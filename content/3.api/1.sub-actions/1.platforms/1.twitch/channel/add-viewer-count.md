@@ -5,8 +5,8 @@ Populate a variable with your current Twitch viewer count
 ## Variables
 :variables-description
 
-Name | Description | Example
-----:|:------------|:--------|
+| Name | Description | Example |
+|-----:|:------------|:--------|
 `viewerCount` | Your current Twitch viewer count. | `12`
 
 

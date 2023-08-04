@@ -3,8 +3,8 @@ variables.summaryText: Twitch Chat
 variables.summaryIcon: mdi:message-text
 ---
 
-Name | Description | Example
-----:|:------------|:--------|
+| Name | Description | Example |
+|-----:|:------------|:--------|
 `msgId` | Twitch's message identifier | `a126e8a8-43f7-4a14-8990-e8c3feea76d8`
 `role` | The role of the Twitch user | `1` (Viewer), `2` (VIP), `3` (Mod), `4` (Broadcaster)
 `isSubscribed` | Is the user subscribed? | `True` / `False`

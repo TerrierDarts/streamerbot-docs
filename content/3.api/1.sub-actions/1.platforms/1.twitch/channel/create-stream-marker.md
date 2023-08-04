@@ -16,8 +16,8 @@ The description of the stream marker.
 ## Variables
 :variables-description
 
-Name | Description | Example
-----:|:------------|:--------|
+| Name | Description | Example |
+|-----:|:------------|:--------|
 `broadcastUser` | The Twitch display name of the broadcaster account | `StreamerBotUser12`
 `broadcastUserName` | The Twitch user name of the broadcaster account | `streamerbotuser12`
 `broadcastUserId` | The Twitch user ID of the broadcaster account | `123456789`
