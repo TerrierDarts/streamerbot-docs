@@ -1,26 +1,14 @@
----
-title: Set Random Group Source Visible
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T13:33:52.829Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-25T21:33:57.829Z
----
+# Set Random Group Source Visible
+Set a random source from a group visible
+:image-preview
 
-## Overview
-This will set the source visibilty for a single random source in a defined group to `Active`
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/set-random-group-source-visible/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-If the selected OBS connection is currently connected, a dropdown list of available scenes will populate for selection, otherwise the scene name can be entered manually.
+### `Group`
+Select the group from this dropdown list, you can also manually enter a group name.
 
-### Group
-If the selected OBS connection is currently connected, a dropdown list of available groups will populate for selection, otherwise the scene name can be entered manually.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+- Type: `String`

@@ -1,36 +1,24 @@
----
-title: Set Media State
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:43:46.625Z
-tags: 
-editor: markdown
-dateCreated: 2022-10-07T12:38:29.777Z
----
-
-## Overview
+# Set Media State
 Set the status of the media source
+:image-preview
 
-![overview.png](/Sub-Actions/OBS/set-media-state/overview.png =400x)
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-## Configuration
-### Scene
-The scene where the settings get applied
+- Type: `String`
 
-### Source
-The source where the settings get applied
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### State
-Name | Description
-----:|:------------
-`Play` | Plays your Media Source
-`Pause` | Pauses your Media Source
-`Restart` | Restarts your Media Source
-`Stop` | Stops your Media Source
-`Next` | Goes next on your Media Source
-`Previous` | Goes previous on your Media Source
+- Type: `String`
 
----
+### `State`
+Select on which side you want to flip the source
 
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+- `Play`: Play your Media Source
+- `Pause`: Pause your Media Source
+- `Restart`: Restart your Media Source
+- `Stop`: Stop your Media Source
+- `Next`: Go next on your Media Source
+- `Previous`: Go to the previous on your Media Source
