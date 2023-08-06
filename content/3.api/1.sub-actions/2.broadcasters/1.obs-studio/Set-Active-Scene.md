@@ -7,3 +7,6 @@ Change the current scene
 Select the scene from this dropdown list, you can also manually enter a scene name.
 
 - Type: `String`
+
+## C# Usage
+:csharp-method{name=ObsSetScene}

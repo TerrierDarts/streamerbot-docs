@@ -14,3 +14,7 @@ Name | Description
 ----:|:------------
 `Stop` | Stops your OBS Stream
 `Start` | Starts your OBS Stream
+
+## C# Usage
+:csharp-method{name=ObsStopStreaming}
+:csharp-method{name=ObsStartStreaming}

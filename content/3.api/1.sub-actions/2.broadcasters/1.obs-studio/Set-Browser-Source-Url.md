@@ -17,3 +17,6 @@ Select the source from this dropdown list, you can also manually enter a source 
 Enter a new URL for the browser source
 
 - Type: `String`
+
+## C# Usage
+:csharp-method{name=ObsSetBrowserSource}

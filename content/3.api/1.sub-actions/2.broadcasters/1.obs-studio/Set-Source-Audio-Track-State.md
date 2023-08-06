@@ -29,3 +29,6 @@ Select an audio track state
 - `Active`: Sets the audio track state to Active
 - `Inactive`: Sets the audio track state to Inactive
 - `Toggle`: Toggles the audio track state between Active and Inactive
+
+## C# Usage
+:csharp-method

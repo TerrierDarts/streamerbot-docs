@@ -28,3 +28,6 @@ Name | Description
 ----:|:------------
 `screenshotFile` | The full path to the screenshot that was taken
 `filedatetime` | Date Time variable that can be used for file name `yyyyMMdd.hhmmss`
+
+## C# Usage
+:csharp-method{name=ObsTakeScreenshot}

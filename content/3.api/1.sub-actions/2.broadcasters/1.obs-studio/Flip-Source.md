@@ -19,3 +19,6 @@ Select on which side you want to flip the source
 - `Horizontal`: Flip the source horizontally
 - `Vertical`: Flip the source vertically
 - `Both`: Flip the source horizontally and vertically
+
+## C# Usage
+:csharp-method

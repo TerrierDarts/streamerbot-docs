@@ -12,3 +12,6 @@ Select the scene from this dropdown list, you can also manually enter a scene na
 Select the source from this dropdown list, you can also manually enter a source name.
 
 - Type: `String`
+
+## C# Usage
+:csharp-method{name=ObsHideSourcesFilters}

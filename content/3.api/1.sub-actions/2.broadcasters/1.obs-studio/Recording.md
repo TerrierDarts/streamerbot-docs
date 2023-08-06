@@ -10,3 +10,9 @@ Choose the recording state
 - `Stop`: Stop your recording
 - `Pause`: Pause your recording
 - `Resume`: Resume your recording
+
+## C# Usage
+:csharp-method{name=ObsStartRecording}
+:csharp-method{name=ObsStopRecording}
+:csharp-method{name=ObsPauseRecording}
+:csharp-method{name=ObsResumeRecording}

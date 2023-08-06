@@ -23,3 +23,6 @@ By default this is an `Absolute` angle with 0 being normal rotation, valid range
 
 ### `Additive`
 This option will make the rotation relative to its current transform rather than overwriting
+
+## C# Usage
+:csharp-method

@@ -22,3 +22,6 @@ Select on which side you want to flip the source
 - `Stop`: Stop your Media Source
 - `Next`: Go next on your Media Source
 - `Previous`: Go to the previous on your Media Source
+
+## C# Usage
+:csharp-method{name=ObsSetMediaState}

@@ -17,3 +17,6 @@ Select the source from this dropdown list, you can also manually enter a source 
 Enter a text string.
 
 - Type: `String`
+
+## C# Usage
+:csharp-method{name=ObsSetGdiText}

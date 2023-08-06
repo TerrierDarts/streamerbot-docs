@@ -44,3 +44,6 @@ Name | Description
 `props.width` | Scene item width (base source width multiplied by the horizontal scaling factor)
 `props.groupChildren[#].<one of these above>` | List of children (if this item is a group)
 `props._json` | Everything above in a json format
+
+## C# Usage
+:csharp-method{name=ObsGetSceneItemProperties}

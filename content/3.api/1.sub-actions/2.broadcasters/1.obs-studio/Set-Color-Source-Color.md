@@ -24,4 +24,9 @@ Choose a color, `#RRGGBBAA` is also supported.
 - Type: `Color`
 
 ### `Pick Random`
-Click this to pick a random color. 
+Click this to pick a random color.
+
+## C# Usage
+:csharp-method{name=ObsSetColorSourceArgbColor}
+:csharp-method{name=ObsSetColorSourceHexColor}
+:csharp-method{name=ObsSetColorSourceRandomColor}

@@ -19,3 +19,6 @@ Select the mute status for the source
 - `Muted`: Set the mute state to muted
 - `Not Muted`: Set the mute state to not muted
 - `Toggle`: Toggle the mute state between muted and not muted
+
+## C# Usage
+:csharp-method{name=ObsSetSourceMuteState}

@@ -12,3 +12,6 @@ Select the scene from this dropdown list, you can also manually enter a scene na
 Select the group from this dropdown list, you can also manually enter a group name.
 
 - Type: `String`
+
+## C# Usage
+:csharp-method{name=ObsHideGroupsSources}

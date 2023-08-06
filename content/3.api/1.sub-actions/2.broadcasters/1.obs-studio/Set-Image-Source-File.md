@@ -17,3 +17,6 @@ Select the source from this dropdown list, you can also manually enter a source 
 The new filepath for the image source
 
 - Type: `File`
+
+## C# Usage
+:csharp-method{name=ObsSetImageSourceFile}

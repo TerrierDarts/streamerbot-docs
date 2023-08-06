@@ -19,3 +19,6 @@ Set the state for the random filter
 - `Visible`: Set the filter state to visible
 - `Hidden`: Set the filter state to hidden
 - `Toggle`: Toggle the filter state between visible and hidden
+
+## C# Usage
+:csharp-method{name=ObsSetRandomSourceFilter}

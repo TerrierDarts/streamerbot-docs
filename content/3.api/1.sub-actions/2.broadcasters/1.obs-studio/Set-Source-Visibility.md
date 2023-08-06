@@ -17,3 +17,6 @@ Select the source from this dropdown list, you can also manually enter a source 
 - `Visible`: Set the visibility state to visible
 - `Hidden`: Set the visibility state to hidden
 - `Toggle`: Toggle the visibility state between visible and hidden
+
+## C# Usage
+:csharp-method{name=ObsSetSourceVisibility}
