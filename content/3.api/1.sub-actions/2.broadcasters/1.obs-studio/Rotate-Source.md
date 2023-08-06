@@ -21,7 +21,7 @@ If the selected OBS connection is currently connected, a dropdown list of availa
 **NOTE** Scene names are case sensitive 
 
 ### Source
-If the selected OBS connection is currently connected, a dropdown list of available sources will populate for selection, otherwise the source name can be entered manually.
+Select the source from this dropdown list, you can also manually enter a source name.
 
 **NOTE** Source names are case sensitive
 

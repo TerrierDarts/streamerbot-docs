@@ -1,33 +1,21 @@
----
-title: Flip Source
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:42:26.237Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-25T21:33:18.885Z
----
+# Flip Source
+Flip a source horizontally, vertically or both
+:image-preview
 
-## Overview
-Transforms the source to be inverted horizontally, vertically or both
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/flip-source/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-A dropdown list of available scenes will populate for selection, but the scene name can also be entered manually.
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### Source
-If the selected OBS connection is currently connected, a dropdown list of available sources will populate for selection, otherwise the source name can be entered manually.
+- Type: `String`
 
-### Mode
-Name | Description
-----:|:------------
-`Horizontal` | Inverts the X axis
-`Vertical` | Inverts the Y axis
-`Both` | Inverts both X and Y axes
+### `Mode`
+Select on which side you want to flip the source
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+- `Horizontal`: Flip the source horizontally
+- `Vertical`: Flip the source vertically
+- `Both`: Flip the source horizontally and vertically
