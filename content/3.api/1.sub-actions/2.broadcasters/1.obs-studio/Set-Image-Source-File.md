@@ -1,29 +1,19 @@
----
-title: Set Image Source File
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:42:49.018Z
-tags: twitch, obs, youtube, image
-editor: markdown
-dateCreated: 2022-05-17T00:21:00.986Z
----
+# Set Image Source File
+Set the file path for an image source
+:image-preview
 
-## Overview
-This allows you to load an image from a file path that you specify. 
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/set-image-source-file/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-The scene where the settings get applied
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### Source
-The source where the settings get applied
+- Type: `String`
 
-### Filename
-The new filepath for the media source
+### `Filename`
+The new filepath for the image source
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+- Type: `File`

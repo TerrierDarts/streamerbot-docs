@@ -1,29 +1,19 @@
----
-title: Set Media Source File
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:43:35.137Z
-tags: 
-editor: markdown
-dateCreated: 2022-10-07T12:34:42.125Z
----
+# Set Media Source File
+Set the file path for a media source
+:image-preview
 
-## Overview
-Set the file of a media source
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/set-media-source-file/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-The scene where the settings get applied
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### Source
-The source where the settings get applied
+- Type: `String`
 
-### Filename
+### `Filename`
 The new filepath for the media source
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+- Type: `File`

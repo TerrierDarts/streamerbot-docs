@@ -1,29 +1,19 @@
----
-title: Set GDI Text
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:42:41.192Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-25T21:33:54.019Z
----
+# Set GDI Text
+Change the text value of GDI Text Source
+:image-preview
 
-## Overview
-Set the text string to appear in a GDI Text Source
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/set-gdi-text/overview.png)
+- Type: `String`
 
-## Configuration
-### Scene
-A scene containing a GDI text source
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### Source
-Name of the GDI source to change
+- Type: `String`
 
-### Text
-Enter any text or display the contents of a defined `variable`
+### `Text`
+Enter a text string.
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+- Type: `String`
