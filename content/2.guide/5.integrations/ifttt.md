@@ -4,7 +4,7 @@ icon: arcticons:ifttt
 version: 0.1.8
 ---
 
-## IFTTT Integration
+# IFTTT Integration
 The IFTTT integration allows you to execute an action in Streamer.bot from any [IFTTT](https://ifttt.com) applet.
 
 You can also send outgoing triggers from Streamer.bot to IFTTT using the included [IFTTT sub-actions](/Sub-Actions/IFTTT)
