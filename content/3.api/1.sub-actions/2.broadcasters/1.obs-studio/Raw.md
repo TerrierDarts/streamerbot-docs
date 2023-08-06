@@ -9,11 +9,7 @@ Generate OBS Raw requests for this Sub-Action
 ::
 
 ## Variables
-::wip
-Add variable bit here
-::
-
-:variables-description{empty}
+The variables are custom based on the request
 
 ## C# Usage
 :csharp-method{name=ObsSendRaw}
