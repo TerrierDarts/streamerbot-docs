@@ -14,7 +14,7 @@ When Live Update is checked, the slider next to it is how often this update will
 
 When Live Update is not checked, the slider next to it behaves as a threshold. The timer runs every minute, and checks the current time minus the user's last active time, if this is less then the threshold, they are marked as present, otherwise they are marked as not present.  The action will still be executed, but, it will occur every minute.
 
-The default setting is `Live Update` not checked, and the slider set to `5` minutes.  To have the same functionality as *v0.1.12*{.version-badge} and earlier, enable `Live Update` and make sure the slider is set to `5` minutes.
+The default setting is `Live Update` not checked, and the slider set to `5` minutes.  To have the same functionality as `v0.1.12` and earlier, enable `Live Update` and make sure the slider is set to `5` minutes.
 
 ## Details
 ::list

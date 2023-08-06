@@ -9,7 +9,6 @@ When someone raids your Twitch stream.
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *v0.0.33*{.version-badge}
 
 ## Variables
 :variables-description

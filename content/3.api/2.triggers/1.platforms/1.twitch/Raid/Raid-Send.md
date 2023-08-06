@@ -9,7 +9,6 @@ When a raid that your channel started is send.
 ::list
 - Twitch Service: `PubSub`
 ::
-Added in: | *v0.0.36*{.version-badge}
 
 ## Variables
 :variables-description

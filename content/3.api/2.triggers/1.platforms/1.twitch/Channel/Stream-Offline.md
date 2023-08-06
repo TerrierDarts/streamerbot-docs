@@ -9,7 +9,6 @@ This triggers when the stream has ended on your broadcaster account.
 ::list
 - Twitch Service: `EventSub`
 ::
-Added in: | *v0.1.17*{.version-badge}
 
 ## Variables
 :variables-description

@@ -22,7 +22,6 @@ Messages that exceed the maximum length are truncated.
 ::list
 - Twitch Service: `Chat Client`
 ::
-Added in: | *v0.0.39*{.version-badge}
 
 ## Variables
 :variables-description
