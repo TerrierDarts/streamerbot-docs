@@ -25,6 +25,4 @@ Name | Description
 `tier` | Subscription tier as a string <br> `tier 1`, `tier 2`, `tier 3`
 `role` | What role the gifter has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

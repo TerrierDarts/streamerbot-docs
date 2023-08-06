@@ -18,6 +18,4 @@ Name | Description
 ----:|:------------
 `viewers` | The amount of viewers this raid received.
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

@@ -14,6 +14,4 @@ Name | Description
 `targetMessageId` | The id of the message that was deleted
 `message` | The message that was deleted
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

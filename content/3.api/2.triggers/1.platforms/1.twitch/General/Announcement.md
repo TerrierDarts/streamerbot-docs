@@ -17,10 +17,5 @@ Name | Description
 ----:|:------------
 `announceColor` | The color of the announcement <br> `DEFAULT`, `BLUE`, `RED`, `ORANGE`, `PURPLE`
 
-::wip
-TODO: Add shared twitch user vars here
-::
-
-::wip
-TODO: Add shared twitch chat vars here
-::
+:variables{name=TwitchUser disclosure}
+:variables{name=TwitchChat disclosure}

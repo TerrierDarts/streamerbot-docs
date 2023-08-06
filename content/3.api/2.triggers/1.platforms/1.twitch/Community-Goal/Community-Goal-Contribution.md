@@ -25,6 +25,4 @@ Name | Description
 `durationDays` | How much days this community goal lasts
 `daysLeft` | How much remaining days for this community goal
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

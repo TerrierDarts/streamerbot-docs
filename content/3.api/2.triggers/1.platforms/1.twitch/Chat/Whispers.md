@@ -27,10 +27,5 @@ Added in: | *v0.0.39*{.version-badge}
 ## Variables
 :variables-description
 
-::wip
-TODO: Add shared twitch user vars here
-::
-
-::wip
-TODO: Add shared twitch chat vars here
-::
+:variables{name=TwitchUser disclosure}
+:variables{name=TwitchChat disclosure}

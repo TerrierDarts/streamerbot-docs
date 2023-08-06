@@ -22,6 +22,4 @@ Name | Description
 The user variables are for the person who destroyed the pyramid.
 ::
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

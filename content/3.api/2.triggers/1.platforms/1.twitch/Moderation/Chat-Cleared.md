@@ -13,6 +13,4 @@ When someone clears your Twitch chat.
 ## Variables
 :variables-description
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

@@ -17,6 +17,4 @@ Name | Description
 ----:|:------------
 `viewerCount` | The viewer count from the user that created the shoutout
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

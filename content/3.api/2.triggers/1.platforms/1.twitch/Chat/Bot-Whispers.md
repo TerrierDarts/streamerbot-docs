@@ -26,6 +26,4 @@ Messages that exceed the maximum length are truncated.
 ## Variables
 :variables-description
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

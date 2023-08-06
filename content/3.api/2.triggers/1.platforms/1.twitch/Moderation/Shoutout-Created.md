@@ -25,9 +25,7 @@ Name | Description
 User: Who created the shoutout
 Target: Who reveived the shoutout
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}
 
 ::wip
 TODO: Add shared twitch target vars here

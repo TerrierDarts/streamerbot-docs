@@ -25,6 +25,4 @@ Name | Description
 `rawInput` | String text entered by the user (if required) <br> `https://streamer.bot/Test Unescaped Text $$$`
 `rawInputEscaped` | String text entered by the user (escaped) <br> `https://streamer\.bot/Test Escaped Text \$\$\$`
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

@@ -17,6 +17,4 @@ Name | Description
 `anonymous` | Boolean value indicating the gift was anonymous <br> `True`/`False` 
 `tier` | The subscriptions tier <br> `tier 1`. `tier 2`, `tier 3`
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

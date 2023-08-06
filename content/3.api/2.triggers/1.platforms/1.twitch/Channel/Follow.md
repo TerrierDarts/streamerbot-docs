@@ -9,6 +9,4 @@ This triggers when someone follows you on Twitch.
 ## Variables
 :variables-description
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}

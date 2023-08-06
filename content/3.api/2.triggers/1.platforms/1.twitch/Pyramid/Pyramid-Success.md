@@ -15,6 +15,4 @@ Name | Description
 `pyramidWidth` | The total amount of pyramid layers.
 `pyramidEmote` | The name of the emote that was used in the pyramid.
 
-::wip
-TODO: Add shared twitch user vars here
-::
+:variables{name=TwitchUser disclosure}
