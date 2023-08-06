@@ -1,37 +1,19 @@
----
-title: Set Source Visibility
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:44:22.841Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-25T21:34:10.227Z
----
+# Set Source Visibility
+Show or hide a source
+:image-preview
 
-## Overview
-Shows or hides a selected source
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/set-source-visibility/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-If the selected OBS connection is currently connected, a dropdown list of available scenes will populate for selection, otherwise the scene name can be entered manually.
-
-**NOTE** Scene names are case sensitive 
-
-### Source
+### `Source`
 Select the source from this dropdown list, you can also manually enter a source name.
 
-**NOTE** Source names are case sensitive
+- Type: `String`
 
-### State
-Name | Description
-----:|:------------
-`Visible` | Sets the visibility state on your source to Visible
-`Hidden` | Sets the visibility state on your source to Hidden
-`Toggle` | Toggles the visibility state on your source between Visible and Hidden
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+### `State`
+- `Visible`: Set the visibility state to visible
+- `Hidden`: Set the visibility state to hidden
+- `Toggle`: Toggle the visibility state between visible and hidden

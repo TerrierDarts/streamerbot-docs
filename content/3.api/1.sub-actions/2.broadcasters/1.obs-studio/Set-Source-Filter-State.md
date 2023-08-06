@@ -1,42 +1,25 @@
----
-title: Set Source Filter State
-description: OBS Studio Sub-Action Reference
-published: true
-date: 2023-03-16T11:46:16.936Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-25T21:34:02.059Z
----
+# Set Source Filter State
+Sets the visibility state of a source filter.
+:image-preview
 
-## Overview
-Sets the enabled state of a specified filter on a source. Valid states are `Visible` `Invisible` or `Toggle`
+## Parameters
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/set-source-filter-state/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-If the selected OBS connection is currently connected, a dropdown list of available scenes will populate for selection, otherwise the scene name can be entered manually.
-
-**NOTE** Scene names are case sensitive 
-
-### Source
+### `Source`
 Select the source from this dropdown list, you can also manually enter a source name.
 
-**NOTE** Source names are case sensitive
+- Type: `String`
 
-### Filter
-If the selected OBS connection is currently connected, a dropdown list of available filters will populate for selection, otherwise the filter name can be entered manually.
+### `Filter`
+Select the filter from this dropdown list, you can also manually enter a filter name.
 
-**NOTE** Filter names are case sensitive
+- Type: `String`
 
-### State
-Name | Description
-----:|:------------
-`Visible` | Sets the filter state on your source to Visible
-`Hidden` | Sets the filter state on your source to Hidden
-`Toggle` | Toggles the filter state on your source between Visible and Hidden
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **OBS Studio Sub-Actions *Go Back***](/Sub-Actions/OBS)
-{.btn-grid .my-5}
+### `State`
+Select which state you want to set
+- `Visible`: Sets the filter state on your scene to Visible
+- `Hidden`: Sets the filter state on your scene to Hidden
+- `Toggle`: Toggles the filter state on your scene between Visible and Hidden
