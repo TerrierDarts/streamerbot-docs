@@ -1,26 +1,20 @@
----
-title: Recording
-description: Streamlabs Desktop Sub-Action Reference
-published: true
-date: 2023-03-16T11:48:39.800Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-26T12:54:29.352Z
----
+# Recording
+Change your recording status
+:image-preview
 
-## Overview
-Controls the record to file function in selected SLOBS connection
+## Parameters
+:parameter{name=SlobsConnection}
 
-![overview.png](/Sub-Actions/OBS/recording/overview.png =400x)
+### `State`
+Choose the recording state
 
-## Configuration
-### State
-* `Start`
-* `Stop`
-* `Pause`
-* `Resume`
+- `Start`: Start your recording
+- `Stop`: Stop your recording
+- `Pause`: Pause your recording
+- `Resume`: Resume your recording
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **Streamlabs Desktop Sub-Actions *Go Back***](/Sub-Actions/Streamlabs-Desktop)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=SlobsStopRecording}
+:csharp-method{name=SlobsStartRecording}
+:csharp-method{name=SlobsPauseRecording}
+:csharp-method{name=SlobsResumeRecording}

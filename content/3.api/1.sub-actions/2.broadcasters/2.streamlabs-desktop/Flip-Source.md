@@ -1,37 +1,26 @@
----
-title: Flip Source
-description: Streamlabs Desktop Sub-Action Reference
-published: true
-date: 2023-03-16T11:48:48.872Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-26T12:51:33.260Z
----
+# Flip Source
+Flip a source horizontally, vertically or both
+:image-preview
 
-## Overview
-Transforms the source to be inverted laterally, vertically or both
+## Parameters
+:parameter{name=SlobsConnection}
 
-![overview.png](/Sub-Actions/OBS/flip-source/overview.png =400x)
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-## Configuration
-### Scene
-If the selected OBS connection is currently connected, a dropdown list of available scenes will populate for selection, otherwise the scene name can be entered manually.
+- Type: `String`
 
-**NOTE** Scene names are case sensitive 
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### Source
-If the selected OBS connection is currently connected, a dropdown list of available sources will populate for selection, otherwise the source name can be entered manually.
+- Type: `String`
 
-**NOTE** Source names are case sensitive
+### `Mode`
+Select on which side you want to flip the source
 
-### Mode
-Name | Description
-----:|:------------
-`Horizontal` | Inverts the X axis
-`Vertical` | Inverts the Y axis
-`Both` | Inverts both X and Y axes
+- `Horizontal`: Flip the source horizontally
+- `Vertical`: Flip the source vertically
+- `Both`: Flip the source horizontally and vertically
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **Streamlabs Desktop Sub-Actions *Go Back***](/Sub-Actions/Streamlabs-Desktop)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method

@@ -1,19 +1,16 @@
----
-title: Get Current Scene
-description: Streamlabs Desktop Sub-Action Reference
-published: true
-date: 2023-03-16T11:49:23.564Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-26T12:52:16.632Z
----
+# Get Current Scene
+Get the current scene
+:image-preview
 
-## Overview
-Sets the variable `currentScene` to the name of the curently broadcasting scene from the chosen SLOBS connection.
+## Parameters
+:parameter{name=SlobsConnection}
 
-![overview.png](/Sub-Actions/OBS/get-current-scene/overview.png =400x)
+## Variables
+:variables-description
 
----
+Name | Description
+----:|:------------
+`currentScene` | Name of the active scene at the time of execution
 
-- [<i class="mdi mdi-chevron-left"></i> **Streamlabs Desktop Sub-Actions *Go Back***](/Sub-Actions/Streamlabs-Desktop)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=SlobsGetCurrentScene}

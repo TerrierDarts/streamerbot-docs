@@ -1,26 +1,19 @@
----
-title: Set Random Group Source Visible
-description: Streamlabs Desktop Sub-Action Reference
-published: true
-date: 2023-03-16T11:49:11.819Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-26T12:57:37.346Z
----
+# Set Random Group Source Visible
+Set a random source from a group visible
+:image-preview
 
-## Overview
-This will set the source visibilty for a single random source in a defined group to `Active`
+## Parameters
+:parameter{name=SlobsConnection}
 
-![overview.png](/Sub-Actions/OBS/set-random-group-source-visible/overview.png =400x)
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-## Configuration
-### Scene
-If the selected SLOBS connection is currently connected, a dropdown list of available scenes will populate for selection, otherwise the scene name can be entered manually.
+- Type: `String`
 
-### Group
-If the selected SLOBS connection is currently connected, a dropdown list of available groups will populate for selection, otherwise the scene name can be entered manually.
+### `Group`
+Select the group from this dropdown list, you can also manually enter a group name.
 
----
+- Type: `String`
 
-- [<i class="mdi mdi-chevron-left"></i> **Streamlabs Desktop Sub-Actions *Go Back***](/Sub-Actions/Streamlabs-Desktop)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=SlobsSetRandomGroupSourceVisible}

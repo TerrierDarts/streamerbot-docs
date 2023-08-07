@@ -1,29 +1,24 @@
----
-title: Set GDI Text
-description: Streamlabs Desktop Sub-Action Reference
-published: true
-date: 2023-03-16T11:49:04.266Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-26T12:56:53.397Z
----
+# Set GDI Text
+Change the text value of GDI Text Source
+:image-preview
 
-## Overview
-Set the text string to appear in a GDI Text Source
+## Parameters
+:parameter{name=SlobsConnection}
 
-![overview.png](/Sub-Actions/OBS/set-gdi-text/overview.png =400x)
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-## Configuration
-### Scene
-A scene containing a GDI text source
+- Type: `String`
 
-### Source
-Name of the GDI source to change
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-### Text
-Enter any text or display the contents of a defined `variable`
+- Type: `String`
 
----
+### `Text`
+Enter a text string.
 
-- [<i class="mdi mdi-chevron-left"></i> **Streamlabs Desktop Sub-Actions *Go Back***](/Sub-Actions/Streamlabs-Desktop)
-{.btn-grid .my-5}
+- Type: `String`
+
+## C# Usage
+:csharp-method{name=SlobsSetGdiText}

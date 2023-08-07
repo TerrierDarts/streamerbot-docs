@@ -1,40 +1,30 @@
----
-title: Rotate Source
-description: Streamlabs Desktop Sub-Action Reference
-published: true
-date: 2023-03-16T11:48:56.793Z
-tags: 
-editor: markdown
-dateCreated: 2021-08-26T12:55:40.989Z
----
+# Rotate Source
+Rotate a source
+:image-preview
 
-## Overview
-Sets the rotation tranformation angle of a source to the specified angle
+## Parameters
+:parameter{name=SlobsConnection}
 
-**NOTE** Rotation occours around the top left corner of the source not the center
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
 
-![overview.png](/Sub-Actions/OBS/rotate-source/overview.png =400x)
+- Type: `String`
 
-## Configuration
-### Scene
-If the selected SLOBS connection is currently connected, a dropdown list of available scenes will populate for selection, otherwise the scene name can be entered manually.
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
 
-**NOTE** Scene names are case sensitive 
+- Type: `String`
 
-### Source
-If the selected SLOBS connection is currently connected, a dropdown list of available sources will populate for selection, otherwise the source name can be entered manually.
+### `Alignment`
+This shows the current alignment.
 
-**NOTE** Source names are case sensitive
-
-### Alignment
-Reports the currently configured alignment position.
-
-### Rotation
+### `Rotation`
 By default this is an `Absolute` angle with 0 being normal rotation, valid range -360 -> +360, however as tranform is instant values outside -180 -> +180 will be visually the same. Negative values rotate the source counter-clockwise.
 
-`Additive` option will make the rotation relative to its current transform rather than overwriting
+- Type: `Number`
 
----
+### `Additive`
+This option will make the rotation relative to its current transform rather than overwriting
 
-- [<i class="mdi mdi-chevron-left"></i> **Streamlabs Desktop Sub-Actions *Go Back***](/Sub-Actions/Streamlabs-Desktop)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method

@@ -1,5 +1,5 @@
-# Set Source Filter State
-Sets the visibility state of a source filter.
+# Set Scene Filter State
+Sets the visibility state of a scene filter.
 :image-preview
 
 ## Parameters
@@ -7,11 +7,6 @@ Sets the visibility state of a source filter.
 
 ### `Scene`
 Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
 
 - Type: `String`
 
@@ -27,4 +22,4 @@ Select which state you want to set
 - `Toggle`: Toggles the filter state on your scene between Visible and Hidden
 
 ## C# Usage
-:csharp-method{name=SlobsSetSourceFilterState}
+:csharp-method{name=SlobsSetSceneFilterState}
