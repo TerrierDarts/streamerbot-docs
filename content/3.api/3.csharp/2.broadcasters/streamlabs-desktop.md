@@ -5,71 +5,124 @@ icon: IconStreamlabsDesktop
 ---
 
 ## Connection
-```csharp
-bool SlobsIsConnected(int connection = 0);
-bool SlobsConnect(int connection = 0);
-void SlobsDisconnect(int connection = 0);
-```
+### `SlobsIsConnected`
+:csharp-method{name=SlobsIsConnected}
 
-## Stream/Recording Status
-```csharp
-bool SlobsIsStreaming(int connection = 0);
-void SlobsStopStreaming(int connection = 0);
-void SlobsStartStreaming(int connection = 0);
-bool SlobsIsRecording(int connection = 0);
-void SlobsStartRecording(int connection = 0);
-void SlobsStopRecording(int connection = 0);
-void SlobsPauseRecording(int connection = 0);
-void SlobsResumeRecording(int connection = 0);
-```
+### `SlobsConnect`
+:csharp-method{name=SlobsConnect}
+
+### `SlobsDisconnect`
+:csharp-method{name=SlobsDisconnect}
+
+## Stream
+### `SlobsIsStreaming`
+:csharp-method{name=SlobsIsStreaming}
+
+### `SlobsStartStreaming`
+:csharp-method{name=SlobsStartStreaming}
+
+### `SlobsStopStreaming`
+:csharp-method{name=SlobsStopStreaming}
+
+## Recording
+### `SlobsIsRecording`
+:csharp-method{name=SlobsIsRecording}
+
+### `SlobsStopRecording`
+:csharp-method{name=SlobsStopRecording}
+
+### `SlobsStartRecording`
+:csharp-method{name=SlobsStartRecording}
+
+### `SlobsPauseRecording`
+:csharp-method{name=SlobsPauseRecording}
+
+### `SlobsResumeRecording`
+:csharp-method{name=SlobsResumeRecording}
 
 ## Scenes
-```csharp
-void SlobsSetScene(string sceneName, int connection = 0);
-string SlobsGetCurrentScene(int connection = 0);
-```
-## Sources
-```csharp
-bool SlobsIsSourceVisible(string scene, string source, int connection = 0);
-void SlobsSetSourceVisibility(string scene, string source, bool visible, int connection = 0);
-void SlobsShowSource(string scene, string source, int connection = 0);
-void SlobsHideSource(string scene, string source, int connection = 0);
-void SlobsHideGroupsSources(string scene, string groupName, int connection = 0);
-string SlobsSetRandomGroupSourceVisible(string scene, string groupName, int connection = 0);
-List<string> SlobsGetGroupSources(string scene, string groupName, int connection = 0);
-```
+### `SlobsSetScene`
+:csharp-method{name=SlobsSetScene}
 
-## Browser/Text Sources
-```csharp
-void SlobsSetBrowserSource(string scene, string source, string url, int connection = 0);
-void SlobsSetGdiText(string scene, string source, string text, int connection = 0);
-```
+### `SlobsGetCurrentScene`
+:csharp-method{name=SlobsGetCurrentScene}
+
+## Sources
+### `SlobsIsSourceVisible`
+:csharp-method{name=SlobsIsSourceVisible}
+
+### `SlobsSetSourceVisibility`
+:csharp-method{name=SlobsSetSourceVisibility}
+
+### `SlobsShowSource`
+:csharp-method{name=SlobsShowSource}
+
+### `SlobsHideSource`
+:csharp-method{name=SlobsHideSource}
+
+### `SlobsHideGroupsSources`
+:csharp-method{name=SlobsHideGroupsSources}
+
+### `SlobsSetRandomGroupSourceVisible`
+:csharp-method{name=SlobsSetRandomGroupSourceVisible}
+
+### `SlobsGetGroupSources`
+:csharp-method{name=SlobsGetGroupSources}
+
+## Browser Source
+### `SlobsSetBrowserSource`
+:csharp-method{name=SlobsSetBrowserSource}
+
+## Gdi Text Source
+### `SlobsSetGdiText`
+:csharp-method{name=SlobsSetGdiText}
 
 ## Filters
-```csharp
-bool SlobsIsFilterEnabled(string scene, string filterName, int connection = 0);
-bool SlobsIsFilterEnabled(string scene, string source, string filterName, int connection = 0);
-void SlobsSetFilterState(string scene, string filterName, int state, int connection = 0);
-void SlobsSetFilterState(string scene, string source, string filterName, int state, int connection = 0);
-void SlobsShowFilter(string scene, string filterName, int connection = 0);
-void SlobsShowFilter(string scene, string source, string filterName, int connection = 0);
-void SlobsHideFilter(string scene, string filterName, int connection = 0);
-void SlobsHideFilter(string scene, string source, string filterName, int connection = 0);
-void SlobsToggleFilter(string scene, string filterName, int connection = 0);
-void SlobsToggleFilter(string scene, string source, string filterName, int connection = 0);
-void SlobsSetRandomFilterState(string scene, int state, int connection = 0);
-void SlobsSetRandomFilterState(string scene, string source, int state, int connection = 0);
-```
+### `SlobsIsSceneFilterEnabled`
+:csharp-method{name=SlobsIsSceneFilterEnabled}
+
+### `SlobsIsSourceFilterEnabled`
+:csharp-method{name=SlobsIsSourceFilterEnabled}
+
+### `SlobsSetSceneFilterState`
+:csharp-method{name=SlobsSetSceneFilterState}
+
+### `SlobsSetSourceFilterState`
+:csharp-method{name=SlobsSetSourceFilterState}
+
+### `SlobsShowSceneFilter`
+:csharp-method{name=SlobsShowSceneFilter}
+
+### `SlobsShowSourceFilter`
+:csharp-method{name=SlobsShowSourceFilter}
+
+### `SlobsHideSceneFilter`
+:csharp-method{name=SlobsHideSceneFilter}
+
+### `SlobsHideSourceFilter`
+:csharp-method{name=SlobsHideSourceFilter}
+
+### `SlobsToggleSceneFilter`
+:csharp-method{name=SlobsToggleSceneFilter}
+
+### `SlobsToggleSourceFilter`
+:csharp-method{name=SlobsToggleSourceFilter}
+
+### `SlobsSetRandomSceneFilterState`
+:csharp-method{name=SlobsSetRandomSceneFilterState}
+
+### `SlobsSetRandomSourceFilterState`
+:csharp-method{name=SlobsSetRandomSourceFilterState}
 
 ## Mute
-```csharp
-void SlobsSetSourceMuteState(string scene, string source, int state, int connection = 0);
-void SlobsSourceMute(string scene, string source, string filterName, int connection = 0);
-void SlobsSourceUnMute(string scene, string source, string filterName, int connection = 0);
-void SlobsSourceMuteToggle(string scene, string source, string filterName, int connection = 0);
-```
+### `SlobsSetSourceMuteState`
+:csharp-method{name=SlobsSetSourceMuteState}
 
----
+### `SlobsSourceMute`
+:csharp-method{name=SlobsSourceMute}
 
-- [<i class="mdi mdi-chevron-left"></i> **C# Available Methods *Go Back***](/Sub-Actions/Code/CSharp/Available-Methods)
-{.btn-grid .my-5}
+### `SlobsSourceUnMute`
+:csharp-method{name=SlobsSourceUnMute}
+
+### `SlobsSourceMuteToggle`
+:csharp-method{name=SlobsSourceMuteToggle}
