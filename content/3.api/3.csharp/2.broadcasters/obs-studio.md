@@ -5,177 +5,204 @@ icon: simple-icons:obsstudio
 ---
 
 ## Connection
-```csharp
-bool ObsIsConnected(int connection = 0);
-bool ObsConnect(int connection = 0);
-void ObsDisconnect(int connection = 0);
-```
+### `ObsIsConnected`
+:csharp-method{name=ObsIsConnected}
 
-```csharp
-int ObsGetConnectionByName(string name);
-```
+### `ObsConnect`
+:csharp-method{name=ObsConnect}
+
+### `ObsDisconnect`
+:csharp-method{name=ObsDisconnect}
+
+### `ObsGetConnectionByName`
+:csharp-method{name=ObsGetConnectionByName}
 
 ## Stream
-```csharp
-bool ObsIsStreaming(int connection = 0);
-void ObsStopStreaming(int connection = 0);
-```
+### `ObsIsStreaming`
+:csharp-method{name=ObsIsStreaming}
+
+### `ObsStartStreaming`
+:csharp-method{name=ObsStartStreaming}
+
+### `ObsStopStreaming`
+:csharp-method{name=ObsStopStreaming}
 
 ## Recording
-```csharp
-bool ObsIsRecording(int connection = 0);
-void ObsStartRecording(int connection = 0);
-void ObsStopRecording(int connection = 0);
-void ObsPauseRecording(int connection = 0);
-void ObsResumeRecording(int connection = 0);
-```
+### `ObsIsRecording`
+:csharp-method{name=ObsIsRecording}
+
+### `ObsStartRecording`
+:csharp-method{name=ObsStartRecording}
+
+### `ObsStopRecording`
+:csharp-method{name=ObsStopRecording}
+
+### `ObsPauseRecording`
+:csharp-method{name=ObsPauseRecording}
+
+### `ObsResumeRecording`
+:csharp-method{name=ObsResumeRecording}
 
 ## Scenes
-```csharp
-void ObsSetScene(string sceneName, int connection = 0);
-string ObsGetCurrentScene(int connection = 0);
-```
+### `ObsSetScene`
+:csharp-method{name=ObsSetScene}
+
+### `ObsGetCurrentScene`
+:csharp-method{name=ObsGetCurrentScene}
 
 ## Sources
-```csharp
-void ObsSetSourceVisibility(string scene, string source, bool visible, int connection = 0);
-void ObsHideSource(string scene, string source, int connection = 0);
-void ObsShowSource(string scene, string source, int connection = 0);
+### `ObsSetSourceVisibility`
+:csharp-method{name=ObsSetSourceVisibility}
 
-string ObsGetSceneItemProperties(string scene, string source, int connection = 0);
-List<string> ObsGetGroupSources(string scene, string groupName, int connection = 0);
-bool ObsIsSourceVisible(string scene, string source, int connection = 0);
+### `ObsHideSource`
+:csharp-method{name=ObsHideSource}
 
-string ObsSetRandomGroupSourceVisible(string scene, string groupName, int connection = 0);
-void ObsHideGroupsSources(string scene, string groupName, int connection = 0);
-```
+### `ObsShowSource`
+:csharp-method{name=ObsShowSource}
+
+### `ObsGetSceneItemProperties`
+:csharp-method{name=ObsGetSceneItemProperties}
+
+### `ObsGetGroupSources`
+:csharp-method{name=ObsGetGroupSources}
+
+### `ObsIsSourceVisible`
+:csharp-method{name=ObsIsSourceVisible}
+
+### `ObsSetRandomGroupSourceVisible`
+:csharp-method{name=ObsSetRandomGroupSourceVisible}
+
+### `ObsHideGroupsSources`
+:csharp-method{name=ObsHideGroupsSources}
 
 ## Browser Sources
-```csharp
-void ObsSetBrowserSource(string scene, string source, string url, int connection = 0);
-```
+### `ObsSetBrowserSource`
+:csharp-method{name=ObsSetBrowserSource}
 
 ## GDI+ Text Sources
-
-```csharp
-// use '\n' for a new line e.g. line 1\nline 2
-void ObsSetGdiText(string scene, string source, string text, int connection = 0);
-```
+### `ObsSetGdiText`
+:csharp-method{name=ObsSetGdiText}
 
 ## Filters
-```csharp
-bool ObsIsFilterEnabled(string scene, string filterName, int connection = 0);
-bool ObsIsFilterEnabled(string scene, string source, string filterName, int connection = 0);
-```
+### `ObsIsSceneFilterEnabled`
+:csharp-method{name=ObsIsSceneFilterEnabled}
 
-```csharp
-void ObsSetFilterState(string scene, string filterName, int state, int connection = 0);
-void ObsSetFilterState(string scene, string source, string filterName, int state, int connection = 0);
-```
+### `ObsIsSourceFilterEnabled`
+:csharp-method{name=ObsIsSourceFilterEnabled}
 
-```csharp
-void ObsShowFilter(string scene, string filterName, int connection = 0);
-void ObsShowFilter(string scene, string source, string filterName, int connection = 0);
-```
+### `ObsSetSceneFilterState`
+:csharp-method{name=ObsSetSceneFilterState}
 
-```csharp
-void ObsHideFilter(string scene, string filterName, int connection = 0);
-void ObsHideFilter(string scene, string source, string filterName, int connection = 0);
-```
+### `ObsSetSourceFilterState`
+:csharp-method{name=ObsSetSourceFilterState}
 
-```csharp
-void ObsToggleFilter(string scene, string filterName, int connection = 0);
-void ObsToggleFilter(string scene, string source, string filterName, int connection = 0);
-```
+### `ObsShowSceneFilter`
+:csharp-method{name=ObsShowSceneFilter}
 
-```csharp
-void ObsSetRandomFilterState(string scene, int state, int connection = 0);
-void ObsSetRandomFilterState(string scene, string source, int state, int connection = 0);
-```
+### `ObsShowSourceFilter`
+:csharp-method{name=ObsShowSourceFilter}
+
+### `ObsHideSceneFilter`
+:csharp-method{name=ObsHideSceneFilter}
+
+### `ObsHideSourceFilter`
+:csharp-method{name=ObsHideSourceFilter}
+
+### `ObsToggleSceneFilter`
+:csharp-method{name=ObsToggleSceneFilter}
+
+### `ObsToggleSceneFilter`
+:csharp-method{name=ObsToggleSceneFilter}
+
+### `ObsSetRandomSceneFilter`
+:csharp-method{name=ObsSetRandomSceneFilter}
+
+### `ObsSetRandomSourceFilter`
+:csharp-method{name=ObsSetRandomSourceFilter}
 
 ## Mute
-```csharp
-void ObsSetSourceMuteState(string scene, string source, int state, int connection = 0);
-void ObsSourceMute(string scene, string source, int connection = 0);
-void ObsSourceUnMute(string scene, string source, int connection = 0);
-void ObsSourceMuteToggle(string scene, string source, int connection = 0);
-```
+### `ObsSetSourceMuteState`
+:csharp-method{name=ObsSetSourceMuteState}
 
+### `ObsSourceMute`
+:csharp-method{name=ObsSourceMute}
+
+### `ObsSourceUnMute`
+:csharp-method{name=ObsSourceUnMute}
+
+### `ObsSourceMuteToggle`
+:csharp-method{name=ObsSourceMuteToggle}
+ 
 ## Raw
-```csharp
-string ObsSendRaw(string requestType, string data, int connection = 0);
-```
+### `ObsSendRaw`
+:csharp-method{name=ObsSendRaw}
 
 ## Hide All Scene/Source Filters
-```csharp
-void ObsHideSourcesFilters(string scene, string source, int connection = 0);
-void ObsHideScenesFilters(string scene, int connection = 0);
-```
+### `ObsHideScenesFilters`
+:csharp-method{name=ObsHideScenesFilters}
+
+### `ObsHideSourcesFilters`
+:csharp-method{name=ObsHideSourcesFilters}
 
 ## Media
-All `state` enums that are used for `int state` (use the number property on the left side):
+### `ObsSetMediaState`
+:csharp-method{name=ObsSetMediaState}
 
-----:|:------------
-`0` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_NONE` | No action.
-`1` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PLAY` | Play the media input.
-`2` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PAUSE` | Pause the media input.
-`3` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_STOP` | Stop the media input.
-`4` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_RESTART` | Restart the media input.
-`5` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_NEXT` | Go to the next playlist item.
-`6` | `OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PREVIOUS` | Go to the previous playlist item.
+### `ObsMediaPlay`
+:csharp-method{name=ObsMediaPlay}
 
-```csharp
-void ObsSetMediaState(string scene, string source, int state, int connection = 0);
-```
+### `ObsMediaPause`
+:csharp-method{name=ObsMediaPause}
 
-```csharp
-void ObsMediaPlay(string scene, string source, int connection = 0);
-void ObsMediaPause(string scene, string source, int connection = 0);
-void ObsMediaRestart(string scene, string source, int connection = 0);
-void ObsMediaStop(string scene, string source, int connection = 0);
-void ObsMediaNext(string scene, string source, int connection = 0);
-void ObsMediaPrevious(string scene, string source, int connection = 0);
-```
+### `ObsMediaRestart`
+:csharp-method{name=ObsMediaRestart}
+
+### `ObsMediaStop`
+:csharp-method{name=ObsMediaStop}
+
+### `ObsMediaNext`
+:csharp-method{name=ObsMediaNext}
+
+### `ObsMediaPrevious`
+:csharp-method{name=ObsMediaPrevious}
 
 ## Colors
-```csharp
-long ObsConvertRgb(int a, int r, int g, int b);
-long ObsConvertColorHex(string colorHex);
-```
+### `ObsConvertArgb`
+:csharp-method{name=ObsConvertArgb}
 
-```csharp
-void ObsSetColorSourceColor(string scene, string source, int a, int r, int g, int b, int connection = 0);
-void ObsSetColorSourceColor(string scene, string source, string hexColor, int connection = 0);
-void ObsSetColorSourceRandomColor(string scene, string source, int connection = 0);
-```
+### `ObsConvertColorHex`
+:csharp-method{name=ObsConvertColorHex}
+
+### `ObsSetColorSourceArgbColor`
+:csharp-method{name=ObsSetColorSourceArgbColor}
+
+### `ObsSetColorSourceHexColor`
+:csharp-method{name=ObsSetColorSourceHexColor}
+
+### `ObsSetColorSourceRandomColor`
+:csharp-method{name=ObsSetColorSourceRandomColor}
 
 ## Replay Buffer
-```csharp
-void ObsSetReplayBufferState(int state, int connection = 0);
-```
+### `ObsSetReplayBufferState`
+:csharp-method{name=ObsSetReplayBufferState}
 
-```csharp
-void ObsReplayBufferStart(int connection = 0);
-void ObsReplayBufferStop(int connection = 0);
-void ObsReplayBufferSave(int connection = 0);
-```
+### `ObsReplayBufferStart`
+:csharp-method{name=ObsReplayBufferStart}
+
+### `ObsReplayBufferStop`
+:csharp-method{name=ObsReplayBufferStop}
+
+### `ObsReplayBufferSave`
+:csharp-method{name=ObsReplayBufferSave}
 
 ## Set Media Source File
-```csharp
-void ObsSetMediaSourceFile(string scene, string source, string file, int connection = 0);
-```
+### `ObsSetMediaSourceFile`
+:csharp-method{name=ObsSetMediaSourceFile}
 
 ## Set Image Source File
-```csharp
-void ObsSetImageSourceFile(string scene, string source, string file, int connection = 0);
-```
+### `ObsSetImageSourceFile`
+:csharp-method{name=ObsSetImageSourceFile}
 
 ## Screenshot
-```csharp
-bool ObsTakeScreenshot(string scene, string source, string path, int quality = -1, int connection = 0);
-```
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **C# Available Methods *Go Back***](/Sub-Actions/Code/CSharp/Available-Methods)
-{.btn-grid .my-5}
+### `ObsTakeScreenshot`
+:csharp-method{name=ObsTakeScreenshot}
