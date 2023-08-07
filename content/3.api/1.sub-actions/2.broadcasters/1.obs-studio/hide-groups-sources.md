@@ -3,6 +3,8 @@ Hide all of the sources from a group
 :image-preview
 
 ## Parameters
+:parameter{name=ObsConnection}
+
 ### `Scene`
 Select the scene from this dropdown list, you can also manually enter a scene name.
 
