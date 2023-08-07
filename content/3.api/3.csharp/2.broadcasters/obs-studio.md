@@ -132,7 +132,7 @@ icon: simple-icons:obsstudio
 
 ### `ObsSourceMuteToggle`
 :csharp-method{name=ObsSourceMuteToggle}
- 
+
 ## Raw
 ### `ObsSendRaw`
 :csharp-method{name=ObsSendRaw}
