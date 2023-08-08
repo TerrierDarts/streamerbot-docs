@@ -3,6 +3,6 @@
   bool TwitchStartRaidByName(string userName);
   ```
   ```csharp [Example]
-
+  CPH.TwitchStartRaidByName("Streamerdotbot");
   ```
 ::

@@ -3,6 +3,6 @@
   string TwitchClientId;
   ```
   ```csharp [Example]
-
+  string clientId = CPH.TwitchClientId;
   ```
 ::

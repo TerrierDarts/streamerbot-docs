@@ -3,6 +3,6 @@
   bool TwitchStartRaidById(string userId);
   ```
   ```csharp [Example]
-
+  CPH.TwitchStartRaidById("718933593");
   ```
 ::

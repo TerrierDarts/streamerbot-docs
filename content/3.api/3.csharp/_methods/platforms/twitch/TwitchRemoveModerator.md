@@ -3,6 +3,6 @@
   bool TwitchRemoveModerator(string userName);
   ```
   ```csharp [Example]
-
+  CPH.TwitchRemoveModerator("Streamerdotbot");
   ```
 ::

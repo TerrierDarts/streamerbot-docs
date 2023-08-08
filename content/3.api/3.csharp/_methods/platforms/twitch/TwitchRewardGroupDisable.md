@@ -3,6 +3,6 @@
   void TwitchRewardGroupDisable(string groupName);
   ```
   ```csharp [Example]
-
+  CPH.TwitchRewardGroupDisable("Live");
   ```
 ::

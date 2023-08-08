@@ -3,6 +3,6 @@
   bool TwitchDeleteGuestStarInvite(string userLogin);
   ```
   ```csharp [Example]
-
+  CPH.TwitchDeleteGuestStarInvite("Streamerdotbot");
   ```
 ::

@@ -3,6 +3,6 @@
   void TwitchRewardGroupTogglePause(string groupName);
   ```
   ```csharp [Example]
-
+  CPH.TwitchRewardGroupTogglePause("Live");
   ```
 ::

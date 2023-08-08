@@ -3,6 +3,6 @@
   bool TwitchSendGuestStarInvite(string userLogin);
   ```
   ```csharp [Example]
-
+  CPH.TwitchSendGuestStarInvite("streamerdotbot");
   ```
 ::

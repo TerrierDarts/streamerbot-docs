@@ -3,6 +3,8 @@
   GuestSession TwitchGetGuestStarSession();
   ```
   ```csharp [Example]
-
+  ::wip
+  Add example here
+  ::
   ```
 ::

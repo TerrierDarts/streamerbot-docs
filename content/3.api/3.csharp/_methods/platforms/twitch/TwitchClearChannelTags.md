@@ -3,6 +3,6 @@
   bool TwitchClearChannelTags();
   ```
   ```csharp [Example]
-
+  CPH.TwitchClearChannelTags();
   ```
 ::

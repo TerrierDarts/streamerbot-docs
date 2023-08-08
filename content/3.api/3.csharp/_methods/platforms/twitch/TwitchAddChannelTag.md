@@ -3,6 +3,6 @@
   bool TwitchAddChannelTag(string tag);
   ```
   ```csharp [Example]
-
+  CPH.TwitchAddChannelTag("gaming");
   ```
 ::

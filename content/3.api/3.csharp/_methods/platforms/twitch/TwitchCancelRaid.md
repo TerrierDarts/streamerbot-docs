@@ -3,6 +3,6 @@
   bool TwitchCancelRaid();
   ```
   ```csharp [Example]
-
+  CPH.TwitchCancelRaid();
   ```
 ::
