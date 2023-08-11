@@ -1,29 +1,22 @@
----
-title: Slow Mode
-description: Twitch Sub-Actions Reference
-published: true
-date: 2022-11-03T19:15:55.550Z
-tags: twitch, subactions, slow-mode
-editor: markdown
-dateCreated: 2021-11-20T03:30:11.449Z
----
+# Slow Mode
+Turn slow mode on or off
+:image-preview
 
-## Overview
-This sub-action can be used to toggle slow mode in your Twitch chat. 
+## Parameters
+### `State`
+Turn slow mode on or off
 
-![overview.png](/Sub-Actions/Twitch/slow-mode/overview.png =400x)
+- `On`: Enable slow mode
+- `Off`: Disable slow mode
 
-## Configuration
-### State
-Name | Description
-----:|:------------
-`Yes` | Set slow mode to **enabled**
-`No` | Set slow mode to **disabled**
+### `Duration`
+The duration of the slow mode
 
-### Duration
-A number in seconds for the duration of the Slow Mode
+- Type: `Integer`
+- *Optional*
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=TwitchSlowMode}

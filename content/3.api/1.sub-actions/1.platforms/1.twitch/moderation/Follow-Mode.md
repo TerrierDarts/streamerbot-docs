@@ -1,29 +1,22 @@
----
-title: Follow Mode
-description: Twitch Sub-Actions Reference
-published: true
-date: 2023-02-03T21:13:12.147Z
-tags: 
-editor: markdown
-dateCreated: 2022-12-23T07:51:30.248Z
----
+# Follow Mode
+Turn follow mode on or off 
+:image-preview
 
-## Overview
-This sub-action can be used to toggle followers only mode in your Twitch chat. 
+## Parameters
+### `State`
+Turn the follow mode on or off
 
-![overview.png](/Sub-Actions/Twitch/follow-mode/overview.png =400x)
+- `On`: Enable follow mode
+- `Off`: Disable follow mode
 
-## Configuration
-### State
-Name | Description
-----:|:------------
-`Yes` | Set followers only mode to **enabled**
-`No` | Set foloowers only mode to **disabled**
+### `Duration`
+The duration of the follow mode
 
-### Duration
-A number in seconds for the duration of the Followers Only Mode
+- Type: `Integer`
+- *Optional*
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=TwitchFollowMode}
