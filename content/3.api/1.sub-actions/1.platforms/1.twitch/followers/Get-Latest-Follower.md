@@ -1,5 +1,5 @@
 # Get Latest Follower
-Get the latest follower from your channel.
+Get the latest follower on your channel.
 :image-preview{width=400}
 
 ## Variables
