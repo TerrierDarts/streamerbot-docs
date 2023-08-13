@@ -1,26 +1,16 @@
----
-title: Delete Guest Star Slot
-description: Twitch Sub-Action Reference
-published: true
-date: 2023-05-18T16:03:02.086Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-18T16:03:00.098Z
----
+# Delete Guest Star Slot
+Delete a user from a guest star slot.
+:image-preview
 
-## Overview
-Delete a user from a slot in guest star.
-
-![delete-guest-star-slot.png](/Sub-Actions/Twitch/delete-guest-star-slot.png =400x)
-
-## Configuration
-### User Login
+## Parameters
+### `User Login`
 The user's login name.
 
-### Slot
+### `Slot`
 A number typically between 1 and 6.
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=TwitchDeleteGuestStarSlot}

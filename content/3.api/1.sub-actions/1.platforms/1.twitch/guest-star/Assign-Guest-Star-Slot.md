@@ -1,26 +1,16 @@
----
-title: Assign Guest Star Slot
-description: Twitch Sub-Action Reference
-published: true
-date: 2023-05-18T15:59:25.500Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-18T15:59:23.453Z
----
+# Assign Guest Star Slot
+Assign a user in a guest star slot.
+:image-preview
 
-## Overview
-Assign a user in a slot for guest star.
-
-![assign-guest-star-slot.png](/Sub-Actions/Twitch/assign-guest-star-slot.png =400x)
-
-## Configuration
-### User Login
+## Parameters
+### `User Login`
 The user's login name.
 
-### Slot
+### `Slot`
 A number typically between 1 and 6.
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=TwitchAssignGuestStarSlot}

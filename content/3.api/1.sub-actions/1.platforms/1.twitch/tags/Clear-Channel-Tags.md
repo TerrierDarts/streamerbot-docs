@@ -1,19 +1,9 @@
----
-title: Clear Channel Tags
-description: Twitch Sub-Action Reference
-published: true
-date: 2023-02-04T10:28:47.195Z
-tags: 
-editor: markdown
-dateCreated: 2023-02-04T10:28:45.463Z
----
+# Clear Channel Tags
+Clear the tags from your channel.
+:image-preview
 
-## Overview
-Clear all the tags from your channel.
+## Variables
+:variables-description{empty}
 
-![overview.png](/Sub-Actions/Twitch/clear-channel-tags/overview.png =400x)
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=TwitchClearChannelTags}

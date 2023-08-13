@@ -1,23 +1,13 @@
----
-title: Delete Guest Star Invite
-description: Twitch Sub-Action Reference
-published: true
-date: 2023-05-18T16:02:02.888Z
-tags: 
-editor: markdown
-dateCreated: 2023-05-18T16:02:00.647Z
----
-
-## Overview
+# Delete Guest Star Invite
 Delete an invite for a guest star.
+:image-preview
 
-![delete-guest-star-invite.png](/Sub-Actions/Twitch/delete-guest-star-invite.png =400x)
-
-## Configuration
-### User Login
+## Parameters
+### `User Login`
 The user's login name.
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=TwitchDeleteGuestStarInvite}

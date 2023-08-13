@@ -12,4 +12,4 @@ Enter the user's login name.
 :variables-description{empty}
 
 ## C# Usage
-:csharp-method{name=TwitchRunCommercial}
+:csharp-method

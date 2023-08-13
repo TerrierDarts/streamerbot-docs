@@ -1,40 +1,38 @@
----
-title: Update Channel Guest Star Settings
-description: Twitch Sub-Action Reference
-published: true
-date: 2023-06-19T09:13:08.055Z
-tags: 
-editor: markdown
-dateCreated: 2023-06-17T22:28:43.823Z
----
-
-## Overview
+# Update Channel Guest Star Settings
 Update the channel guest star settings.
+:image-preview
 
-![update-channel-guest-star-settings.png](/Sub-Actions/Twitch/update-channel-guest-star-settings.png =400x)
+## Parameters
+### `Moderator Send Live Enabled`
+If the moderator send live should be enabled
 
-## Configuration
-### Moderator Send Live Enabled
-True/False if the moderator send live should be enabled
+- Type: `Boolean`
 
-### Slot Count
-The number of slots for the guest star
+### `Slot Count`
+The number of slots
 
-### Browser Source Audio Enabled
-True/False if the browser source audio should be enabled
+- Type: `Integer`
 
-### Group Layout
-Name | Description
-----:|:------------
-`TILED_LAYOUT` | A layout where all the guests are tiled
-`SCREENSHARE_LAYOUT` | A layout where your screen is shared along side the guests
-`HORIZONTAL_LAYOUT` | A horizontal layout
-`VERICAL_LAYOUT` | A vertial layout
+### `Browser Source Audio Enabled`
+If the browser source audio should be enabled
 
-### Regenerate Browser Sources
-True/False if browser sources should regenerate
+- Type: `Boolean`
 
----
+### `Group Layout`
+Select the group layout
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+- `TILED_LAYOUT`: A layout where all the guests are tiled
+- `SCREENSHARE_LAYOUT`: A layout where your screen is shared along side the guests
+- `HORIZONTAL_LAYOUT`: A horizontal layout
+- `VERICAL_LAYOUT`: A vertial layout
+
+### `Regenerate Browser Sources`
+If browser sources should regenerate
+
+- Type: `Boolean`
+
+## Variables
+:variables-description{empty}
+
+## C# Usage
+:csharp-method{name=TwitchUpdateChannelGuestStarSettings}
