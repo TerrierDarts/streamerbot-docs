@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     'nuxt-og-image',
     'nuxt-content-assets',
-    'nuxt-link-checker',
     'nuxt-multi-cache',
   ],
 
@@ -71,11 +70,6 @@ export default defineNuxtConfig({
     component: {
       enabled: true,
     }
-  },
-
-  linkChecker: {
-    failOnError: false,
-    runOnBuild: false,
   },
 
   ogImage: {
