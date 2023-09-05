@@ -4,8 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-headlessui',
     'nuxt-og-image',
-    'nuxt-content-assets',
-    'nuxt-multi-cache',
+    'nuxt-content-assets'
   ],
 
   app: {
@@ -18,6 +17,8 @@ export default defineNuxtConfig({
     url: 'https://docs.streamer.bot',
     name: 'Streamer.bot Documentation',
   },
+
+  css: ['@/assets/main.css'],
 
   colorMode: {
     preference: 'dark',
@@ -64,12 +65,6 @@ export default defineNuxtConfig({
         apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
       }
     },
-  },
-
-  multiCache: {
-    component: {
-      enabled: true,
-    }
   },
 
   ogImage: {

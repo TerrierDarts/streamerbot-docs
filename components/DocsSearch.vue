@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFuse } from '@vueuse/integrations/useFuse'
+import { useFuse } from '@vueuse/integrations/useFuse';
 
 const props = defineProps({
   modelValue: {
@@ -49,7 +49,7 @@ const { results } = useFuse<DocusSearchResult>(
       includeScore: true,
     },
     matchAllWhenSearchEmpty: false,
-    resultLimit: 20
+    resultLimit: 20,
   }
 )
 
