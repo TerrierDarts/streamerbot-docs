@@ -29,7 +29,6 @@ This account is **required** for Streamer.bot to monitor chat and events from Yo
 ---
 
 ::disclosure{type=warning icon=mdi:alert}
-#summary
 If you stream from a **brand account**, click here!
 
 #content

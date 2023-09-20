@@ -1,13 +1,6 @@
 export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-headlessui',
-    'nuxt-og-image',
-    'nuxt-content-assets',
-    'nuxt-link-checker',
-    'nuxt-multi-cache',
-  ],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-headlessui', 'nuxt-og-image', 'nuxt-content-assets'],
 
   app: {
     head: {
@@ -19,6 +12,8 @@ export default defineNuxtConfig({
     url: 'https://docs.streamer.bot',
     name: 'Streamer.bot Documentation',
   },
+
+  css: ['@/assets/main.css'],
 
   colorMode: {
     preference: 'dark',
@@ -37,9 +32,10 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      concurrency: 32,
       failOnError: false,
+      // FIXME: Remove these when migration is finished and we have no more broken links :)
       ignore: [
-        // TODO: Remove these when migration is finished and we have no more broken links :)
         '/Sub-Actions',
         '/Events',
         '/Triggers',
@@ -57,36 +53,19 @@ export default defineNuxtConfig({
         '/api/sub-actions/platforms/twitch/moderation/Sub-Actions',
       ],
     },
-    storage: {
-      cache: {
-        driver: "cloudflare-kv-http",
-        namespaceId: process.env.CLOUDFLARE_KV_NAMESPACE_ID,
-        accountId: process.env.CLOUDFLARE_ACCOUNT_ID,
-        apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
+  },
+
+  // FIXME: This is a workaround for nuxi prepare hanging
+  hooks: {
+    close: (nuxt) => {
+      if (!nuxt.options._prepare) {
+        process.exit();
       }
     },
   },
 
-  multiCache: {
-    component: {
-      enabled: true,
-    }
-  },
-
-  linkChecker: {
-    failOnError: false,
-    runOnBuild: false,
-  },
-
   ogImage: {
-    runtimeSatori: process.dev,
-    runtimeCacheStorage: {
-      base: 'og-image:',
-      driver: 'cloudflare-kv-http',
-      namespaceId: process.env.CLOUDFLARE_KV_NAMESPACE_ID,
-      accountId: process.env.CLOUDFLARE_ACCOUNT_ID,
-      apiToken: process.env.CLOUDFLARE_KV_API_TOKEN,
-    },
+    runtimeCacheStorage: true,
     defaults: {
       cacheTtl: 60 * 60 * 24 * 30, // 30 days
     },

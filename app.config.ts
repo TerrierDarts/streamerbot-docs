@@ -48,5 +48,8 @@ export default defineAppConfig({
       exclude: [],
       fluid: true,
     },
+    fuse: {
+      resultLimit: 20,
+    }
   },
 });

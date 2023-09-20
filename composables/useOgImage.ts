@@ -23,7 +23,7 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
   );
 
   // Grab root parent title/icon as fallbacks
-  const parentPath = route.path.split('/').at(1);
+  const parentPath = route.path?.split('/').at(1) ?? '';
   const parentTitle = parentPath
     ? navKeyFromPath(`/${parentPath}`, 'title', navigation.value)
     : undefined;
@@ -31,8 +31,8 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
     ? navKeyFromPath(`/${parentPath}`, 'icon', navigation.value)
     : undefined;
 
-  if (route.path !== '/' && page.value?.ogImage !== false && page.value?.title) {
-    defineOgImageCached({
+  if (route.path !== '/' && !page.value._partial && page.value?.ogImage !== false && page.value?.title) {
+    defineOgImage({
       component: options.component ?? defaultOptions.component,
       title: page.value?.title ?? 'Docs',
       description: page.value?.description,

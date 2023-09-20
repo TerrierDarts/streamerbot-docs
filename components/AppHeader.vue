@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useMagicKeys } from '@vueuse/core'
+import { useMagicKeys } from '@vueuse/core';
 
 const { config } = useDocus()
 const { navigation } = useContent()

@@ -33,7 +33,7 @@ const isOpen = ref(false)
 */
 const asideNav = ref<any>(null)
 
-const getParentPath = () => route.path.split('/').slice(0, 2).join('/')
+const getParentPath = () => route.path.split('/').slice(0, 2).join('/');
 const asideScroll = useState('asideScroll', () => {
   return {
     parentPath: getParentPath(),

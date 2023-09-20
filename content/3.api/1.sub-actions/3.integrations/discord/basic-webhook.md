@@ -41,8 +41,8 @@ Enter the text content for your Webhook message
 ::
 
 ::disclosure{icon=mdi:discord style="margin-top: 1rem;"}
-#summary
 If you would like to ping users or roles, click here to learn more!
+
 #content
 #### Enable Developer Mode
 Enable developer mode in Discord by opening settings and navigating to `App Settings -> Advanced`. Then, enable the `Developer Mode` toggle.

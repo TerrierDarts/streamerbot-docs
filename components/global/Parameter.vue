@@ -24,7 +24,10 @@ const { data, pending } = useAsyncData(`parameter-${props.name ?? 'empty'}`, () 
       </List>
     </template>
   </ContentRenderer>
-  <List v-else-if="!pending" type="danger">
+  <List v-else-if="pending" type="info">
+    Loading parameter...
+  </List>
+  <List v-else type="danger">
     Unknown Parameter
   </List>
 </template>

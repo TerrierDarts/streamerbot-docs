@@ -24,7 +24,7 @@ const icon = computed(() => {
 <template>
   <template v-if="data">
     <Disclosure v-if="disclosure" type="neutral" :icon="icon" class="mb-3">
-      <template #summary>
+      <template #default>
         <template v-if="data?.variables?.summaryText">
           <span class="font-semibold">{{ data?.variables?.summaryText }}</span> variables will also be populated. Click here to view.
         </template>
@@ -55,7 +55,10 @@ const icon = computed(() => {
       </ContentRenderer>
     </template>
   </template>
-  <List v-else-if="!pending" type="warning">
+  <List v-else-if="pending" type="info">
+    Loading variables...
+  </List>
+  <List v-else type="warning">
     Variables not found
   </List>
 </template>

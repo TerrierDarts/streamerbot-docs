@@ -24,7 +24,10 @@ const { data, pending } = useAsyncData(`csharp-method-${props.name ?? 'empty'}`,
       </List>
     </template>
   </ContentRenderer>
-  <List v-else-if="!pending" type="danger">
+  <List v-else-if="pending" type="info">
+    Loading C# Method...
+  </List>
+  <List v-else type="danger">
     C# method not found
   </List>
 </template>
