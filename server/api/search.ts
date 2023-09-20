@@ -13,13 +13,13 @@ export default defineEventHandler(async (event) => {
   const mode = appConfig?.docus?.search?.mode || 'meta';
 
   // Fetch all documents
-  let docs = await serverQueryContent(event).where({ _partial: false }).find();
+  let docs = await serverQueryContent(event).find();
 
   docs = await Promise.all(
     docs
       .filter((doc) => {
         // Only use `.md` files which are not drafts and has content
-        return doc?._extension === 'md' && doc?._draft === false && doc?._empty === false;
+        return doc?._extension === 'md' && doc?._draft !== true && doc?._partial !== true;
       })
       .map(
         async ({

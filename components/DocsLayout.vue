@@ -22,7 +22,7 @@ const isOpen = ref(false)
 */
 const asideNav = ref<any>(null)
 
-const getParentPath = () => route.path.split('/').slice(0, 2).join('/')
+const getParentPath = () => route.path.split('/').slice(0, 2).join('/');
 const asideScroll = useState('asideScroll', () => {
   return {
     parentPath: getParentPath(),
@@ -69,7 +69,7 @@ onBeforeUnmount(() => {
     >
       <slot name="aside-app-navigation">
         <AppNavigation
-          v-if="config.aside?.navigation"
+          v-if="config?.aside?.navigation"
           vertical
         />
       </slot>
@@ -86,7 +86,7 @@ onBeforeUnmount(() => {
         v-else
         type="info"
       >
-        Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.
+        Start writing in <ProseCodeInline>content/{{ page?._file }}</ProseCodeInline> to see this page taking shape.
       </Alert>
       <template v-if="hasContent && page && bottom">
         <div class="page-content-bottom">

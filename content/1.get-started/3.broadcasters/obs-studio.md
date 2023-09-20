@@ -7,7 +7,6 @@ icon: simple-icons:obsstudio
 Set up Streamer.bot to remotely control your [OBS Studio](https://obsproject.com) instance
 
 ::disclosure{type=info}
-#summary
 This guide assumes you are running **OBS Studio** version `28` or later
 
 #content
