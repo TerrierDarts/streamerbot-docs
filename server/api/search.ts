@@ -1,12 +1,11 @@
 import { serverQueryContent } from '#content/server';
-import { defineEventHandler } from 'h3';
 
 // Source storage
 // import { prefixStorage } from 'unstorage'
 // import { useStorage } from '#imports'
 // const sourceStorage = prefixStorage(useStorage(), 'content:source')
 
-export default defineEventHandler(async (event) => {
+export default defineCachedEventHandler(async (event) => {
   const appConfig = useAppConfig();
 
   // `full-text` or `meta`

@@ -28,11 +28,28 @@ export default defineNuxtConfig({
     navigation: {
       fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version'],
     },
+    highlight: {
+      preload: [
+        'js',
+        'ts',
+        'csharp',
+        'bash',
+        'json',
+        'yaml',
+        'markdown',
+        'html',
+        'css',
+        'scss',
+        'less',
+        'xml',
+        'diff',
+      ],
+    },
   },
 
   nitro: {
     prerender: {
-      concurrency: 32,
+      concurrency: 8,
       failOnError: false,
       // FIXME: Remove these when migration is finished and we have no more broken links :)
       ignore: [
@@ -55,7 +72,7 @@ export default defineNuxtConfig({
     },
   },
 
-  // FIXME: This is a workaround for nuxi prepare hanging
+  // FIXME: temporary fix for nuxi commands hanging
   hooks: {
     close: (nuxt) => {
       if (!nuxt.options._prepare) {
