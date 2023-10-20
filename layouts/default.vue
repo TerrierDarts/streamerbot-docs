@@ -1,5 +1,15 @@
+<script setup lang="ts">
+const navigation = inject('navigation')
+</script>
+
 <template>
-  <DocsLayout>
-    <slot />
-  </DocsLayout>
+  <div>
+    <UMain>
+      <UContainer>
+        <UPage>
+          <slot />
+        </UPage>
+      </UContainer>
+    </UMain>
+  </div>
 </template>

@@ -47,7 +47,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped lang="ts">
+<!-- <style scoped lang="ts">
 css({
   li: {
     marginBottom: '{elements.list.item.marginBottom}',
@@ -98,4 +98,4 @@ css({
     }
   }
 })
-</style>
+</style> -->

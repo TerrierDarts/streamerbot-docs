@@ -36,6 +36,6 @@ Name | Description
 `poll.winningChoice.totalVotes` | Total number of votes for the choice
 `poll._json` | All the variables in a JSON Object
 
-::alert{type="info"}
+::callout{color=amber icon=i-mdi-lightbulb}
 Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
 ::

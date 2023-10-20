@@ -28,6 +28,6 @@ Name | Description
 `poll.rewardVotes` | Total number of reward based votes
 `poll.totalVotes` | Overall total number of votes
 `poll._json` | All the variables in a JSON Object
-::alert{type="info"}
+::callout{color=amber icon=i-mdi-lightbulb}
 Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
 ::

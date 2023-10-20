@@ -1,6 +1,14 @@
+
 export default defineNuxtConfig({
-  extends: ['@nuxt-themes/docus'],
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-headlessui', 'nuxt-og-image', 'nuxt-content-assets'],
+  extends: ['nuxt-lego', '@nuxt/ui-pro'],
+  modules: [
+    '@nuxt/ui',
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'nuxt-icon',
+    'nuxt-content-assets',
+    '@nuxt/content',
+  ],
 
   app: {
     head: {
@@ -11,9 +19,15 @@ export default defineNuxtConfig({
   site: {
     url: 'https://docs.streamer.bot',
     name: 'Streamer.bot Documentation',
+    twitterCard: 'summary_large_image',
   },
 
   css: ['@/assets/main.css'],
+
+  ui: {
+    global: true,
+    icons: ['mdi', 'heroicons', 'simple-icons', 'vscode-icons'],
+  },
 
   colorMode: {
     preference: 'dark',
@@ -45,6 +59,28 @@ export default defineNuxtConfig({
         'diff',
       ],
     },
+  },
+
+  googleFonts: {
+    display: 'swap',
+    download: true,
+    families: {
+      'DM+Sans': [400, 500, 600, 700],
+    },
+  },
+
+  generate: {
+    routes: [
+      '/',
+      '/api/sub-actions',
+      '/api/triggers',
+      '/api/csharp',
+      '/api/search.json',
+    ],
+  },
+
+  routeRules: {
+    '/guide': { redirect: { to: '/guide/actions', statusCode: 301 }}
   },
 
   nitro: {
@@ -85,13 +121,13 @@ export default defineNuxtConfig({
     // Downside: bigger JS bundle
     // With sync: 465KB, gzip: 204KB
     // Without: 418KB, gzip: 184KB
-    'components:extend' (components) {
+    'components:extend'(components) {
       for (const comp of components) {
         if (comp.global) {
-          comp.global = 'sync'
+          comp.global = 'sync';
         }
       }
-    }
+    },
   },
 
   ogImage: {

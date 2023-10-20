@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
+
 const route = useRoute();
-const { config } = useDocus();
-const { navigation } = useContent();
+const navigation = inject<ComputedRef<any[]>>('navigation');
 const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
 const m = route.path.match(/^(\/[\w-]+\/[\w-]+)\//i);
@@ -37,8 +38,8 @@ const currentItem = computed(() => {
 </script>
 
 <template>
-  <HeadlessMenu v-if="(config.aside.level ?? 0) >= 4" as="div" class="group relative w-full rounded-lg text-sm">
-    <HeadlessMenuButton class="min-w-full py-1 flex justify-between items-center">
+  <Menu as="div" class="group relative w-full rounded-lg text-sm">
+    <MenuButton class="min-w-full py-1 flex justify-between items-center">
       <div class="flex items-baseline pt-1 text-sm">
         <Icon v-if="currentItem?.icon" :name="currentItem?.icon" class="self-center mr-2 h-5 w-5" />
         <div class="flex flex-wrap">
@@ -47,13 +48,13 @@ const currentItem = computed(() => {
         </div>
       </div>
       <Icon name="mdi:menu" class="text-neutral-400 group-hover:text-neutral-100 transition-colors w-4 h-5 self-end" />
-    </HeadlessMenuButton>
-    <HeadlessMenuItems as="ul" class="absolute z-20 left-0 w-full max-h-[400px] overflow-y-auto flex flex-col bg-neutral-900 border border-neutral-800 py-2">
+    </MenuButton>
+    <MenuItems as="ul" class="absolute z-20 left-0 w-full max-h-[400px] overflow-y-auto flex flex-col bg-neutral-900 border border-neutral-800 py-2">
       <template v-for="category in items" :key="category.title">
-        <HeadlessMenuItem v-if="category.items?.length" as="li" class="px-4 pt-2 pb-1 font-semibold text-neutral-100">
+        <MenuItem v-if="category.items?.length" as="li" class="px-4 pt-2 pb-1 font-semibold text-neutral-100">
           {{ category.title }}
-        </HeadlessMenuItem>
-        <HeadlessMenuItem
+        </MenuItem>
+        <MenuItem
           v-for="item in category.items"
           :key="item._path"
           as="li"
@@ -64,9 +65,9 @@ const currentItem = computed(() => {
             <span class="text-neutral-300">{{ item.title }}</span>
             <!-- <small class="text-neutral-400 ml-2">{{ category.title }}</small> -->
           </NuxtLink>
-        </HeadlessMenuItem>
+        </MenuItem>
       </template>
-    </HeadlessMenuItems>
-  </HeadlessMenu>
-  <hr v-if="(config.aside.level ?? 0) >= 4" class="border-neutral-800 my-3" />
+    </MenuItems>
+  </Menu>
+  <hr class="border-neutral-800 my-3" />
 </template>

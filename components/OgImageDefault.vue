@@ -18,10 +18,10 @@ type Props = {
   categoryIcon?: string;
 };
 const props = withDefaults(defineProps<Props>(), {
-  title: 'Og Image Template',
-  description: 'Set a description to change me.',
+  title: 'Streamer.bot Docs',
+  description: 'Official documentation for Streamer.bot',
   icon: undefined,
-  siteName: 'Stream Deck Plugin',
+  siteName: 'Streamer.bot',
   siteLogo: '/logo-dark.svg',
   categoryTitle: 'Documentation',
   categoryIcon: 'mdi:book-open-page-variant-outline',

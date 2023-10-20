@@ -3,10 +3,10 @@ const props = defineProps<{
   empty?: boolean;
 }>();
 
-const { page } = useContent();
+const route = useRoute();
 
 const text = computed(() => {
-  const m = page.value._path.match(/\/(sub-actions|triggers)\//i);
+  const m = route.path.match(/\/(sub-actions|triggers)\//i);
   const type = m && m[1] ? m[1] : null;
 
   switch(type) {

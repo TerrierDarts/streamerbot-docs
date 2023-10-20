@@ -1,18 +1,18 @@
 <script setup lang="ts">
 const route = useRoute();
-const { navigation } = useContent();
+const navigation = inject<ComputedRef<any[]>>('navigation');
 const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
-const dir = navDirFromPath(route.path, navigation.value)?.filter(i => i._path !== route.path);
-const categories = computed(() => dir?.map(i => ({ title: i.navigation?.title ?? i.title, icon: i.icon })) ?? []);
-const items = computed(() => dir?.map(i => ({
+const dir = computed(() => navDirFromPath(route.path, navigation.value)?.filter(i => i._path !== route.path));
+const categories = computed(() => dir.value?.map(i => ({ title: i.navigation?.title ?? i.title, icon: i.icon })) ?? []);
+const items = computed(() => dir.value?.map(i => ({
   title: i.navigation?.title ?? i.title,
   icon: i.icon,
   items: i.children?.map(child => {
     const childPage = navPageFromPath(child._path, navigation.value);
     return {
       _path: child._path,
-      href: childPage ? navBottomLink(childPage) ?? child._path : child._path,
+      to: childPage ? navBottomLink(childPage) ?? child._path : child._path,
       title: child.navigation?.title ?? child.title,
       description: child.navigation?.description ?? child.description,
       icon: child.icon
@@ -28,7 +28,7 @@ const items = computed(() => dir?.map(i => ({
         <h4 class="py-1.5 font-semibold text-lg flex flex-col gap-y-2 pt-8">
           Categories
         </h4>
-        <ul class="flex flex-col py-4 gap-y-3">
+        <ul class="flex flex-col gap-y-1 px-0">
           <li v-for="category in categories" :key="category.title" class="inline-flex items-center group">
             <NuxtLink :to="{ path: route.path, hash: `#${category.title}` }" class="text-neutral-400 hover:text-white">{{ category.title }}</NuxtLink>
           </li>
@@ -38,30 +38,28 @@ const items = computed(() => dir?.map(i => ({
     <div class="relative col-span-10 lg:col-span-8">
       <div class="min-h-[calc(100vh-18rem)]">
         <div v-for="category in items" :key="category.title">
-          <div :id="category.title" class="font-semibold text-lg flex flex-col gap-y-2 pt-8 pb-1.5">
+          <h3 :id="category.title" class="font-semibold text-lg flex flex-col gap-y-2 pt-8 pb-1.5">
             {{ category.title }}
-          </div>
-          <ul class="grid grid-cols-1 gap-8 my-4 sm:grid-cols-2 xl:grid-cols-3">
-            <NuxtLink
-              is="li"
-              v-for="item in category.items"
-              :key="item._path"
-              :to="item.href"
-              class="bg-neutral-900 rounded-xl border border-neutral-800 hover:border-cyan-500 px-4 py-3 transition-colors"
+          </h3>
+          <UPageGrid>
+            <ULandingCard
+              v-for="(card, subIndex) of category.items"
+              :key="subIndex"
+              v-bind="card"
+              :ui="{
+                background: 'dark:bg-gray-900/50 dark:lg:bg-gradient-to-b from-gray-700/50 to-gray-950/50',
+                body: {
+                  base: 'flex-1',
+                  background: 'dark:bg-gray-800/50 dark:lg:bg-gray-900/50 backdrop-blur-lg'
+                }
+              }"
+              class="flex flex-col"
             >
-              <span class="inline-block rounded-lg my-2 h-8 w-8">
-                <Icon :name="item.icon ?? category.icon ?? 'mdi:document'" class="w-full h-full text-neutral-300" />
-              </span>
-              <div class="mt-1">
-                <h3 class="py-1.5 font-semibold">
-                  {{ item.title }}
-                </h3>
-                <p class="text-neutral-400 text-sm mb-2">
-                  {{ item.description }}
-                </p>
-              </div>
-            </NuxtLink>
-          </ul>
+              <template #icon>
+                <Icon :name="card.icon" class="h-6 w-6 my-1" />
+              </template>
+            </ULandingCard>
+          </UPageGrid>
         </div>
       </div>
     </div>
