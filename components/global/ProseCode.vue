@@ -10,7 +10,8 @@ const props = defineProps<{
 }>()
 
 const config = {
-  wrapper: '[&>pre]:!rounded-t-none [&>pre]:!my-0 my-5 [&>pre]:whitespace-nowrap',
+  wrapper: '[&>pre]:!rounded-t-none [&>pre]:!my-0 my-5',
+  importWrapper: '[&>pre]:!whitespace-nowrap',
   header: 'flex items-center gap-1.5 border border-gray-200 dark:border-gray-700 border-b-0 relative rounded-t-md px-4 py-3 not-prose',
   icon: {
     base: ''
@@ -29,7 +30,10 @@ const name = computed(() => isImportCode ? 'Import Code' : props.filename);
 </script>
 
 <template>
-  <div class="relative" :class="!!name && ui.wrapper">
+  <div class="relative" :class="{
+    [ui.wrapper]: !!name,
+    [ui.importWrapper]: isImportCode
+  }">
     <div v-if="name && !hideHeader" :class="ui.header">
       <IconStreamerbot v-if="isImportCode" :class="ui.icon.base" height="16" width="16" />
       <ProseCodeIcon v-else :icon="icon" :filename="name" :class="ui.icon.base" />
