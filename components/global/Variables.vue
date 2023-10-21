@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
+
 const props = defineProps<{
   name?: string,
   icon?: string,
   disclosure?: boolean,
 }>();
 
-const { data, pending } = useAsyncData(`variables-${props.name ?? 'empty'}`, () => {
+const { data, pending } = useAsyncData(`vars:${props.name}`, () => {
   if (!props.name) return Promise.resolve(null);
   return queryContent('api', '_variables').where({
     _partial: true,
@@ -16,23 +18,40 @@ const { data, pending } = useAsyncData(`variables-${props.name ?? 'empty'}`, () 
   }).findOne();
 });
 
+const appConfig = useAppConfig()
+
+const config = {
+  button: {
+    icon: {
+      name: appConfig.ui.icons.chevron,
+      base: 'w-4 h-4 transform transition-transform duration-200',
+      active: '',
+      inactive: '-rotate-90'
+    }
+  }
+}
+
+const { ui } = useUI('prose.collapsible', undefined, config, undefined, true)
+
 const icon = computed(() => {
-  return props.icon ?? data?.value?.variables?.summaryIcon ?? 'mdi:list-box-outline';
+  return props.icon ?? data?.value?.variables?.summaryIcon ?? 'i-mdi-list-box-outline';
 })
 </script>
 
 <template>
   <template v-if="data">
-    <Disclosure v-if="disclosure" type="neutral" :icon="icon" class="mb-3">
-      <template #default>
+    <Disclosure v-if="disclosure" v-slot="{ open }">
+      <DisclosureButton class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+        <UIcon :name="ui.button.icon.name" :class="[ui.button.icon.base, open ? ui.button.icon.active : ui.button.icon.inactive]" />
         <template v-if="data?.variables?.summaryText">
           <span class="font-semibold">{{ data?.variables?.summaryText }}</span> variables will also be populated. Click here to view.
         </template>
         <template v-else>
           Additional shared variables will also be populated. Click here to view.
         </template>
-      </template>
-      <template #content>
+      </DisclosureButton>
+
+      <DisclosurePanel class="mt-4 ml-2 py-2.5 pl-4 border-l border-gray-200 dark:border-gray-800">
         <ContentRenderer :value="data">
           <template #empty>
             <List type="warning">
@@ -40,7 +59,7 @@ const icon = computed(() => {
             </List>
           </template>
         </ContentRenderer>
-      </template>
+      </DisclosurePanel>
     </Disclosure>
     <template v-else>
       <div class="text-lg font-semibold mt-8">

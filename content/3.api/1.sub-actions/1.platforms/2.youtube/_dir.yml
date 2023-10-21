@@ -4,5 +4,4 @@ aside.level: 4
 category.title: YouTube Sub-Actions
 category.icon: mdi:youtube
 navigation.title: YouTube
-navigation.redirect: /api/sub-actions/platforms/youtube/send-message-to-channel
 navigation.description: Control your YouTube channel with Streamer.bot

@@ -18,7 +18,7 @@ Name | Description
 `pyramidOwnerUsername` | The user name of the person who intiated the pyramid.
 `pyramidOwnerDisplayName` | The user display of the person who intiated the pyramid.
 
-::alert{type="info"}
+::callout{color=amber icon=i-mdi-lightbulb}
 The user variables are for the person who destroyed the pyramid.
 ::
 

@@ -1,9 +1,13 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <Alert type="warning" icon="mdi:alert" class="mb-5">
-    <span>
-      <ContentSlot :use="$slots.default" unwrap="p">
+  <UAlert :prose="false" color="amber" icon="i-mdi-alert" class="mb-5" variant="soft">
+    <template #title>
+      <ContentSlot :use="$slots.default" unwrap="p" class="m-0">
         Docs migration currently in progress
       </ContentSlot>
-    </span>
-  </Alert>
+    </template>
+  </UAlert>
 </template>

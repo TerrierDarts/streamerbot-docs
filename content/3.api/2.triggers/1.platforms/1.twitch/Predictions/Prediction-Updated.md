@@ -25,6 +25,6 @@ Name | Description
 `prediction.outcome#.color` | In caps the color name for this outcome e.g. `BLUE` or `PINK`
 `prediction._json` | All the variables in a JSON Object
 
-::alert{type="info"}
+::callout{color=amber icon=i-mdi-lightbulb}
 Change the `#` incrementing from 0. So e.g. `variable0%` `variable1%` `variable2%`
 ::

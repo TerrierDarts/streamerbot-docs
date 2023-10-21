@@ -1,19 +1,24 @@
 <script setup lang="ts">
 const route = useRoute();
-const { page, navigation } = useContent();
-const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
+const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne());
+const navigation = inject<ComputedRef<any[]>>('navigation');
+const { navDirFromPath, navPageFromPath, navBottomLink, navKeyFromPath } = useContentHelpers();
 
 const isActive = (link: any) =>
   link.exact ? route.fullPath === link._path : route.fullPath.startsWith(link._path);
 
 const showMenu = computed(() => {
-  return page.aside !== false && route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
+  return page.value?.aside !== false && route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
 });
+
+const apiCategoryPath = computed(() => {
+  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
+  return m && m[1] ? m[1] : null;
+})
 
 // Automatically choose a matching API directory when it exists
 const links = computed(() => {
-  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
-  const categoryPath = m && m[1] ? m[1] : null;
+  const categoryPath = apiCategoryPath.value;
 
   const subActionsPath = categoryPath
     ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/sub-actions')
@@ -52,42 +57,44 @@ const links = computed(() => {
     }
   ];
 });
+
+// Reduce navigation tree to only include the current API sub category
+// e.g. Twitch, YouTube, etc.
+const asideLevel = computed(() => Number(navKeyFromPath(page.value._path, 'aside', navigation.value)?.level || 4));
+const { data: navTree } = await useAsyncData('apiNavigation', () => fetchContentNavigation(
+  queryContent('api').where({
+    _path: {
+      $contains: route.path.split('/').slice(0, asideLevel.value + 1).join('/')
+    }
+  })
+), { watch: [() => route.path, asideLevel] });
+const navChildren = computed(() => {
+  // if (route.path.split('/').length <= (asideLevel.value)) return [];
+
+  let children = navTree.value?.[0]?.children ?? [];
+  let level = asideLevel.value;
+  while (level > 1 && children?.[0]?.children) {
+    children = children[0].children;
+    level--;
+  }
+  return children;
+})
 </script>
 
 <template>
-  <BasicLayout>
-    <div
-      class="sticky z-[5] top-[64px] p-3 bg-[#121110] bg-opacity-80 border-b border-neutral-800 mb-1"
-    >
-      <Container>
-        <div class="grid grid-cols-12">
-          <nav class="col-span-12 flex justify-center items-center gap-5 font-semibold">
-            <NuxtLink
-              v-for="link in links"
-              :key="link._path"
-              :to="link._path"
-              class="px-2 hover:text-white transition-colors"
-              :class="{
-                'text-white': isActive(link),
-                'text-neutral-400': !isActive(link),
-              }"
-            >
-              {{ link.text }}
-            </NuxtLink>
-          </nav>
-        </div>
-      </Container>
-    </div>
-    <Container v-if="page.aside === false">
-      <div class="py-12">
-        <slot />
-      </div>
-    </Container>
-    <DocsLayout v-else>
-      <template #aside-app-navigation>
-        <CategoryMenu v-if="showMenu" />
-      </template>
-      <slot />
-    </DocsLayout>
-  </BasicLayout>
+  <div>
+    <UMain>
+      <UContainer>
+        <UPage>
+          <template #left>
+            <UAside class="min-h-full">
+              <ApiCategoryMenu v-if="asideLevel >= 4" />
+              <UNavigationTree :links="mapContentNavigation(navChildren)" :multiple="false" :default-open="''" />
+            </UAside>
+          </template>
+          <slot />
+        </UPage>
+      </UContainer>
+    </UMain>
+  </div>
 </template>

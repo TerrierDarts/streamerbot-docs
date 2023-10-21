@@ -1,3 +1,2 @@
 icon: mdi:api
 title: WebSocket Server
-navigation.redirect: /api/servers/websocket/requests

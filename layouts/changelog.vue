@@ -1,5 +1,23 @@
+<script setup lang="ts">
+const nav = inject<ComputedRef<any[]>>('navigation')
+const navigation = computed(() => {
+  return nav.value.filter((link) => link._path.startsWith('/changelogs'))
+})
+</script>
+
 <template>
-  <ChangelogDocsLayout>
-    <slot />
-  </ChangelogDocsLayout>
+  <div>
+    <UMain>
+      <UContainer>
+        <UPage>
+          <template #left>
+            <UAside>
+              <UNavigationTree :links="mapContentNavigation(navigation)" />
+            </UAside>
+          </template>
+          <slot />
+        </UPage>
+      </UContainer>
+    </UMain>
+  </div>
 </template>

@@ -1,6 +1,14 @@
+
 export default defineNuxtConfig({
-  extends: ['@nuxt-themes/docus'],
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-headlessui', 'nuxt-og-image', 'nuxt-content-assets'],
+  extends: ['nuxt-lego', '@nuxt/ui-pro'],
+  modules: [
+    '@nuxt/ui',
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'nuxt-icon',
+    'nuxt-content-assets',
+    '@nuxt/content',
+  ],
 
   app: {
     head: {
@@ -11,9 +19,15 @@ export default defineNuxtConfig({
   site: {
     url: 'https://docs.streamer.bot',
     name: 'Streamer.bot Documentation',
+    twitterCard: 'summary_large_image',
   },
 
   css: ['@/assets/main.css'],
+
+  ui: {
+    global: true,
+    icons: ['mdi', 'heroicons', 'simple-icons', 'vscode-icons'],
+  },
 
   colorMode: {
     preference: 'dark',
@@ -26,13 +40,54 @@ export default defineNuxtConfig({
 
   content: {
     navigation: {
-      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version'],
+      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version', 'badge'],
     },
+    highlight: {
+      preload: [
+        'js',
+        'ts',
+        'csharp',
+        'bash',
+        'json',
+        'yaml',
+        'markdown',
+        'html',
+        'css',
+        'scss',
+        'less',
+        'xml',
+        'diff',
+      ],
+    },
+  },
+
+  googleFonts: {
+    display: 'swap',
+    download: true,
+    families: {
+      'DM+Sans': [400, 500, 600, 700],
+    },
+  },
+
+  generate: {
+    routes: [
+      '/',
+      '/api/sub-actions',
+      '/api/triggers',
+      '/api/csharp',
+      '/api/search.json',
+    ],
+  },
+
+  routeRules: {
+    '/get-started': { redirect: { to: '/get-started/introduction', statusCode: 301 }},
+    '/guide': { redirect: { to: '/guide/actions', statusCode: 301 }},
+    '/api/servers/websocket': { redirect: { to: '/api/servers/websocket/requests', statusCode: 301 }},
   },
 
   nitro: {
     prerender: {
-      concurrency: 32,
+      concurrency: 8,
       failOnError: false,
       // FIXME: Remove these when migration is finished and we have no more broken links :)
       ignore: [
@@ -55,11 +110,24 @@ export default defineNuxtConfig({
     },
   },
 
-  // FIXME: This is a workaround for nuxi prepare hanging
   hooks: {
+    // FIXME: temporary fix for nuxi commands hanging
     close: (nuxt) => {
       if (!nuxt.options._prepare) {
         process.exit();
+      }
+    },
+    // Related to https://github.com/nuxt/nuxt/pull/22558
+    // Adding all global components to the main entry
+    // To avoid lagging during page navigation on client-side
+    // Downside: bigger JS bundle
+    // With sync: 465KB, gzip: 204KB
+    // Without: 418KB, gzip: 184KB
+    'components:extend'(components) {
+      for (const comp of components) {
+        if (comp.global) {
+          comp.global = 'sync';
+        }
       }
     },
   },
