@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-const navigation = inject<ComputedRef<any[]>>('navigation');
+const navigation = inject<ComputedRef<any[]>>('apiNavigation');
 const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
 const dir = computed(() => navDirFromPath(route.path, navigation.value)?.filter(i => i._path !== route.path));

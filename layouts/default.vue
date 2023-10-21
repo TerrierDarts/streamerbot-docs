@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const navigation = inject('navigation')
 </script>
 
 <template>

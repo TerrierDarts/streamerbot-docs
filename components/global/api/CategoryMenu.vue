@@ -2,7 +2,7 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
 
 const route = useRoute();
-const navigation = inject<ComputedRef<any[]>>('navigation');
+const navigation = inject<ComputedRef<any[]>>('apiNavigation');
 const { navDirFromPath, navPageFromPath, navBottomLink } = useContentHelpers();
 
 const m = route.path.match(/^(\/[\w-]+\/[\w-]+)\//i);

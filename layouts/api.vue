@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne());
-const navigation = inject<ComputedRef<any[]>>('navigation');
+const navigation = inject<ComputedRef<any[]>>('apiNavigation');
 const { navDirFromPath, navPageFromPath, navBottomLink, navKeyFromPath } = useContentHelpers();
 
 const isActive = (link: any) =>
