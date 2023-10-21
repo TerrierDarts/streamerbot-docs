@@ -4,5 +4,4 @@ aside.level: 4
 category.title: Twitch Sub-Actions
 category.icon: mdi:twitch
 navigation.title: Twitch
-navigation.redirect: /api/sub-actions/platforms/twitch/ads/run-commercial
 navigation.description: Control your Twitch stream with Streamer.bot

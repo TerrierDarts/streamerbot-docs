@@ -73,7 +73,7 @@ const links: Array<{
         />
       </UButton>
     </template>
-    <template #panel>
+    <template #panel="{ close }">
       <div
         class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
       >

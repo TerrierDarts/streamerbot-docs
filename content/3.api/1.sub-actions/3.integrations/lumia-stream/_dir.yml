@@ -5,4 +5,3 @@ category.title: Lumia Stream Sub-Actions
 category.icon: IconLumiaStream
 navigation.title: Lumia Stream
 navigation.description: Light up your stream with Lumia integration
-navigation.redirect: /api/sub-actions/integrations/lumia-stream/send-command

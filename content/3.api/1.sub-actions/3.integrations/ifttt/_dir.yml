@@ -4,5 +4,4 @@ aside.level: 4
 category.title: IFTTT Sub-Actions
 category.icon: simple-icons:ifttt
 navigation.title: IFTTT
-navigation.redirect: /api/sub-actions/integrations/ifttt/notification
 navigation.description: Trigger IFTTT applets with Streamer.bot

@@ -4,5 +4,4 @@ aside.level: 4
 category.title: Twitch Triggers
 category.icon: mdi:twitch
 navigation.title: Twitch
-navigation.redirect: /api/triggers/platforms/twitch/ads/ad-mid-roll
 navigation.description: React to Twitch events with Streamer.bot

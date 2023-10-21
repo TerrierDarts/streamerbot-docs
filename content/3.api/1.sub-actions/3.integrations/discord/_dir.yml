@@ -4,5 +4,4 @@ aside.level: 4
 category.title: Discord Sub-Actions
 category.icon: mdi:discord
 navigation.title: Discord
-navigation.redirect: /api/sub-actions/integrations/discord/basic-webhook
 navigation.description: Send messages to Discord via webhook

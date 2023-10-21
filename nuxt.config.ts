@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 
   content: {
     navigation: {
-      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version'],
+      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version', 'badge'],
     },
     highlight: {
       preload: [
@@ -80,7 +80,9 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/guide': { redirect: { to: '/guide/actions', statusCode: 301 }}
+    '/get-started': { redirect: { to: '/get-started/introduction', statusCode: 301 }},
+    '/guide': { redirect: { to: '/guide/actions', statusCode: 301 }},
+    '/api/servers/websocket': { redirect: { to: '/api/servers/websocket/requests', statusCode: 301 }},
   },
 
   nitro: {

@@ -88,8 +88,8 @@ const navChildren = computed(() => {
         <UPage>
           <template #left>
             <UAside class="min-h-full">
-              <CategoryMenu v-if="asideLevel >= 4" />
-              <UNavigationTree :links="mapContentNavigation(navChildren)" />
+              <ApiCategoryMenu v-if="asideLevel >= 4" />
+              <UNavigationTree :links="mapContentNavigation(navChildren)" :multiple="false" :default-open="''" />
             </UAside>
           </template>
           <slot />
