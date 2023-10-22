@@ -1,30 +1,48 @@
 ---
-navigation.title: Shopify
+title: Shopify
+description: Integrate Streamer.bot with your Shopify account
 navigation.icon: null
 icon: mdi:shopify
 version: 0.1.14
+logo: https://streamer.bot/img/integrations/shopify.svg
 ---
 
-# Shopify Integration
-Integrate Streamer.bot with Shopify via webhooks
+Receive [Shopify](https://shopify.com){target=_blank} event triggers in Streamer.bot via webhooks
 
-## Overview
-With the Shopify integration you can listen to when orders are created and when orders are paid.
+::callout{color=amber icon=i-mdi-alert}
+This integration requires the [Streamer.bot Website Integration](/guide/integrations/streamerbot)
+::
 
-## Setup
-First you need to go to this page https://streamer.bot/user/settings#shopify. On this page you will find a field that says `Shopify Webhook URL`. You need to copy that URL and use it later on. Now we can go to the Shopify notifications page, to get here you need to change `your-store-domain` to your store's domain https://your-store-domain.myshopify.com/admin/settings/notifications. On this page you need to completely scroll down to the bottom where it says `Create Webhook`. When you click on this it will open up a dialog where you need to put in some information. This information can be found [below](#add-webhook-dialog). After creating these 2 webhooks it will show a webhook secret yellow marked below the webhook list. You need to copy this and go back to https://streamer.bot/user/settings#shopify and paste it in the `Shopify Webhook Secret` field. After that you need to make sure the `Streamer.bot Website Integration` inside Streamer.bot is connected. And then you can use the Shopify triggers.
+## Configuration
 
-## Add Webhook Dialog
-You need to create 2 of these webhooks one with the event of `Order creation` and the other event of  `Order payment`.
+::callout{icon=i-mdi-navigation to="https://streamer.bot/user/settings#shopify" target=_blank rel=noopener}
+Navigate to **Streamer.bot User Settings > Webhook Integrations > Shopify** on the Streamer.bot website
+::
 
-### Event
-In the first webhook fill in `Order creation` and in the other webhook fill in `Order payment`.
+1. Set `Shopify Connection` to `Enabled`
+2. Copy your `Shopify Webhook URL`
 
-### Format
-The format needs to be in JSON
+::callout{icon=i-mdi-navigation}
+Navigate to **Store Admin > Settings > Notifications** on the Shopify website<br/>
+:icon{name=i-mdi-chevron-right class="w-4 mr-1"} `https://admin.shopify.com/store/YOUR_STORE_NAME/settings/notifications`
+::
 
-### URL
-Paste the URL that you've copied from https://streamer.bot/user/settings#shopify
+1. Scroll to the bottom of the page and click `Create Webhook`
+2. Set `Event` to `Order creation` or `Order payment`
+    - You can create multiple webhooks if you would like to receive both events
+3. Leave `Format` as `JSON`
+4. Paste your `Shopify Webhook URL` from Streamer.bot into the `URL` field
+5. Set the `Webhook API Version` to `Latest`
+6. Click `Save`
+7. You should now see a verification token highlighted in yellow - **copy this token**.
 
-### Webhook API version
-Use the Latest version
+::callout{icon=i-mdi-navigation to="https://streamer.bot/user/settings#shopify" target=_blank rel=noopener}
+Return to **Streamer.bot User Settings > Webhook Integrations > Shopify** on the Streamer.bot website
+::
+
+1. Paste the `Verification Token` into the `Shopify Verification Token` input
+
+## Usage
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/shopify/order-created}
+Explore the [Shopify Triggers](/api/triggers/integrations/shopify/order-created) API references
+::

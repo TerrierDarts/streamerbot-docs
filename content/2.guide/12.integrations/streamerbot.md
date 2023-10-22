@@ -1,39 +1,41 @@
 ---
-navigation.title: Streamer.bot Website
+title: Streamer.bot Website
+description: Unlock additional functionality through the Streamer.bot website
 icon: IconStreamerbot
 navigation.icon: null
 version: 0.1.8
-tags: integrations, streamerbot, decks, ko-fi, patreon, v0.1.8
+logo: /logo.svg
 ---
 
-# Streamer.bot Website Integration
-Enable additional Streamer.bot features by configuring the Streamer.bot Website integration!
+Enable additional Streamer.bot features by connecting your bot to the Streamer.bot website!
+
+## Configuration
+
+::callout{icon=i-mdi-navigation}
+Navigate to **Integrations > Streamer.bot Website**
+::
+
+1. Click `Login` to launch the OAuth consent screen
+2. Login on the Streamer.bot website
 
 ## Supported Features
-::card-grid{cols=2}
-#default
-  ::card{icon="IconStreamerbot" lights noise}
-  #title
-  [Streamer.bot Decks](/guide/extra-features/streamerbot-decks)
-  #description
+::card-group
+  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/extra-features/streamerbot-decks}
   Web-based stream decks for Streamer.bot
   ::
-  ::card{icon="simple-icons:kofi" lights noise}
-  #title
-  [Ko-Fi](/guide/integrations/ko-fi)
-  #description
-  Ko-Fi Webhook Integration
+  ::card{icon=i-mdi-bookmark title="IFTTT" to=/guide/integrations/ifttt}
+  Integration with IFTTT
   ::
-  ::card{icon="mdi:patreon" lights noise}
-  #title
-  [Patreon](/guide/integrations/patreon)
-  #description
-  Patreon Webhook Integration
+  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/kofi}
+  Integration with Ko-Fi
   ::
-  ::card{icon="mdi:shopify" lights noise}
-  #title
-  [Shopify](/guide/integrations/shopify)
-  #description
-  Shopify Webhook Integration
+  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/patreon}
+  Integration with Patreon
+  ::
+  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/shopify}
+  Integration with Shopify
+  ::
+  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/fourthwall}
+  Integration with Fourthwall
   ::
 ::

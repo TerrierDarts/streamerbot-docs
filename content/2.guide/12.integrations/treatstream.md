@@ -4,21 +4,15 @@ description: Integrate Streamer.bot with TreatStream
 icon: mdi:chevron-right-circle
 navigation.icon: null
 version: 0.1.8
+logo: /img/icons/treatstream.png
 ---
 
-## Overview
-Integrate with [TreatStream](https://treatstream.com) to receive food donation events!
+Integrate with [TreatStream](https://treatstream.com){target=_blank} to receive food donation events!
 
-## Events
-### Donation
-Name | Description
-----:|:------------
-| `username` | The user name of the person that has treated the streamer
-| `timestamp` | Timestamp of when the event occurred |
-| `type` | Type of treat that has been gifted *e.g. Pizza*
-| `message` | Message that the `username` has given
+## Configuration
+:wip
 
----
-
-- [<i class="mdi mdi-chevron-left"></i> **All Integrations *Go Back***](/Integrations)
-{.btn-grid .my-5}
+## Usage
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/treatstream/donation}
+Explore the [TreatStream Triggers](/api/triggers/integrations/treatstream/donation) API references
+::
