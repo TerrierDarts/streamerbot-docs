@@ -1,6 +1,6 @@
 
 export default defineNuxtConfig({
-  extends: ['nuxt-lego', '@nuxt/ui-pro'],
+  extends: ['@nuxt/ui-pro'],
   modules: [
     '@nuxt/ui',
     '@vueuse/nuxt',

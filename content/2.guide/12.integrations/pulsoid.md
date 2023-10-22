@@ -1,25 +1,27 @@
 ---
-navigation.title: Pulsoid
+title: Pulsoid
+description: Trigger actions based on your heart rate
 navigation.icon: null
 icon: mdi:heart
 version: 0.1.8
+logo: /img/icons/pulsoid.png
 ---
 
-![streamerbot.png](https://streamer.bot/img/integrations/pulsoid.png){.align-abstopright}
+Receive heart rate events from [Pulsoid](https://pulsoid.com){target=_blank}
 
-# Pulsoid Integration
-Integrate Streamer.bot with Pulsoid heart rate events
+## Configuration
 
-![pulsoid-integration.png](/pulsoid-integration.png =x400)
+::callout{icon=i-mdi-navigation}
+Navigate to **Integrations > Pulsoid**
+::
 
-After connecting your account, by clicking **Connect to Pulsoid** and following the prompts in your browser. You can assign an action to the `Heart Rate` Event, and when Pulsoid broadcasts a heart beat, this action will run.
+1. Click `Connect to Pulsoid` to launch the OAuth consent screen
+2. Login with Pulsoid to connect your account to Streamer.bot
+2. Enable `Auto Connect` to automatically connect to Pulsoid when Streamer.bot starts up
+3. Enable `Auto Reconnect` to automatically reconnect to Pulsoid if the connection is disrupted
 
-> When Pulsoid is broadcasting your heart rate, this event can fire once every second, so be sure whatever action you use runs fast enough so it won't cause a backlog in an action queue.  It is also recommended that whatever action you are running be placed in a blocking queue.
-{.is-warning}
 
-## Variables
-
-| Name | Description |
-|---:|:------------|
-| `measuredAt` | Time the measurement was taken |
-| `heartRate` | Heart rate value (BPM) |
+## Usage
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/pulsoid/heart-rate-pulse}
+Explore the [Pulsoid Triggers](/api/triggers/integrations/pulsoid/heart-rate-pulse) API references
+::

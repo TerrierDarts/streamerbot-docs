@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const nav = inject<ComputedRef<any[]>>('navigation')
+const nav = inject<ComputedRef<any[]>>('changelogNavigation')
 const navigation = computed(() => {
   return nav.value.filter((link) => link._path.startsWith('/changelogs'))
 })

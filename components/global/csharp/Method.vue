@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const props = defineProps<{name?: string}>();
 
-const { data, pending } = useAsyncData(`csharp-method-${props.name ?? 'empty'}`, () => {
+const { data, pending } = useAsyncData(`csharp:${props.name}`, () => {
   if (!props.name) return Promise.resolve(null);
-  return queryContent('api', 'csharp').where({
+  return queryContent('api', 'csharp', '_methods').where({
     _partial: true,
     $or: [
       { 'csharp.method': props.name ?? '' },
@@ -24,9 +24,9 @@ const { data, pending } = useAsyncData(`csharp-method-${props.name ?? 'empty'}`,
       </List>
     </template>
   </ContentRenderer>
-  <List v-else-if="pending" type="info">
-    Loading C# Method...
-  </List>
+  <div v-else-if="pending">
+    <USkeleton class="h-8 w-full" />
+  </div>
   <List v-else type="danger">
     C# method not found
   </List>

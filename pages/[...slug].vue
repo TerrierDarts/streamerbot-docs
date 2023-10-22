@@ -67,7 +67,13 @@ const links = computed(() => [{
 
 <template>
   <UPage>
-    <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
+    <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" class="relative">
+      <template v-if="!page.links && page.logo" #default>
+        <div class="absolute top-16 right-0">
+          <ProseImg :src="page.logo" class="h-12 max-w-14" />
+        </div>
+      </template>
+    </UPageHeader>
 
     <UPageBody prose>
       <ContentRenderer v-if="page.body" :value="page" />

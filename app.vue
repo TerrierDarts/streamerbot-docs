@@ -14,18 +14,18 @@ const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', { defa
 
 // Computed
 const navigation = computed(() => {
-  if (route.path.match(/^\/api/i)) {
-    return nav.value?.filter(item => item._path.match(/^\/api/i))
-  }
-  else if (route.path.match(/^\/changelogs/i)) {
-    return nav.value?.filter(item => item._path.match(/^\/changelogs/i)).map(item => {
-      item.children?.sort((a, b) => {
-        return gt(a.version, b.version) ? -1 : 1;
-      })
-      return item;
-    })?.[0].children;
-  }
   return nav.value?.filter(item => !item._path.match(/^\/(api|changelogs)/i))
+})
+const apiNavigation = computed(() => {
+  return nav.value?.filter(item => item._path.match(/^\/api/i))
+})
+const changelogNavigation = computed(() => {
+  return nav.value?.filter(item => item._path.match(/^\/changelogs/i)).map(item => {
+    item.children?.sort((a, b) => {
+      return gt(a.version, b.version) ? -1 : 1;
+    })
+    return item;
+  })?.[0].children;
 })
 const groups = computed(() => {
   return [];
@@ -57,6 +57,8 @@ useHead({
 
 // Provide
 provide('fullNavigation', nav)
+provide('apiNavigation', apiNavigation)
+provide('changelogNavigation', changelogNavigation)
 provide('navigation', navigation)
 provide('files', files)
 </script>

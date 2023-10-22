@@ -1,48 +1,31 @@
 ---
-navigation.title: Streamlabs
+title: Streamlabs
+description: Integrate Streamer.bot with your Streamlabs account
 icon: arcticons:streamlabs
 navigation.icon: null
+logo: /img/icons/streamlabs.png
 ---
 
-![streamlabs-logo.png](https://streamer.bot/img/integrations/streamlabs.png){.align-abstopright}
-
-# Streamlabs Integration
-**Streamer.bot** can monitor your Streamlabs account and perform actions on Donation and Merchandise events.
-
-![overview.png](/intergrations/streamlabs/tabs/events/overview.png =700x)
+The [Streamlabs](https://streamlabs.com){target=_blank} integration allows you to receive donation and merchandise events in Streamer.bot
 
 ## Configuration
-To enable Streamlabs integration you will need a `Socket API token` from [streamlabs.com](https://streamlabs.com/)
 
-![overview.png](/intergrations/streamlabs/tabs/settings/overview.png =700x)
+::callout{icon=i-mdi-navigation to="https://streamlabs.com/dashboard#/settings/api-settings" target=_blank rel=noopener}
+Navigate to **Dashboard > Settings > API Settings > API Tokens** on the [Streamlabs](https://streamlabs.com/dashboard#/settings/api-settings) website
+::
 
-## Events
-Both `Donations` and `Merchandise` have access to a number of text [variables](/Variables) that can be passed to your [sub-actions](/Sub-Actions)
+1. Next to `Your Socket API Token`, click `Copy` to obtain your API token
 
-For donation events, different actions can be run based on the size of the donation.
+::callout{icon=i-mdi-navigation}
+Navigate to **Integrations > Streamlabs** in Streamer.bot
+::
 
-## Variables
-### Donations
-Name | Description
-----:|:------------
-`donationFrom` | Who the donation was from, as the user filled out
-`donationAmount` | the amount of the donation
-`donationCurrency` | 3 letter currency code
-`donationFormattedAmount` | The donation amount with the currency symbol
-`donationMessage` | Any donation message the user may have included
-`isTest` | Boolean value indicating if the donation was a test | `True`/`False`
+1. Paste your `Socket API Token` into the `Token` field
+2. Click `Connect to Streamlabs`
+2. Enable `Auto Connect` to automatically connect to Streamlabs when Streamer.bot starts up
+3. Enable `Auto Reconnect` to automatically reconnect to Streamlabs if the connection is disrupted
 
-### Merchandise
-Name | Description
-----:|:------------
-`merchandiseFrom` | Who purchased a product
-`merchandiseMessage` | Any message the user attached to the purchase
-`merchandiseProduct` | The product that was purchased
-`merchandiseImageUrl` | URL to the image of the product
-`merchandiseImageEscaped` | URL to the image of the product with escaped characters
-`isTest` | Boolean value indicating if the purchase was a test | `True`/`False`
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **All Integrations *Go Back***](/Integrations)
-{.btn-grid .my-5}
+## Usage
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/streamlabs/donation}
+Explore the [Streamlabs Triggers](/api/triggers/integrations/streamlabs/donation) API references
+::
