@@ -17,7 +17,6 @@ You can enable `Application` events with this [Subscribe](/api/servers/websocket
   },
 }
 ```
-![Alt text](/img/dildo.png)
 
 ## Events
 ### `ActionAdded`
