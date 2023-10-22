@@ -1,30 +1,21 @@
----
-title: Set Paused State
-description: Channel Point Rewards Sub-Actions Reference
-published: true
-date: 2023-02-04T11:57:07.481Z
-tags: subactions, rewards, channel-point-rewards
-editor: markdown
-dateCreated: 2022-06-11T05:00:36.383Z
----
-
-## Overview
+# Set Paused State
 Toggle the paused state of a channel point reward.
+:image-preview
 
-![overview.png](/Sub-Actions/Twitch/set-paused-state/overview.png =400x)
+## Parameters
+### `Reward`
+Select the reward.
 
-## Configuration
-### Reward
-Select the reward you want to modify.
+- Type: `Selection`
 
-### State
-Name | Description
-----:|:------------
-`Paused` | Set the selected reward as **paused**
-`Unpaused` | Set the selected reward as **unpaused**
-`Toggle` | Toggle the existing paused/unpaused state of the selected reward
+### `State`
+- `Paused`: Pause the channel point reward
+- `Unpaused`: Unpause the channel point reward
+- `Toggle`: Toggle the current status between paused and unpaused
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=PauseReward}
+:csharp-method{name=UnPauseReward}

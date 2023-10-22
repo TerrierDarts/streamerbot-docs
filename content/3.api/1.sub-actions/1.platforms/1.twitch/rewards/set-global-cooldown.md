@@ -14,8 +14,10 @@ Change the global cooldown from a reward.
 ![overview.png](/Sub-Actions/Twitch/set-global-cooldown/overview.png =400x)
 
 ## Configuration
-### Reward
+### `Reward`
 Select the reward.
+
+- Type: `Selection`
 
 ### Cooldown
 How long the new cooldown should be.

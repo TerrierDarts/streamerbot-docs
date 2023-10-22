@@ -14,8 +14,10 @@ Modify the title of a channel point reward.
 ![overview.png](/Sub-Actions/Twitch/set-title/overview.png =400x)
 
 ## Configuration
-### Reward
-Select the reward you want to modify.
+### `Reward`
+Select the reward.
+
+- Type: `Selection`
 
 ### Title
 Enter the new title for your channel point reward.

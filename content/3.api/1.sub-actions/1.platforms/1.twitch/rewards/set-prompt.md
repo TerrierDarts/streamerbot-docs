@@ -14,8 +14,10 @@ Change the prompt of a channel point reward.
 ![overview.png](/Sub-Actions/Twitch/set-prompt/overview.png =400x)
 
 ## Configuration
-### Reward
+### `Reward`
 Select the reward.
+
+- Type: `Selection`
 
 ### Prompt
 Enter the text to apply to your reward prompt.

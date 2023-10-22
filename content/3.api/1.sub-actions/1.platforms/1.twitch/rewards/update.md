@@ -14,8 +14,10 @@ Modify the `Title`, `Prompt` and `Cost` of a channel point reward at once.
 ![overview.png](/Sub-Actions/Twitch/update/overview.png =400x)
 
 ## Configuration
-### Reward
-Select the reward you want to modify.
+### `Reward`
+Select the reward.
+
+- Type: `Selection`
 
 ### Title
 Enter the new title for your channel point reward.

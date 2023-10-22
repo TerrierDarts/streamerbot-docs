@@ -1,38 +1,30 @@
----
-title: Set Cost
-description: Channel Point Rewards Sub-Actions Reference
-published: true
-date: 2023-02-04T11:48:20.640Z
-tags: subactions, rewards, channel-point-rewards
-editor: markdown
-dateCreated: 2021-11-02T04:07:26.868Z
----
-
-## Overview
+# Set Cost
 Change the cost of a channel point reward.
+:image-preview
 
-![overview.png](/Sub-Actions/Twitch/set-cost/overview.png =400x)
-
-## Configuration
-### Reward
+## Parameters
+### `Reward`
 Select the reward.
 
-### Cost
+- Type: `Selection`
+
+### `Cost`
 Enter the amount you would like to set or modify
 
+- Type: `Integer`
+
 ### Operator
-Name | Description
-----:|:------------
-`None` | Set the cost to the amount entered
-`Add` | Add the amount entered to the current cost
-`Subtract` | Subtract the amount entered from the current cost
-`Multiply` | Multiplay the amount entered with the current cost
-`Divide` | Divice the current cost by the amount entered
+Select an operator for the cost. 
+The operator works like this: `{OLD VALUE} {OPERATOR} {VALUE OF THE COST INPUT}`.
 
-### Reset to Original
-This will automatically fill the `Cost` input with the original cost and set`Operator` to `None`.
+- `None`
+- `Add`
+- `Subtract`
+- `Multiply`
+- `Divide`
 
----
+## Variables
+:variables-description{empty}
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method{name=UpdateRewardCost}

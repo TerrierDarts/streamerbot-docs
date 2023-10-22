@@ -1,24 +1,25 @@
----
-title: Configure Rewards
-description: Channel Point Rewards Sub-Actions Reference
-published: true
-date: 2023-02-04T11:34:35.001Z
-tags: subactions, rewards, channel-point-rewards
-editor: markdown
-dateCreated: 2022-06-09T02:20:12.720Z
----
-
-## Overview
+# Configure Rewards
 Enable, disable and pause multiple rewards.
+:image-preview
 
-![overview.png](/Sub-Actions/Twitch/configure-rewards/overview.png =400x)
+## Parameters
+### `Disable not configured rewards`
+Checking this box will make any reward in the `Not Configured` group disabled at the time of execution.
 
-## Configuration
-### Move To
+- Type: `Checkbox`
+
+### `Move To`
 <kbd>Right-Click</kbd> a row and select `Move To` to move a selected reward to a new group.
 
-### Move All To
+- Type: `Option`
+
+### `Move All To`
 <kbd>Right-Click</kbd> a group and select `Move All To` to move all rewards within the selected group to a new group.
 
-### Disable not configured rewards
-Checking this box will move any rewards in the `Not Configured` group into the `Disabled` group.
+- Type: `Option`
+
+## Variables
+:variables-description{empty}
+
+## C# Usage
+:csharp-method

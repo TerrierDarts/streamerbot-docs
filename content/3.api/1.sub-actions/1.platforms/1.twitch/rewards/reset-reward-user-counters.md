@@ -1,23 +1,15 @@
----
-title: Reset Reward User Counters
-description: Rewards Sub-Action Reference
-published: true
-date: 2023-02-04T11:43:49.512Z
-tags: 
-editor: markdown
-dateCreated: 2023-02-04T11:43:47.692Z
----
-
-## Overview
+# Reset Reward User Counters
 Reset all user counters for a reward.
+:image-preview
 
-![overview.png](/Sub-Actions/Twitch/reset-reward-user-counters/overview.png =400x)
-
-## Configuration
-### Reward
+## Parameters
+### `Reward`
 Select the reward.
 
----
+- Type: `Selection`
 
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## Variables
+:variables-description{empty}
+
+## C# Usage
+:csharp-method{name=TwitchResetRewardUserCounters}
