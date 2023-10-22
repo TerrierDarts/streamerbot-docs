@@ -4,6 +4,7 @@ description: Integrate Streamer.bot with your Patreon account
 navigation.icon: null
 icon: mdi:patreon
 version: 0.1.8
+logo: https://streamer.bot/img/integrations/patreon.png
 ---
 
 Receive [Patreon](https://www.patreon.com/) event triggers in Streamer.bot via webhooks
