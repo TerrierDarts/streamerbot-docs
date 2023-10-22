@@ -1,23 +1,15 @@
----
-title: Incentive
-description: DonorDrive Triggers Reference
-published: true
-date: 2023-04-27T14:31:18.482Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-27T14:31:16.154Z
----
+# Incentive
+DonorDrive incentive trigger.
 
-## Overview
-This triggers when you get an incentive via DonorDrive.
+This event triggers when you get an incentive with DonorDrive.
 
-For a detailed guide about DonorDrive see [this page](/Integrations/DonorDrive).
-
-## Configuration
-### DonorDrive
-Select any or a DonorDrive provider as the source for this donation.
+## Parameters
+### `DonorDrive`
+Select any or a DonorDrive provider as the source for this incentive.
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `donorAvatarUrl` | The avatar url of the donor.
@@ -44,10 +36,3 @@ Name | Description
 `incentive.links.donate` | The url of the donate link.
 `incentive.startDate` | The timestamp this incentive starts.
 `incentive.endDate` | The timestamp this incentive ends.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**DonorDrive Triggers Reference *Go Back***](/Triggers/DonorDrive)
-- [<i class="mdi mdi-account-cog primary--text"></i> **Profile Updated *Next Up***](/Triggers/DonorDrive/Profile-Updated)
-{.btn-grid .my-5}
