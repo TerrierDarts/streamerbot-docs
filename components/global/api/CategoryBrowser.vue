@@ -58,7 +58,7 @@ const items = computed(() => dir.value?.map(i => ({
               class="flex flex-col"
             >
               <template #icon>
-                <Icon :name="card.icon" class="h-6 w-6 my-1" />
+                <Icon v-if="card.icon" :name="card.icon" class="h-6 w-6 my-1" />
               </template>
             </ULandingCard>
           </UPageGrid>
