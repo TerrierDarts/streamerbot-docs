@@ -26,16 +26,16 @@ Navigate to **Integrations > Streamer.bot Website**
   ::card{icon=i-mdi-bookmark title="IFTTT" to=/guide/integrations/ifttt}
   Integration with IFTTT
   ::
-  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/kofi}
+  ::card{icon=i-mdi-bookmark title="Ko-Fi" to=/guide/integrations/kofi}
   Integration with Ko-Fi
   ::
-  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/patreon}
+  ::card{icon=i-mdi-bookmark title="Patreon" to=/guide/integrations/patreon}
   Integration with Patreon
   ::
-  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/shopify}
+  ::card{icon=i-mdi-bookmark title="Shopify" to=/guide/integrations/shopify}
   Integration with Shopify
   ::
-  ::card{icon=i-mdi-bookmark title="Streamer.bot Decks" to=/guide/integrations/fourthwall}
+  ::card{icon=i-mdi-bookmark title="Fourthwall" to=/guide/integrations/fourthwall}
   Integration with Fourthwall
   ::
 ::
