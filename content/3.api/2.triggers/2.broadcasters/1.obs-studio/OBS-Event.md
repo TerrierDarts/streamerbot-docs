@@ -1,28 +1,14 @@
----
-title: OBS Event
-description: OBS Triggers Reference
-published: true
-date: 2023-04-17T23:42:46.367Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-17T23:42:44.492Z
----
+# OBS Event
+OBS Studio event trigger.
 
-## Overview
-This triggers when a selected event triggers.
+This event triggers when a selected OBS event occurs.
 
-## Configuration
-### OBS
-The OBS connection to react to this event.
+## Parameters
+### `OBS`
+Select the configured [OBS Studio Connection](/guide/broadcasters/obs-studio) to connect to.
 
-### Event
-The event that you want to select.
+### `Event`
+Select an or any event to react on.
 
 ## Variables
-This changes depending on your event, for a reference for all the variables go to [here](/Broadcasters/OBS/Events).
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**OBS Triggers Reference *Go Back***](/Triggers/OBS)
-- [<i class="mdi mdi-connection text--obs"></i> **OBS Connected *Up Next***](/Triggers/OBS/OBS-Connected)
-{.btn-grid .my-5}
+The variables of this trigger are different depending on the `Event` parameter.
