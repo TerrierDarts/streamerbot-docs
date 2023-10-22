@@ -14,6 +14,28 @@ const links = computed(() => {
   const result = [];
   const categoryPath = apiCategoryPath.value;
 
+  if (!categoryPath) {
+    result.push({
+      to: navBottomLink(navPageFromPath('/api/servers/websocket', navigation.value)),
+      label: 'WebSocket Server',
+      icon: 'i-mdi-api',
+      active: !!route.path.match(/^\/api\/servers\/websocket/i)
+    })
+    result.push({
+      to: navBottomLink(navPageFromPath('/api/servers/http', navigation.value)),
+      label: 'HTTP Server',
+      icon: 'i-mdi-api',
+      active: !!route.path.match(/^\/api\/servers\/http/i)
+    })
+    result.push({
+      to: navBottomLink(navPageFromPath('/api/servers/udp', navigation.value)),
+      label: 'UDP Server',
+      icon: 'i-mdi-api',
+      active: !!route.path.match(/^\/api\/servers\/udp/i)
+    })
+    return result;
+  }
+
   const subActionsPath = categoryPath
     ? categoryPath.replace(/^\/api\/(sub-actions|triggers|csharp)/, '/api/sub-actions')
     : '/api/sub-actions';
@@ -81,8 +103,10 @@ const navChildren = computed(() => {
 const { data: categoryPage } = await useAsyncData('categoryPage', () => {
   if (!apiCategoryPath.value) return null;
   return queryContent(apiCategoryPath.value).findOne();
-}, { watch: [apiCategoryPath] });
+}, { watch: [apiCategoryPath, () => route.path] });
 const asideTitle = computed(() => {
+  if (route.path.match(/^\/api\/servers/i)) return 'Servers';
+  if (!categoryPage.value) return null;
   return navKeyFromPath(categoryPage.value?._path, 'title', navigation.value);
 })
 const asideIcon = computed(() => {
@@ -97,7 +121,7 @@ const asideIcon = computed(() => {
         <UPage>
           <template #left>
             <UAside class="min-h-full">
-              <div v-if="categoryPage && asideTitle" class="text-neutral-200 text-sm/6 font-semibold mb-4 pb-1 border-b border-neutral-800">
+              <div v-if="asideTitle" class="text-neutral-200 text-sm/6 font-semibold mb-4 pb-1 border-b border-neutral-800">
                 <div class="flex gap-2 items-center">
                   <Icon v-if="asideIcon" :name="asideIcon" class="h-4 w-4" />
                   <span>{{ asideTitle }}</span>
@@ -105,7 +129,7 @@ const asideIcon = computed(() => {
                 <span class="text-neutral-400">API References</span>
               </div>
               <UAsideLinks :links="links" class="pb-3 border-b border-neutral-800" />
-              <UNavigationTree :links="mapContentNavigation(navChildren)" :multiple="false" :default-open="''" />
+              <UNavigationTree :links="mapContentNavigation(navChildren)" :multiple="false" :default-open="route.path.startsWith('/api/servers') ? false : ''" />
             </UAside>
           </template>
           <slot />

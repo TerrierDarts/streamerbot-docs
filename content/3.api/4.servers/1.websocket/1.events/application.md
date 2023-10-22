@@ -1,4 +1,4 @@
-# Application Events
+# Application
 Streamer.bot application events emitted by the WebSocket Server
 
 ## Overview
