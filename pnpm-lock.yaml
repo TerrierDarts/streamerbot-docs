@@ -37,6 +37,9 @@ devDependencies:
   '@nuxtjs/fontaine':
     specifier: ^0.4.1
     version: 0.4.1
+  '@nuxtjs/plausible':
+    specifier: ^0.2.3
+    version: 0.2.3
   '@vueuse/nuxt':
     specifier: ^10.5.0
     version: 10.5.0(nuxt@3.8.0)(vue@3.3.6)
@@ -1562,6 +1565,18 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+
+  /@nuxtjs/plausible@0.2.3:
+    resolution: {integrity: sha512-HGZA70ad6IgaP0bN2N3sEsBxURZfUb8HMMxQ7s/Iqw1U8snBsByAEaIxD0eafWLOvwNckHMTYzCIl+Xs6ZiXSA==}
+    dependencies:
+      '@nuxt/kit': 3.8.0
+      defu: 6.1.2
+      pathe: 1.1.1
+      plausible-tracker: 0.3.8
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /@nuxtjs/tailwindcss@6.8.0(webpack@5.89.0):
     resolution: {integrity: sha512-jzuvD1nfA2BPnSbHtKK0aiI51ndMa7lNGL1iDEFuEPsltzilZ9ED7zOP6niGTrImg0n5Yt4GEJpixi6yWwp9Hw==}
@@ -7120,6 +7135,11 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.4.2
       pathe: 1.1.1
+
+  /plausible-tracker@0.3.8:
+    resolution: {integrity: sha512-lmOWYQ7s9KOUJ1R+YTOR3HrjdbxIS2Z4de0P/Jx2dQPteznJl2eX3tXxKClpvbfyGP59B5bbhW8ftN59HbbFSg==}
+    engines: {node: '>=10'}
+    dev: true
 
   /playwright-core@1.39.0:
     resolution: {integrity: sha512-+k4pdZgs1qiM+OUkSjx96YiKsXsmb59evFoqv8SKO067qBA+Z2s/dCzJij/ZhdQcs2zlTAgRKfeiiLm8PQ2qvw==}
