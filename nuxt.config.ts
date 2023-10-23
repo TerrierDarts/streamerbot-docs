@@ -40,7 +40,17 @@ export default defineNuxtConfig({
 
   content: {
     navigation: {
-      fields: ['icon', 'titleTemplate', 'header', 'main', 'aside', 'footer', 'category', 'version', 'badge'],
+      fields: [
+        'icon',
+        'titleTemplate',
+        'header',
+        'main',
+        'aside',
+        'footer',
+        'category',
+        'version',
+        'badge',
+      ],
     },
     highlight: {
       preload: [
@@ -69,25 +79,25 @@ export default defineNuxtConfig({
     },
   },
 
-  generate: {
-    routes: [
-      '/',
-      '/api/sub-actions',
-      '/api/triggers',
-      '/api/csharp',
-      '/api/servers/websocket',
-      '/changelogs',
-      '/api/search.json',
-    ],
-  },
-
-  routeRules: {
-    '/get-started': { redirect: { to: '/get-started/introduction', statusCode: 301 }},
-    '/guide': { redirect: { to: '/guide/actions', statusCode: 301 }},
-  },
-
   nitro: {
+    routeRules: {
+      '/**': { isr: true, swr: true },
+      '/get-started': { redirect: { to: '/get-started/introduction', statusCode: 301 } },
+      '/guide': { redirect: { to: '/guide/actions', statusCode: 301 } },
+      '/api/servers/websocket': {
+        redirect: { to: '/api/servers/websocket/requests', statusCode: 301 },
+      },
+    },
     prerender: {
+      routes: [
+        '/',
+        '/api/sub-actions',
+        '/api/triggers',
+        '/api/csharp',
+        '/api/servers/websocket/requests',
+        '/changelogs',
+        '/api/search.json',
+      ],
       concurrency: 8,
       failOnError: false,
       // FIXME: Remove these when migration is finished and we have no more broken links :)

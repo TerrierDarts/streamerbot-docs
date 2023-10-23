@@ -1,12 +1,10 @@
 ---
 title: PolyPop
-description:
-published: true
-date: 2022-10-29T21:57:07.668Z
-tags:
-editor: markdown
-dateCreated: 2022-06-03T19:40:37.143Z
+description: Integrate Streamer.bot with PolyPop
+logo: /img/icons/polypop.png
 ---
+
+:wip
 
 PolyPop integration is made possible via the community made Websocket plugin available [here](https://github.com/Jabbey92/PolyPopWebsocketPlugin/releases/tag/1.0)
 

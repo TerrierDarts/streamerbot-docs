@@ -1,12 +1,10 @@
 ---
 title: OBS Studio
 description: Configuration page for one or more connection(s) to OBS Studio instance(s)
+logo: https://streamer.bot/img/integrations/obs.svg
 ---
 
-## Quick Links
-- [<i class="mdi mdi-creation text--obs"></i>**OBS Studio Events *Reference of all events supported with OBS Studio***](/Broadcasters/OBS/Events)
-- [<i class="mdi mdi-lightning-bolt-outline text--obs"></i>**OBS Studio Sub-Actions *Control OBS with all these amazing sub-actions!***](/Sub-Actions/OBS)
-{.btn-grid .list .my-5}
+:wip
 
 ## Overview
 > **Streamer.bot supports both OBS WebSocket versions, *v4.9+*{.obs-version-badge} and *v5+*{.obs-version-badge}**

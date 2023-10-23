@@ -36,7 +36,7 @@ const links: Array<{
     icon: 'simple-icons:elgato',
   },
   {
-    title: 'WebSocket Client',
+    title: 'Streamer.bot Client',
     href: 'https://streamerbot.github.io/client/',
     description: 'Official WebSocket Client for Streamer.bot',
     icon: 'IconStreamerbot',
@@ -47,6 +47,12 @@ const links: Array<{
     description: 'Official Discord server for Streamer.bot',
     icon: 'mdi:discord',
   },
+  {
+    title: 'Ideas & Suggestions',
+    href: 'https://ideas.streamer.bot',
+    description: 'Suggest new features and vote on existing ideas',
+    icon: 'i-mdi-lightbulb'
+  }
 ];
 </script>
 

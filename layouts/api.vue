@@ -5,7 +5,7 @@ const navigation = inject<ComputedRef<any[]>>('apiNavigation');
 const { navDirFromPath, navPageFromPath, navBottomLink, navKeyFromPath } = useContentHelpers();
 
 const apiCategoryPath = computed(() => {
-  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp)\/[\w-]+\/[\w-]+)\/?/i);
+  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp|servers)\/[\w-]+\/[\w-]+)\/?/i);
   return m && m[1] ? m[1] : null;
 })
 
@@ -14,7 +14,8 @@ const links = computed(() => {
   const result = [];
   const categoryPath = apiCategoryPath.value;
 
-  if (!categoryPath) {
+  // Servers navigation
+  if (route.path.startsWith('/api/servers')) {
     result.push({
       to: navBottomLink(navPageFromPath('/api/servers/websocket', navigation.value)),
       label: 'WebSocket Server',
@@ -80,17 +81,15 @@ const links = computed(() => {
 
 // Reduce navigation tree to only include the current API sub category
 // e.g. Twitch, YouTube, etc.
-const asideLevel = computed(() => Number(navKeyFromPath(page.value._path, 'aside', navigation.value)?.level || 4));
-const { data: navTree } = await useAsyncData('apiNavigation', () => fetchContentNavigation(
+const asideLevel = computed(() => Number(navKeyFromPath(route.path, 'aside', navigation.value)?.level || 4));
+const { data: navTree, pending } = await useAsyncData('apiNavigation', () => fetchContentNavigation(
   queryContent('api').where({
     _path: {
       $contains: route.path.split('/').slice(0, asideLevel.value + 1).join('/')
     }
   })
-), { watch: [() => route.path, asideLevel] });
+), { watch: [apiCategoryPath, asideLevel] });
 const navChildren = computed(() => {
-  // if (route.path.split('/').length <= (asideLevel.value)) return [];
-
   let children = navTree.value?.[0]?.children ?? [];
   let level = asideLevel.value;
   while (level > 1 && children?.[0]?.children) {
@@ -129,7 +128,8 @@ const asideIcon = computed(() => {
                 <span class="text-neutral-400">API References</span>
               </div>
               <UAsideLinks :links="links" class="pb-3 border-b border-neutral-800" />
-              <UNavigationTree :links="mapContentNavigation(navChildren)" :multiple="false" :default-open="route.path.startsWith('/api/servers') ? false : ''" />
+              <UNavigationTree v-if="!pending" :links="mapContentNavigation(navChildren)" :multiple="false" :default-open="route.path.startsWith('/api/servers') ? false : ''" />
+              <USkeleton v-else class="w-full h-4" />
             </UAside>
           </template>
           <slot />
