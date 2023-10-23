@@ -7,7 +7,7 @@ const props = defineProps<{
   disclosure?: boolean,
 }>();
 
-const { data, pending } = useAsyncData(`vars:${props.name}`, () => {
+const { data, pending } = useLazyAsyncData(`vars:${props.name}`, () => {
   if (!props.name) return Promise.resolve(null);
   return queryContent('api', '_variables').where({
     _partial: true,
@@ -75,7 +75,7 @@ const icon = computed(() => {
     </template>
   </template>
   <List v-else-if="pending" type="info">
-    Loading variables...
+    <USkeleton class="h-8 w-full" />
   </List>
   <List v-else type="warning">
     Variables not found

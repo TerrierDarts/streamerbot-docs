@@ -75,6 +75,8 @@ export default defineNuxtConfig({
       '/api/sub-actions',
       '/api/triggers',
       '/api/csharp',
+      '/api/servers/websocket',
+      '/changelogs',
       '/api/search.json',
     ],
   },
@@ -82,7 +84,6 @@ export default defineNuxtConfig({
   routeRules: {
     '/get-started': { redirect: { to: '/get-started/introduction', statusCode: 301 }},
     '/guide': { redirect: { to: '/guide/actions', statusCode: 301 }},
-    '/api/servers/websocket': { redirect: { to: '/api/servers/websocket/requests', statusCode: 301 }},
   },
 
   nitro: {

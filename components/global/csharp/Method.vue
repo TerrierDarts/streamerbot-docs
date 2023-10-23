@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{name?: string}>();
 
-const { data, pending } = useAsyncData(`csharp:${props.name}`, () => {
+const { data, pending } = useLazyAsyncData(`csharp:${props.name}`, () => {
   if (!props.name) return Promise.resolve(null);
   return queryContent('api', 'csharp', '_methods').where({
     _partial: true,
