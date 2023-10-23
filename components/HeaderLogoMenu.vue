@@ -60,14 +60,14 @@ const links: Array<{
       >
         <div class="flex items-center">
           <img src="https://streamer.bot/logo-transparent.svg" width="26">
-          <span class="font-light text-xl text-gray-300">
+          <span class="font-light text-xl text-neutral-900 dark:text-neutral-300">
             Streamer.bot
-            <span><small class="font-normal text-gray-100 tracking-tight">Documentation</small></span>
+            <span><small class="font-normal text-neutral-400 dark:text-neutral-100 tracking-tight">Documentation</small></span>
           </span>
         </div>
         <Icon
           :class="open ? '' : 'text-opacity-70'"
-          class="ml-2 h-5 w-5 text-gray-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
+          class="ml-2 h-5 w-5 text-neutral-600 dark:text-neutral-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
           name="mdi:chevron-down"
           aria-hidden="true"
         />
