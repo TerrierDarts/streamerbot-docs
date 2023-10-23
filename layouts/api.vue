@@ -5,7 +5,7 @@ const navigation = inject<ComputedRef<any[]>>('apiNavigation');
 const { navDirFromPath, navPageFromPath, navBottomLink, navKeyFromPath } = useContentHelpers();
 
 const apiCategoryPath = computed(() => {
-  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp|servers)\/[\w-]+(\/[\w-])*)\/?/i);
+  const m = route.path.match(/^(\/api\/(sub-actions|triggers|csharp|servers)\/[\w-]+(\/[\w-]+)?)\/?/i);
   return m && m[1] ? m[1] : null;
 })
 
