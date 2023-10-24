@@ -1,4 +1,4 @@
-# Donation
+# Merchandise
 Streamlabs merchandise trigger.
 
 This event triggers when you someone buys merchandise in your Streamlabs store.
