@@ -1,23 +1,15 @@
----
-title: Donation
-description: TipeeeStream Triggers Reference
-published: true
-date: 2023-03-15T21:36:47.478Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-15T21:36:45.632Z
----
+# Donation
+TipeeeStream donation trigger.
 
-## Overview
-This triggers when you get a donation via TipeeeStream.
+This event triggers when you get a donation with TipeeeStream.
 
-For a detailed guide about TipeeeStream see [this page](/Integrations/TipeeeStream).
-
-## Configuration
-### Ranges
-You can select ranges if you want to filter between two values.
+## Parameters
+### `Range`
+:range-description
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `tipeeStreamId` | The id from TipeeeStream
@@ -28,9 +20,3 @@ Name | Description
 `fees` | The fees that will be taken from the tip
 `currency` | The 3 letter curency code
 `message` | Any donation message the user may have included
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**TipeeeStream Triggers Reference *Go Back***](/Triggers/TipeeeStream)
-{.btn-grid .my-5}
