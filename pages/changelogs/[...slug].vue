@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
 import { withoutTrailingSlash } from 'ufo';
+import { useSeo } from '~/composables/useSeo';
 
 const route = useRoute()
 
@@ -26,19 +27,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
     .findSurround(withoutTrailingSlash(route.path))
 })
 
-useSeoMeta({
-  titleTemplate: '%s | Streamer.bot Docs',
-  title: page.value.title,
-  ogTitle: `${page.value.title} | Streamer.bot Docs`,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImage({
-  component: 'OgImageDefault',
-  title: page.value.title,
-  description: page.value.description
-})
+useSeo(page)
 
 const headline = computed(() => findPageHeadline(page.value))
 

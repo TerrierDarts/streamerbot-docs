@@ -8,11 +8,14 @@ const defaultOptions: OgImageOptions = {
 };
 
 /**
+ * Automatically generate SEO meta tags
  * Automatically generate OpenGraph images for each page using `nuxt-og-image`
  */
-export function useOgImage(options: OgImageOptions = defaultOptions) {
+export function useSeo(page: Ref<ParsedContent>, options: OgImageOptions = defaultOptions) {
+  if (!page?.value) return;
+
   const route = useRoute();
-  const { navigation, page } = useContent();
+  const navigation = inject('fullNavigation');
   const { navKeyFromPath } = useContentHelpers();
 
   // Grab any manually set category
@@ -31,7 +34,7 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
     ? navKeyFromPath(`/${parentPath}`, 'icon', navigation.value)
     : undefined;
 
-  if (route.path !== '/' && !page.value._partial && page.value?.ogImage !== false && page.value?.title) {
+  if (page.value?.ogImage !== false) {
     defineOgImage({
       component: options.component ?? defaultOptions.component,
       title: page.value?.title ?? 'Docs',
@@ -40,20 +43,16 @@ export function useOgImage(options: OgImageOptions = defaultOptions) {
       siteName: 'Streamer.bot Docs',
       categoryTitle: category?.title ?? parentTitle,
       categoryIcon: category?.icon ?? parentIcon,
-      cacheKey: page.value?._id ?? page.value?._path ?? route.path,
+      cacheKey: btoa(`${route.path}:${page.value?.title ?? 'Docs'}:${category?.title ?? parentTitle}`),
       cacheTtl: 60 * 60 * 24 * 30, // 30 days
     });
-
-    page.value.image = `https://docs.streamer.bot${page.value?._path}/__og_image__/og.png`;
-
-    useSeoMeta({
-      ogUrl:`https://docs.streamer.bot${page.value?._path ?? ''}`,
-      ogTitle: page.value?.title ?? 'Docs',
-      ogDescription: page.value?.description,
-      ogImage: `${page.value?._path}/__og_image__/og.png`,
-      twitterTitle: page.value?.title ?? 'Docs',
-      twitterDescription: page.value?.description,
-      twitterImage: `${page.value?._path}/__og_image__/og.png`,
-    });
   }
+
+  useSeoMeta({
+    titleTemplate: '%s | Streamer.bot Docs',
+    title: page.value?.title ?? '',
+    ogUrl: `https://docs.streamer.bot${page.value?._path ?? ''}`,
+    ogTitle: `${page.value?.title}`,
+    ogDescription: page.value?.description,
+  });
 }

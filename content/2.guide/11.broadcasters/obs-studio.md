@@ -1,6 +1,6 @@
 ---
 title: OBS Studio
-description: Configuration page for one or more connection(s) to OBS Studio instance(s)
+description: Configure Streamer.bot to interact with your OBS Studio instances
 logo: https://streamer.bot/img/integrations/obs.svg
 ---
 

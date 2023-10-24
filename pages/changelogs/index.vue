@@ -13,7 +13,9 @@ if (path && route.path === '/changelogs') {
 <template>
   <UPage>
     <UPageBody>
-      <span>Loading latest changelog...</span>
+      <UMain>
+        <USkeleton class="w-full h-4"></USkeleton>
+      </UMain>
     </UPageBody>
   </UPage>
 </template>

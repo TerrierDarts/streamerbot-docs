@@ -1,14 +1,10 @@
 <script setup lang="ts">
+import { useSeo } from '~/composables/useSeo';
+
 const route = useRoute()
 const { data: page } = await useAsyncData('index', () => queryContent(route.path).findOne())
 
-useSeoMeta({
-  titleTemplate: '',
-  title: page.value?.title,
-  ogTitle: page.value?.title,
-  description: page.value?.description,
-  ogDescription: page.value?.description
-})
+useSeo(page);
 </script>
 
 <template>

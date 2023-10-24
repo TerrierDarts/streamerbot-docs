@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSeo } from '~/composables/useSeo';
 
 const route = useRoute()
 
@@ -11,19 +12,7 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-useSeoMeta({
-  titleTemplate: '%s | Streamer.bot Docs',
-  title: page.value.title,
-  ogTitle: `${page.value.title} | Streamer.bot Docs`,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImage({
-  component: 'OgImageDefault',
-  title: page.value.title,
-  description: page.value.description
-})
+useSeo(page);
 
 const headline = `API References`
 
