@@ -82,7 +82,7 @@ export default defineNuxtConfig({
 
   nitro: {
     routeRules: {
-      '/**': { isr: true, swr: true },
+      '/**': { isr: !process.dev },
       '/get-started': { redirect: { to: '/get-started/introduction', statusCode: 301 } },
       '/guide': { redirect: { to: '/guide/actions', statusCode: 301 } },
       '/api/servers/websocket': {

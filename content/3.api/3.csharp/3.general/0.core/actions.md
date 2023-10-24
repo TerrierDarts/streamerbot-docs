@@ -1,10 +1,7 @@
 ---
-navigation.title: Actions
-icon: mdi:lightning-bolt
+title: Actions
+description: Execute actions or manipulate their state with C#
 ---
-
-# Action C# Methods
-Reference of C# methods for manipulating Streamer.bot actions
 
 ## Actions
 ### `RunAction`

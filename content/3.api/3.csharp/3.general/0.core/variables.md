@@ -1,14 +1,11 @@
 ---
-navigation.title: Core
-icon: IconStreamerbot
+title: Variables
+description: C# methods for manipulating arguments and variables
 ---
 
-# Core C# Methods
-Reference of C# methods for Streamer.bot core
-
 ## Arguments
-::list{type=info}
-- Arguments are local variables only available to the currently running action and any subsequent sub-actions
+::callout{icon=i-mdi-lightbulb color=amber}
+Arguments are local variables only available to the currently running action and any subsequent sub-actions
 ::
 
 ### `SetArgument`
@@ -131,95 +128,3 @@ void SetUserVar(string userName, string varName, object value, bool persisted = 
 void UnsetUserVar(string userName, string varName, bool persisted = true);
 void UnsetUser(string userName, bool persisted = true);
 ```
-
-## Utilities
-### `Between`
-Generate a random `int` value between a given min and max
-:csharp-method{name=Between}
-
-### `NextDouble`
-Generate a random `double` value between `0f` and `1f`
-:csharp-method{name=NextDouble}
-
-### `Wait`
-Delay code execution for a given number of milliseconds
-:csharp-method{name=Wait}
-
-### `UrlEncode`
-URL encode a given `string` value
-:csharp-method{name=UrlEncode}
-
-### `EscapeString`
-Escape a given `string` value
-:csharp-method{name=EscapeString}
-
-### `KeyboardPress`
-Simulate a keypress event
-::list{type=info}
-- Refer to the [SendKeys documentation](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys){target=_blank} for keystroke examples
-::
-:csharp-method{name=KeyboardPress}
-
-## Advanced
-
-### `GetSource`
-Get the value of the `__source` variable
-:csharp-method{name=GetSource}
-
-
-### `GetEventType`
-Get the value of the `eventType` variable
-:csharp-method{name=GetEventType}
-
-### `CSharpExecuteMethod`
-Execute a method defined in another existing execute code sub-action
-:csharp-method{name=ExecuteMethod}
-
-## Logging
-### `LogInfo`
-Write a new log with level `Info`
-:csharp-method{name=LogInfo}
-
-### `LogWarn`
-Write a new log with level `Warn`
-:csharp-method{name=LogWarn}
-
-### `LogDebug`
-Write a new log with level `Debug`
-:csharp-method{name=LogDebug}
-
-### `LogVerbose`
-Write a new log with level `Verbose`
-:csharp-method{name=LogVerbose}
-
-## Sounds
-### `PlaySound`
-Play a specific audio file
-:csharp-method{name=PlaySound}
-
-### `PlaySoundFromFolder`
-Play an audio file from a given directory
-:csharp-method{name=PlaySoundFromFolder}
-
-## Credits
-### `AddToCredits`
-Add a new item to a section of the stream credits
-:csharp-method{name=AddToCredits}
-
-### `ResetCredits`
-Reset all credits data
-:csharp-method{name=ResetCredits}
-
-## First Words
-### `ResetFirstWords`
-Reset all first words data
-:csharp-method{name=ResetFirstWords}
-
-## Timers
-### `EnableTimer`
-Enable a [timed action](/guide/timed-actions) by name
-:csharp-method{name=EnableTimer}
-
-### `DisableTimer`
-Disable a [timed action](/guide/timed-actions) by name
-:csharp-method{name=DisableTimer}

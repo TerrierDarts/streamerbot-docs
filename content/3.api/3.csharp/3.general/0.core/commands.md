@@ -1,10 +1,7 @@
 ---
-navigation.title: Commands
-icon: mdi:message-alert
+title: Commands
+description: Modify chat commands and their cooldowns with C# code
 ---
-
-# Commands C# Methods
-Reference of C# methods for interacting with Streamer.bot commands
 
 ## State
 ### `EnableCommand`
