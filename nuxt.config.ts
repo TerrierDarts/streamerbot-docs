@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/plausible',
     'nuxt-og-image',
+    'nuxt-link-checker',
     'nuxt-icon',
     'nuxt-content-assets',
     '@nuxt/content',
@@ -148,6 +149,13 @@ export default defineNuxtConfig({
     runtimeCacheStorage: true,
     defaults: {
       cacheTtl: 60 * 60 * 24 * 30, // 30 days
+    },
+  },
+
+  linkChecker: {
+    report: {
+      html: true,
+      markdown: true,
     },
   },
 });
