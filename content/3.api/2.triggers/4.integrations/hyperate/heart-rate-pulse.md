@@ -8,8 +8,8 @@ When HypeRate.io is broadcasting your heart rate, this event can fire once every
 ::
 
 ## Parameters
-### `Ranges`
-You can select ranges if you want to filter between two values.
+### `Range`
+:range-description
 
 ## Variables
 :variables-description
