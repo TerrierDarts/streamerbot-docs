@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import type { NavItem } from '@nuxt/content/dist/runtime/types';
 
 const route = useRoute();
-const navigation = inject<ComputedRef<any[]>>('changelogNavigation');
+const navigation = inject<ComputedRef<NavItem[]>>('changelogNavigation');
 
 // Redirect to latest changelog page
-const path = navigation.value?.at(0)._path;
-if (path && route.path === '/changelogs') {
+const path = navigation.value?.find(item => !!item.version)._path;
+if (path && path !== route.path && route.path === '/changelogs') {
   navigateTo(path);
 }
 </script>
